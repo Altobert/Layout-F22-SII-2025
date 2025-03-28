@@ -13599,6 +13599,7 @@ section {
                     content "$cod1301"
                     format TEXTBOX
 					width "120px" 
+
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "1313"
@@ -13652,8 +13653,7 @@ section {
 				cell {
                     style "fw-2019-descripcionCampo"
                     content "Remanente ejercicio anterior o saldo inicial (saldo negativo)"
-                    format LABEL    
-					
+                    format LABEL    					
                 }
                 cell {
                     style "fw-2019-codigoCampo"
@@ -13680,7 +13680,7 @@ section {
 					width "120px" 
                 }		
 		
-		cell {
+		        cell {
                     style "fw-2019-codigoCampo"
                     content "1289"
                     format LABEL
@@ -13752,7 +13752,104 @@ section {
 					colSpan 3 				 
                 }        
 			}
-		row {
+            row{
+                
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "Monto extinguido por ISIF art 10  Ley N° 21.681, reajustado"
+                    format LABEL					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1936"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1936"
+                    format TEXTBOX
+				    width "120px"                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1937"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1937"
+                    format TEXTBOX
+				    width "120px"
+                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1938"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1938"
+                    format TEXTBOX
+				    width "120px"                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1939"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1939"
+                    format TEXTBOX
+				    width "120px"                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1940"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1940"
+                    format TEXTBOX
+				    width "120px"                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1941"
+                    format LABEL
+					width "30px"					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1941"
+                    format TEXTBOX
+				    width "120px"                    					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px" 
+
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "-"
+                    format LABEL
+					colSpan 3 				 
+                }
+            }
+		    row {
 				cell {
                     style "fw-2019-descripcionCampo"
                     content "Aumentos del ejercicio (por reorganizaciones)"
@@ -13769,7 +13866,7 @@ section {
                     content "$cod1271"
                     format TEXTBOX
 				    width "120px"
-					
+
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "1280"
@@ -15747,7 +15844,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Base Imponible afecta a IDPC (o pérdida tributaria antes de imputar dividendos o retiros percibidos) del ejercicio"
+                    content "Base Imponible afecta a IDPC o pérdida tributaria del ejercicio"
                     format LABEL
 					width "600px"
                 }cell {
@@ -15767,84 +15864,7 @@ section {
 					width "30px"
                 }
             }
-			row {
-				cell {
-					style "fw-2019-tituloGrupoIzq"
-					content "IMPUTACIONES A LA PÉRDIDA TRIBUTARIA DEL EJERCICIO"
-					format LABEL
-					colSpan 4
-					width "860px"
-				}
-			}
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Dividendos o retiros percibidos afectos a impuestos finales, que absorben la pérdida tributaria"
-                    format LABEL
-					width "600px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1434"
-                    format LABEL
-					width "30px"
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1434"
-                    format TEXTBOX
-					width "200px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "+"
-                    format LABEL
-					width "30px"
-                }
-            }
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Incremento por IDPC de los dividendos o retiros percibidos afectos a impuestos finales, que absorben la pérdida tributaria"
-                    format LABEL
-					width "600px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1435"
-                    format LABEL
-					width "30px"
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1435"
-                    format TEXTBOX
-					width "200px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "+"
-                    format LABEL
-					width "30px"
-                }
-            }
-			row {
-				cell {
-                    style "fw-2019-tituloGrupoIzq"
-                    content "Pérdida tributaria del ejercicio al 31 de diciembre"
-                    format LABEL
-					width "600px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1450"
-                    format LABEL
-					width "30px"
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1450"
-                    format TEXTBOX
-					width "200px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "="
-                    format LABEL
-					width "30px"
-                }
-            }
+			
 		}
 	}#RECUADRO 17
     #INICIO RECUADRO 18
