@@ -9129,6 +9129,45 @@ section {
                     format LABEL
                 } 
             }
+            row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "Donaciones, según artículo 157 ter del Código del Trabajo"
+                    format LABEL   
+                                    
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1992"
+                    format LABEL
+                    width "30px"
+                    
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1992"
+                    format TEXTBOX
+
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content ""
+                    format LABEL
+                    width "30px"
+                    
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content ""
+                    format LABEL
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content ""
+                    format LABEL
+                    width "30px"
+                    
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content ""
+                    format LABEL
+                }
+            }
 			row {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
