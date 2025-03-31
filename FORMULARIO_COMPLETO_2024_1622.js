@@ -1,5 +1,7 @@
 # Layout COMPLETO 2025 Ingreso,Rectificatoria y Consulta
 # VERSION 1.7 25-06-2024
+# MODIFICACIONES 31-03-2025
+# BASE año 2024
 layout f22DefaultLayout {
     style "fw-formulario" 
 #seccion 1
@@ -324,7 +326,7 @@ layout f22DefaultLayout {
            row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "4"
+                    content " "
                     format LABEL
                 }cell {
                     style "fw-2019-descripcionCampo"
@@ -353,10 +355,73 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }#linea 5
+            row{
+                cell {
+                    style "fw-2019-codigoCampo"
+                    content "4"
+                    format LABEL
+                }cell{
+                    style "fw-2019-descripcionCampo"
+                    content "a) Rentas propias de actividad de renta presunta"
+                    format LABEL
+                    colSpan 11
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1920.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1920"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1921.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1921"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }
+            }row{
+                cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }cell{
+                    style "fw-2019-descripcionCampo"
+                    content "b) Rentas por participaciones o cuotas de comunidades obtenidas por la empresa que determina su renta presunta"
+                    format LABEL
+                    colSpan 11
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1922.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1922"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1923.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1923"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }
+            }
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "5"
+                    content " "
                     format LABEL
                     rowSpan 7
                 }cell {
@@ -483,6 +548,11 @@ layout f22DefaultLayout {
                 }
             }
             row {
+                cell{
+                    style "fw-2019-codigoCampo"
+                    content "5"
+                    format LABEL
+                }    
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "c) Rentas por participaciones o cuotas de comunidad obtenida por la empresa que determinan su renta efectiva sin contabilidad completa, provenientes de otras empresas en las que participa"
@@ -998,7 +1068,7 @@ layout f22DefaultLayout {
            row {
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "c) Retiros de ELD del art. 42 ter LIR efectuados durante el año 2023, que no excedan los límites exentos de impuesto de 200 u 800 UTM "
+                    content "c) Retiros de ELD del art. 42 ter LIR efectuados durante el año 2024, que no excedan los límites exentos de impuesto de 200 u 800 UTM"
                     format LABEL
                     colSpan 13
                 }
@@ -1285,7 +1355,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "Impuesto Territorial pagado en el año 2023, según art. 55 letra a) LIR"
+                    content "Impuesto Territorial pagado en el año 2024, según art. 55 letra a) LIR"
                     format LABEL
                     colSpan 13
                 }cell {
@@ -2511,8 +2581,162 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }#linea 16
-            row {
-            cell {
+            row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "a) Rentas propias de actividad de renta presunta agrícola"
+                    format LABEL                 
+					colSpan 9
+                }
+                cell {
+                    style "fw-2019-codigoCampo"
+                    content "$cod1924.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1924"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "$cod1925.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1925"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "$cod1926.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1926"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }
+
+            }row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "b) Rentas propias de actividad de renta presunta transporte de pasajeros"
+                    format LABEL                 
+					colSpan 9
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1927.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1927"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1928.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1928"  
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }
+
+            }row{
+
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "c) Rentas propias de actividad de renta presunta transporte de carga"
+                    format LABEL
+                    colSpan 9
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1929.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1929"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1930.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1930"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL   
+                }
+
+            }row{
+
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "d) Rentas propias de actividad de renta presunta minera"
+                    format LABEL
+                    colSpan 9
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1931.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1931"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1932.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1932"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL  
+                }
+
+            }row{
+
+                cell {
                     style "fw-2019-codigoCampo"
                     content "58"
                     format LABEL
@@ -2923,6 +3147,106 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }#linea 16
+            row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "Royalty Minero Ley 21.591"
+                    format LABEL
+                    colSpan 9
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1976.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1976"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "+"
+                    format LABEL
+                }
+            }row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "a) Componente Ad Valorem según art. 2 Ley N° 21.591"
+                    format LABEL
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1977.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1977"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1978.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1978"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "+"
+                    format LABEL
+                }
+            }row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "b) Componente del margen según art 3 o art 4 N° 21.591"
+                    format LABEL
+                }cell{ 
+                    style "fw-2019-codigoCampo"
+                    content "$cod1979.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1979"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "$cod1980.codigo"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1980"
+                    format TEXTBOX
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "+"
+                    format LABEL
+                }
+            }
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
@@ -3716,7 +4040,7 @@ layout f22DefaultLayout {
                 cell {
                     style "fw-2019-descripcionCampo"
                     #content "Pagos provisionales, según arts. 14 letra D) N° 3 letra (k) y 84 LIR"
-					content "a) PPM arts. 84 letras a), c) , e), y h) y 14 D N° 3 letra (k) LIR"
+					content "a) PPM arts. 84 letras a), c) , e), y h) y 14 D N° 3 letra (k) LIR  y PPM royalty minero según art. 7 Ley N° 21.591"
                     format LABEL                 
                     colSpan 13
                 }
@@ -18143,7 +18467,97 @@ section {
                     content "-"
                     format LABEL
                 }       
-			}
+			}row{
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "Monto imputado al ISIF arts. 10 y 11 Ley N° 21.681"
+                    format LABEL                    
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1945"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1945"
+                    format TEXTBOX
+                    width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1946"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1946"
+                    format TEXTBOX
+                    width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1947"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1947"
+                    format TEXTBOX
+                    width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1948"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1948"
+                    format TEXTBOX
+                    width "120px"
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px" 
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1949"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1949"
+                    format TEXTBOX
+                    width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1950"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1950"
+                    format TEXTBOX
+                    width "120px"
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "-"
+                    format LABEL
+                }
+            }
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
@@ -20488,9 +20902,17 @@ row {
             row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Pago anticipado por reintegro del préstamo tasa 0% (F-50, F-10 o códigos 1797 o 1842 del F-22 AT 2023), según el art. 6 (art. primero) Ley N° 21.242 y/o art. 7 (art. primero) Ley N° 21.252 o art. 11 inc. 3° Ley N° 21.323"
+                    content "Pago anticipado por reintegro del préstamo tasa 0% (F-50, F-10 o códigos 1797 o 1842 del F-22 AT 2024), según el art. 6 (art. primero) Ley N° 21.242 y/o art. 7 (art. primero) Ley N° 21.252 o art. 11 inc. 3° Ley N° 21.323"
                     format LABEL  
                     colSpan 3               
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1951"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1951"
+                    format TEXTBOX                    
                 }
                 cell {
                     style "fw-2019-codigoCampo"
@@ -20514,6 +20936,14 @@ row {
                     content "Monto a pagar de la(s) cuota(s) después de anticipos"
                     format LABEL  
                     colSpan 3               
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1952"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1952"
+                    format TEXTBOX
                 }
                 cell {
                     style "fw-2019-codigoCampo"
@@ -20530,6 +20960,32 @@ row {
                     content "="
                     format LABEL					
                 }
+            }row{
+                cell{
+                    style "fw-2019-descripcionCampo"
+                    content "Total cuotas a pagar (suma códigos 1952 y 1788)"
+                    format LABEL  
+                    colSpan 3               
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px" 
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "120px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1953"
+                    format LABEL
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1953"
+                    format LABEL
+                }
+                    
             } 
             row{
                 cell{
@@ -20716,7 +21172,7 @@ row {
 					colSpan 6
                 }
             }
-            row {
+            row {       
 				cell {
                     style "fw-2019-descripcionCampo"
                     content "Monto del código 1795 destinado voluntariamente a pagar el saldo pendiente de los préstamos tasa 0% o futuras cuotas de dichos préstamos"
