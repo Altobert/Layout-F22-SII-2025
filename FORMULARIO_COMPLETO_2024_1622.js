@@ -16915,6 +16915,89 @@ section {
                     format LABEL
                 }       
 			}
+            row {
+                cell {
+                    style "fw-2019-descripcionCampo"
+                    content "Monto acogido al ISIF según arts. 10 y 11 Ley N° 21.681"
+                    format LABEL
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1942"
+                    format LABEL
+					width "30px"
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1942"
+                    format TEXTBOX
+                    width "110px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1943"
+                    format LABEL
+					width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1943"
+                    format TEXTBOX
+                    width "110px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL
+					width "30px"					
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "1944"
+                    format LABEL
+                    width "30px"
+                }cell{
+                    style "fw-valorCampo"
+                    content "$cod1944"
+                    format TEXTBOX
+                    width "110px"
+                }cell{
+                    style "fw-2019-codigoCampo"
+                    content "'+/-"
+                    format LABEL
+					width "30px"					
+                }
+
+            }
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
