@@ -6311,7 +6311,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Precios de enajenaciones del conjunto de los bienes raíces situados en Chile"
+                    content "Precios de enajenaciones del conjunto de los bienes raíces"                    
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -6615,7 +6615,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Mayor valor percibido según códigos 1099 y 1114 anteriores afecto al IGC o IA, a trasladar a código 1891; y  y según código 1988 afecto a IDPC e IGC o IA a trasladar a código 1895 o 1912, y a código 1891, según corresponda "
+                    content "Mayor valor percibido según códigos 1099, 1114, o devengado según código1987 afectos al IGC o IA, trasladar a códigos 1891; según código 1988 afecto a IDPC e IGC o IA a trasladar a código 1895 o 1912, y a código 1891, según corresponda"
                     format LABEL                    
                 }cell {
                     style "fw-2019-codigoCampo"
