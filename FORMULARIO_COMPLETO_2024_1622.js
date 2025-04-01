@@ -12712,7 +12712,7 @@ section {
 			}row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto acogido al ISIF art 10 Ley N° 21.681, reajustado"
+                    content "Monto acogido al ISIF art. 10 Ley N° 21.681, reajustado"
                     format LABEL    
 					
                 }cell {
