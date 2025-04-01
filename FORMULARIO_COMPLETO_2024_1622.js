@@ -362,7 +362,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }cell{
                     style "fw-2019-descripcionCampo"
-                    content "a) Rentas propias de actividad de renta presunta"
+                    content "a) Rentas propias de la actividad de renta presunta"
                     format LABEL
                     colSpan 11
                 }cell{
@@ -964,7 +964,7 @@ layout f22DefaultLayout {
            row {
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "a) Rentas de FCH provenientes de capitales mobiliarios, que no excedan los límites de 20 o 30 UTM, según corresponda."
+                    content "a) Rentas comprendidas en el art. 57 LIR, que no excedan los límites de 20 o 30 UTM, según corresponda"
                     format LABEL
                     colSpan 5
                 }cell {
@@ -1009,7 +1009,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content ""
+                    content " "
                     format LABEL
                 }
             }
@@ -1403,7 +1403,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "Pérdida en operaciones de capitales mobiliarios y ganancias de capital según códigos 105, 155,152 ,1032, 1891, y 1104 (arts. 54 N° 1 y 62 LIR)"
+                    content "Pérdida en operaciones de capitales mobiliarios y ganancias de capital según códigos 105, 155,152 ,1032, 1891, 1104, 1063 y 1989 (arts. 54 N° 1 y 62 LIR)"
                     format LABEL
                     colSpan 13
                 }cell {
@@ -1427,7 +1427,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "Rebaja por donaciones a entidades sin fines de lucro según nuevo Título VIII bis D.L. N° 3.063 de 1979 (incorporado por Ley N° 21.440), efectuadas por contribuyentes del IUSC, IGC o IA"
+                    content "Rebaja por donaciones a entidades sin fines de lucro según Título VIII bis D.L. N° 3.063 de 1979 (incorporado por Ley N° 21.440), efectuadas por contribuyentes del IUSC, IGC o IA"
                     format LABEL
                     colSpan 13
                 }cell {
@@ -1637,7 +1637,7 @@ layout f22DefaultLayout {
 		row {
 			cell {
 				style "fw-2019-tituloGrupo"
-				content "IUSC o IGC, y DÉBITOS FISCALES"
+				content "IUSC o IGC, Y DÉBITOS FISCALES"
 				format LABEL
 				colSpan 9
 			}
@@ -3112,7 +3112,7 @@ layout f22DefaultLayout {
                     #width "20px"
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "Impuesto Específico a la Actividad Minera, según art. 64 bis LIR"
+                    content "Impuesto específico a la actividad minera, según ex. art. 64 bis LIR"
                     format LABEL                 
 					colSpan 9
                 }cell {
@@ -3150,7 +3150,7 @@ layout f22DefaultLayout {
             row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "Royalty Minero Ley 21.591"
+                    content "Royalty Minero Ley N° 21.591"
                     format LABEL
                     colSpan 9
                 }cell {
@@ -3177,7 +3177,7 @@ layout f22DefaultLayout {
             }row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "a) Componente Ad Valorem según art. 2 Ley N° 21.591"
+                    content "a) Componente ad valorem según art. 2 Ley N° 21.591"
                     format LABEL
                 }cell{
                     style "fw-2019-codigoCampo"
@@ -3213,7 +3213,7 @@ layout f22DefaultLayout {
             }row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "b) Componente del margen según art 3 o art 4 N° 21.591"
+                    content "b) Componente del margen según art 3 o art 4 Ley N° 21.591"
                     format LABEL
                 }cell{ 
                     style "fw-2019-codigoCampo"
@@ -14141,7 +14141,7 @@ section {
                 
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto extinguido por ISIF art 10  Ley N° 21.681, reajustado"
+                    content "Monto extinguido por ISIF art. 10  Ley N° 21.681, reajustado"
                     format LABEL					
                 }cell {
                     style "fw-2019-codigoCampo"
@@ -20694,7 +20694,7 @@ row {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Crédito por IDPC, por participaciones en otras empresas que incrementaron la BI del ejercicio."
+                    content "Crédito por IDPC, por participaciones en otras empresas que incrementaron la BI del ejercicio"
                     format LABEL
 					width "600px"
                 }cell {
