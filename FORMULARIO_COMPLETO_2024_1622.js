@@ -9617,7 +9617,7 @@ section {
 			row {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
-					content "ANTECEDENTES IEAM ARTS. 64 BIS y 64 TET LIR (CONTRIBUYENTES CON INVARIABILIDAD TRIBUTARIA VIGENTE)"
+					content "ANTECEDENTES IEAM EX ARTS. 64 BIS y 64 TER LIR (CONTRIBUYENTES CON INVARIABILIDAD TRIBUTARIA VIGENTE)"
 					format LABEL
 					colSpan 3
 				}
@@ -9625,7 +9625,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Agregados a la RLI (o pérdida tributaria) de Primera Categoría, según art. 64 ter LIR"
+                    content "Agregados a la RLI (o pérdida tributaria) de primera categoría, según ex. art. 64 ter LIR"
                     format LABEL    
 					width "705px"					
                 }cell {
@@ -9648,7 +9648,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Deducciones a la RLI (o pérdida tributaria) de Primera Categoría, según art. 64 ter LIR"
+                    content "Deducciones a la RLI (o pérdida tributaria) de primera categoría, según ex. art. 64 ter LIR"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9671,7 +9671,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Ventas expresadas en toneladas métricas de cobre fino, según art. 64 bis LIR"
+                    content "Ventas expresadas en toneladas métricas de cobre fino, según ex. art. 64 bis LIR"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9694,7 +9694,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Ventas de relacionados expresadas en toneladas métricas de cobre fino, según art. 64 bis LIR"
+                    content "Ventas de relacionados expresadas en toneladas métricas de cobre fino, según ex art. 64 bis LIR"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9717,7 +9717,7 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Margen operacional minero según art. 64 bis LIR"
+                    content "Margen operacional minero según ex. art. 64 bis LIR"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9740,7 +9740,7 @@ section {
             }row {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
-					content "ANTECEDENTES ROYALTY MINERO Ley 21.591"
+					content "ANTECEDENTES ROYALTY MINERO LEY N° 21.591"
 					format LABEL
 					colSpan 4
 				}
@@ -9748,7 +9748,7 @@ section {
 			}row {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
-					content "AGREGADOS A LA RIOMA (ART. 6 LEY 21.591 Y ART 58 LEY 20.551) "
+					content "AGREGADOS A LA RIOMA (ART. 6 LEY N° 21.591 Y ART 58 LEY N° 20.551)"
 					format LABEL
 					colSpan 4
 				}
@@ -9779,7 +9779,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Costos asociados a Ingresos no operacionales mineros"
+                    content "Costos asociados a ingresos no operacionales mineros"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9802,7 +9802,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos asociados a Ingresos no operacionales mineros"
+                    content "Gastos asociados a ingresos no operacionales mineros"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9848,7 +9848,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos de Intereses"
+                    content "Gastos de intereses"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9871,7 +9871,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Depreciación Acelerada"
+                    content "Depreciación acelerada"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9917,7 +9917,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos de organización y puesta en Marcha"
+                    content "Gastos de organización y puesta en marcha"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9940,7 +9940,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Contratos de Avio y otras contraprestaciones"
+                    content "Contratos de avío y otras contraprestaciones"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9963,7 +9963,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Cierre de Faenas (art 58 de la Ley N° 20.551)"
+                    content "Cierre de faenas (art 58 de la Ley N° 20.551)"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -9987,7 +9987,7 @@ section {
 			row {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
-					content "DEDUCCIONES A LA RIOMA ART. 6 LEY 21.591"
+					content "DEDUCCIONES A LA RIOMA ART. 6 LEY N° 21.591"
 					format LABEL
 					colSpan 4
 				}
@@ -10041,7 +10041,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Cuota Gastos de organización y puesta en marcha"
+                    content "Cuota gastos de organización y puesta en marcha"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -10165,7 +10165,7 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Margen operacional minero según art 2 Ley N° 21.591"
+                    content "Margen operacional minero según N° 6 del art 1 Ley N° 21.591"
                     format LABEL    
 					width "400px"					
                 }cell {
@@ -10990,6 +10990,28 @@ section {
                 }cell {
                     style "fw-valorCampo"
                     content "$cod1151"
+                    format TEXTBOX
+					
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "+"
+                    format LABEL					
+                }
+            }
+            row{
+                cell{
+                    style "fw-2019-descripcionCampo"
+                    content "Ajustes de precios de transferencia, según artículo 41 E LIR"
+                    format LABEL    
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1991"
+                    format LABEL
+					width "20px"
+					
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1991"
                     format TEXTBOX
 					
                 }cell {
