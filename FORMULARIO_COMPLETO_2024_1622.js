@@ -1,7 +1,7 @@
 # Layout COMPLETO 2025 Ingreso,Rectificatoria y Consulta
 # VERSION 1.7 25-06-2024
 # MODIFICACIONES 31-03-2025
-# BASE año 2024
+# BASE año 2024 - cambios: asanmartin 01-04-2025
 layout f22DefaultLayout {
     style "fw-formulario" 
 #seccion 1
