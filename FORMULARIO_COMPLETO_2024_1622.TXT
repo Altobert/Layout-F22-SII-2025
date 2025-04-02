@@ -298,7 +298,7 @@ layout f22DefaultLayout {
                     content "+"
                     format LABEL
                 }
-            }#linea 3
+           }#linea 3
            row {
                 cell {
                     style "fw-2019-codigoCampo"
@@ -322,18 +322,20 @@ layout f22DefaultLayout {
                     content "+"
                     format LABEL
                 }
-            }#linea 4
-           row {
+            }#linea 4           
+            row{
                 cell {
                     style "fw-2019-codigoCampo"
-                    content " "
+                    content "4"
                     format LABEL
-                }cell {
+                    rowSpan  3
+                }                      
+                cell {
                     style "fw-2019-descripcionCampo"
                     content "Rentas presuntas propias y/o de terceros, según art. 14 letra B) N° 2 y art. 34 LIR"
                     format LABEL
                     colSpan 11
-				}cell {
+                }cell {
                     style "fw-2019-codigoCampo"
                     content "$cod603.codigo"
                     format LABEL
@@ -354,13 +356,9 @@ layout f22DefaultLayout {
                     content "+"
                     format LABEL
                 }
-            }#linea 5
-            row{
-                cell {
-                    style "fw-2019-codigoCampo"
-                    content "4"
-                    format LABEL
-                }cell{
+            }row{
+
+                cell{
                     style "fw-2019-descripcionCampo"
                     content "a) Rentas propias de la actividad de renta presunta"
                     format LABEL
@@ -383,15 +381,13 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content " "
+                    content ""
                     format LABEL
                 }
-            }row{
-                cell {
-                    style "fw-2019-codigoCampo"
-                    content " "
-                    format LABEL
-                }cell{
+
+            }
+            row{                                
+                cell{
                     style "fw-2019-descripcionCampo"
                     content "b) Rentas por participaciones o cuotas de comunidades obtenidas por la empresa que determina su renta presunta"
                     format LABEL
@@ -418,17 +414,12 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }
-            row {
+            row {               
                 cell {
-                    style "fw-2019-codigoCampo"
-                    content " "
-                    format LABEL
-                    rowSpan 7
-                }cell {
                     style "fw-2019-descripcionCampo"
                     content "Rentas propias y/o de terceros, provenientes de empresas que determinan su renta efectiva sin contabilidad completa, según art. 14 letra B) N° 1 LIR"
                     format LABEL
-                    colSpan 5
+                    #colSpan 5
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "$cod1721.codigo"
@@ -477,6 +468,11 @@ layout f22DefaultLayout {
             }#linea 5b
             row {
                 cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL                    
+                }
+                cell {
                     style "fw-2019-descripcionCampo"
                     content "a) Rentas del arrendamiento, subarrendamiento, usufructo o cesión de cualquier otra forma del uso o goce temporal de bienes raíces agrícolas y no agrícolas, determinadas mediante el respectivo contrato"
                     format LABEL
@@ -512,6 +508,11 @@ layout f22DefaultLayout {
                 }
             }
             row {
+                cell {
+                    style "fw-2019-codigoCampo"
+                    content " "
+                    format LABEL                    
+                }
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "b) Rentas por participaciones o cuotas de comunidad obtenidas por la empresa que determina su renta efectiva sin contabilidad completa"
@@ -552,6 +553,7 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content "5"
                     format LABEL
+                    rowSpan 7
                 }    
                 cell {
                     style "fw-2019-descripcionCampo"
