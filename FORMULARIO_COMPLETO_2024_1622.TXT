@@ -414,12 +414,18 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }
-            row {               
+            row {
+                cell{
+                    style "fw-2019-codigoCampo"
+                    content "5"
+                    format LABEL
+                    rowSpan 7
+                }                
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "Rentas propias y/o de terceros, provenientes de empresas que determinan su renta efectiva sin contabilidad completa, según art. 14 letra B) N° 1 LIR"
                     format LABEL
-                    #colSpan 5
+                    
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "$cod1721.codigo"
@@ -466,12 +472,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }#linea 5b
-            row {
-                cell {
-                    style "fw-2019-codigoCampo"
-                    content " "
-                    format LABEL                    
-                }
+            row {                
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "a) Rentas del arrendamiento, subarrendamiento, usufructo o cesión de cualquier otra forma del uso o goce temporal de bienes raíces agrícolas y no agrícolas, determinadas mediante el respectivo contrato"
@@ -507,12 +508,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }
-            row {
-                cell {
-                    style "fw-2019-codigoCampo"
-                    content " "
-                    format LABEL                    
-                }
+            row {                
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "b) Rentas por participaciones o cuotas de comunidad obtenidas por la empresa que determina su renta efectiva sin contabilidad completa"
@@ -549,12 +545,7 @@ layout f22DefaultLayout {
                 }
             }
             row {
-                cell{
-                    style "fw-2019-codigoCampo"
-                    content "5"
-                    format LABEL
-                    rowSpan 7
-                }    
+                  
                 cell {
                     style "fw-2019-descripcionCampo"
                     content "c) Rentas por participaciones o cuotas de comunidad obtenida por la empresa que determinan su renta efectiva sin contabilidad completa, provenientes de otras empresas en las que participa"
