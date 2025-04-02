@@ -171,8 +171,7 @@ layout f22DefaultLayout {
                 cell {
                     style "fw-2019-codigoCampo"
                     content "1"
-                    format LABEL
-                    #width "20px"
+                    format LABEL                    
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "Retiros o remesas afectos al IGC o IA, según art. 14 letras A) y/o D) N° 3 LIR"
@@ -232,7 +231,7 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content "+"
                     format LABEL
-                    #width "20px"
+                    
                 }
             }#linea 2
            row {
@@ -394,7 +393,7 @@ layout f22DefaultLayout {
                     colSpan 11
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "$cod1922.codigo"
+                    content "1922"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"
@@ -402,7 +401,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "$cod1923.codigo"
+                    content "1923"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"
@@ -425,10 +424,11 @@ layout f22DefaultLayout {
                     style "fw-2019-descripcionCampo"
                     content "Rentas propias y/o de terceros, provenientes de empresas que determinan su renta efectiva sin contabilidad completa, según art. 14 letra B) N° 1 LIR"
                     format LABEL
-                    
+                    #colSpan 7
+                    colSpan 5
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod1721.codigo"
+                    content "1721"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -436,7 +436,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod1722.codigo"
+                    content "1722"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -444,7 +444,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod1596.codigo"
+                    content "1596"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -452,7 +452,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod954.codigo"
+                    content "954"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -460,7 +460,7 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod955.codigo"
+                    content "955"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
