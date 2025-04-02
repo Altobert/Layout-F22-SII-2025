@@ -2535,7 +2535,7 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content "57"
                     format LABEL
-                    #width "20px"
+                    rowSpan 5
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "IDPC sobre rentas presuntas, según art. 34 LIR"
@@ -2734,7 +2734,7 @@ layout f22DefaultLayout {
                     content "58"
                     format LABEL
                     rowSpan 6
-                    #width "20px"
+                    
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "IDPC sobre rentas efectivas determinadas sin contabilidad completa"
@@ -2800,8 +2800,7 @@ layout f22DefaultLayout {
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "$cod1894.codigo"
-                    format LABEL
-                    #width "20px"
+                    format LABEL                    
                 }cell {
                     style "fw-valorCampo"
                     content "$cod1894"
@@ -2820,7 +2819,7 @@ layout f22DefaultLayout {
                     colSpan 9
                 }cell {
                    style "fw-2019-codigoCampo"
-                    content "$cod1895.codigo"
+                    content "1895"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -2829,16 +2828,15 @@ layout f22DefaultLayout {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod1896.codigo"
+                    content ""
                     format LABEL
-                    #width "20px"
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1896"
-                    format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod1897.codigo"
+                    content ""
+                    format LABEL
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "1897"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3141,10 +3139,15 @@ layout f22DefaultLayout {
                 }
             }#linea 16
             row{
-                cell {
+                cell{
+                    style "fw-2019-codigoCampo"
+                    content "63"
+                    format LABEL  
+                    rowSpan 3                    
+                }cell {
                     style "fw-2019-descripcionCampo"
                     content "Royalty Minero Ley N° 21.591"
-                    format LABEL
+                    format LABEL                    
                     colSpan 9
                 }cell {
                     style "fw-2019-codigoCampo"
@@ -3172,6 +3175,7 @@ layout f22DefaultLayout {
                     style "fw-2019-descripcionCampo"
                     content "a) Componente ad valorem según art. 2 Ley N° 21.591"
                     format LABEL
+                    colSpan 9
                 }cell{
                     style "fw-2019-codigoCampo"
                     content "$cod1977.codigo"
@@ -3184,12 +3188,12 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content " "
                     format LABEL
-					width "30px" 
+					#width "30px" 
                 }cell {
                     style "fw-2019-codigoCampo"
                     content " "
                     format LABEL
-					width "120px"
+					#width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
                     content "$cod1978.codigo"
@@ -3208,6 +3212,7 @@ layout f22DefaultLayout {
                     style "fw-2019-descripcionCampo"
                     content "b) Componente del margen según art 3 o art 4 Ley N° 21.591"
                     format LABEL
+                    colSpan 9
                 }cell{ 
                     style "fw-2019-codigoCampo"
                     content "$cod1979.codigo"
@@ -3220,12 +3225,12 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content " "
                     format LABEL
-					width "30px" 
+					#width "30px" 
                 }cell {
                     style "fw-2019-codigoCampo"
                     content " "
                     format LABEL
-					width "120px"
+					#width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
                     content "$cod1980.codigo"
@@ -3240,12 +3245,12 @@ layout f22DefaultLayout {
                     format LABEL
                 }
             }
-			row {
+			row {             
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "63"
-                    format LABEL
-                    #width "20px"
+                    content "64"
+                    format LABEL                                        
+
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "Impuesto Único de 10% por enajenación de bienes raíces, según art. 17 N° 8 letra b) LIR y/o art. 4 Ley N° 21.078"
@@ -3287,7 +3292,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "64"
+                    content "65"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3331,7 +3336,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "65"
+                    content "66"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3375,7 +3380,7 @@ layout f22DefaultLayout {
             row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "66"
+                    content "67"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3419,7 +3424,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "67"
+                    content "68"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3462,7 +3467,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "68"
+                    content "69"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3505,7 +3510,7 @@ layout f22DefaultLayout {
 			row {								
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "69"
+                    content "70"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3549,7 +3554,7 @@ layout f22DefaultLayout {
 			row {				
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "70"
+                    content "71"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3593,7 +3598,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "71"
+                    content "72"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3637,7 +3642,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "72"
+                    content "73"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3681,7 +3686,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "73"
+                    content "74"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3708,7 +3713,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "74"
+                    content "75"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3735,7 +3740,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "75"
+                    content "76"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3762,7 +3767,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "76"
+                    content "77"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3789,7 +3794,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "77"
+                    content "78"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3816,7 +3821,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "78"
+                    content "79"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3843,7 +3848,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "79"
+                    content "80"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3870,7 +3875,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "80"
+                    content "81"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3897,7 +3902,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "81"
+                    content "82"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3924,7 +3929,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "82"
+                    content "83"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -3960,7 +3965,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "83"
+                    content "84"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4004,7 +4009,7 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "84"
+                    content "85"
                     format LABEL
                     rowSpan 5
                     #width "20px"
@@ -4031,8 +4036,7 @@ layout f22DefaultLayout {
             }
             row {
                 cell {
-                    style "fw-2019-descripcionCampo"
-                    #content "Pagos provisionales, según arts. 14 letra D) N° 3 letra (k) y 84 LIR"
+                    style "fw-2019-descripcionCampo"                    
 					content "a) PPM arts. 84 letras a), c) , e), y h) y 14 D N° 3 letra (k) LIR  y PPM royalty minero según art. 7 Ley N° 21.591"
                     format LABEL                 
                     colSpan 13
@@ -4085,7 +4089,7 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content "$cod1906.codigo"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-valorCampo"
                     content "$cod1906"
@@ -4122,9 +4126,9 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "85"
+                    content "86"
                     format LABEL
-                    #width "20px"
+
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "Crédito fiscal AFP, según art. 23 D.L. N° 3.500 de 1980"
@@ -4149,7 +4153,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "86"
+                    content "87"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4176,7 +4180,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "87"
+                    content "88"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4203,7 +4207,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "88"
+                    content "89"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4230,7 +4234,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "89"
+                    content "90"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4257,7 +4261,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "90"
+                    content "91"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4284,7 +4288,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "91"
+                    content "92"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4311,7 +4315,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "92"
+                    content "93"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4338,7 +4342,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "93"
+                    content "94"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4365,7 +4369,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "94"
+                    content "95"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4392,7 +4396,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "95"
+                    content "96"
                     format LABEL
                     #width "20px"
                 }cell {
@@ -4420,45 +4424,45 @@ layout f22DefaultLayout {
 			row {
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "96"
+                    content "97"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "PPUA sin derecho a devolución, según art. 27° transitorio de la Ley N° 21.210"
+                    content "Remanente de crédito por reliquidación del IUSC y/o por ahorro neto positivo, proveniente de códigos 162 y/o 174"
                     format LABEL                 
 					colSpan 7
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod912.codigo"
+                    content "119"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-valorCampo"
-                    content "$cod912"
+                    content "$cod119"
                     format TEXTBOX
 					colSpan 2
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "PPUA con derecho a devolución, según art. 27° transitorio de la Ley N° 21.210"
+                    content "Remanente de crédito por IDPC proveniente de códigos 1638 y/o 610"
                     format LABEL
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod167.codigo"
+                    content "116"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-valorCampo"
-                    content "$cod167"
+                    content "$cod116"
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "$cod747.codigo"
+                    content "757"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-valorCampo"
-                    content "$cod747"
+                    content "$cod757"
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
@@ -4520,7 +4524,7 @@ layout f22DefaultLayout {
                     style "fw-2019-codigoCampo"
                     content "98"
                     format LABEL
-                    #width "20px"
+                    
                 }cell {
                     style "fw-2019-descripcionCampo"
                     content "Créditos puestos a disposición de los socios por la sociedad respectiva, según instrucciones"
@@ -4627,8 +4631,7 @@ layout f22DefaultLayout {
                     format LABEL
                     #width "20px"
                 }cell {
-                    style "fw-2019-descripcionCampo"
-                    #content "Retenciones sobre intereses, según art. 74 N° 7 LIR"
+                    style "fw-2019-descripcionCampo"                    
 					 content "Retenciones sobre intereses, según art. 74 N° 7 y 8 LIR"
                     format LABEL                 
                     colSpan 13
@@ -4654,8 +4657,7 @@ layout f22DefaultLayout {
                     format LABEL
                     #width "20px"
                 }cell {
-                    style "fw-2019-descripcionCampo"
-                    #content "Impuestos declarados y pagados en conformidad al art. 69 N° 3 y N° 4 LIR"
+                    style "fw-2019-descripcionCampo"                    
 					content "Impuestos declarados y pagados en conformidad al art. 69 N° 4 LIR"
                     format LABEL                 
                     colSpan 13
