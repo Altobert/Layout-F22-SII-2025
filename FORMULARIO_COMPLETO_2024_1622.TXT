@@ -9761,12 +9761,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Componente del margen minero art. 3 o art. 4 Ley N° 21.591"
+                    content "$cod1954.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1954"
+                    content "$cod1954.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9784,12 +9784,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Costos asociados a ingresos no operacionales mineros"
+                    content "$cod1955.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1955"
+                    content "$cod1955.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9802,17 +9802,16 @@ section {
                     style "fw-2019-codigoCampo"
                     content "+"
                     format LABEL					
-                }
-				
+                }				
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos asociados a ingresos no operacionales mineros"
+                    content "$cod1956.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1956"
+                    content "$cod1956.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9830,12 +9829,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Proporción gastos de imputación común que no sean asignables exclusivamente a un determinado tipo de ingresos"
+                    content "$cod1957.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1957"
+                    content "$cod1957.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9853,12 +9852,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos de intereses"
+                    content "$cod1958.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1958"
+                    content "$cod1958.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9876,12 +9875,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Depreciación acelerada"
+                    content "$cod1959.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1959"
+                    content "$cod1959.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9899,12 +9898,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Pérdida de ejercicios anteriores"
+                    content "$cod1960.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1960"
+                    content "$cod1960.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9922,12 +9921,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Gastos de organización y puesta en marcha"
+                    content "$cod1961.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1961"
+                    content "$cod1961.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9945,12 +9944,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Contratos de avío y otras contraprestaciones"
+                    content "$cod1962.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1962"
+                    content "$cod1962.codigo"
                     format LABEL
 					width "20px"
 					
@@ -9968,12 +9967,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Cierre de faenas (art 58 de la Ley N° 20.551)"
+                    content "$cod1963.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1963"
+                    content "$cod1963.codigo"
                     format LABEL
 					width "20px"
 					
