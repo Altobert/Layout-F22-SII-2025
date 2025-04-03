@@ -14867,7 +14867,11 @@ formulario f22_DSL_COMPLETO_2024
 
 
 ################## -- REGLAS A -- ##################
-
+    regla rBloqueo {
+         glosa "Debe habilitarse el AT2025. "
+         condicion { ""!="" }
+         severidad error
+     }
 
      regla rA1 {
          glosa "Debe registrar domicilio"

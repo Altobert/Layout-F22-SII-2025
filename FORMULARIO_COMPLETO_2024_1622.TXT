@@ -6278,17 +6278,17 @@ section {
                     style "fw-2019-tituloGrupo"
                     content "Conceptos"
                     format LABEL
-                    colSpan 2
+                    colSpan 1
                 }cell {
                     style "fw-2019-tituloGrupo"
                     content "Según art. 17 N°8 letra b) de la LIR"
                     format LABEL
-                    colSpan 3
+                    colSpan 2
                 }cell {					
                     style "fw-2019-tituloGrupo"
                     content "Enajenaciones a partes relacionadas"
                     format LABEL
-                    colSpan 3
+                    colSpan 2
                 }cell {					
                     style "fw-2019-tituloGrupo"
                     content "Otras enajenaciones afectas"
@@ -6305,15 +6305,15 @@ section {
 			 
 			row {
 				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Precios de enajenaciones del conjunto de los bienes raíces"                    
-                    format LABEL    
-					width "400px"					
+                     style "fw-2019-descripcionCampo"
+                     content "$cod1055.glosa"                    
+                     format LABEL    
+                     #width "10px"
+					 
                 }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1055"
-                    format LABEL
-					width "20px"
+                     style "fw-2019-codigoCampo"
+                     content "$cod1055.codigo"
+                     format LABEL					 
 					
                 }cell {
                     style "fw-valorCampo"
@@ -6322,9 +6322,9 @@ section {
 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1981"
+                    content "$cod1981.codigo"
                     format LABEL
-					width "20px"
+					
 					
                 }cell {
                     style "fw-valorCampo"
@@ -6334,9 +6334,9 @@ section {
                 }
 				cell {
                     style "fw-2019-codigoCampo"
-                    content "1982"
+                    content "$cod1982.codigo"
                     format LABEL
-					width "20px"
+					#width "20px"
 					
                 }cell {
                     style "fw-valorCampo"
@@ -6354,7 +6354,8 @@ section {
 				cell {
                     style "fw-2019-descripcionCampo"
                     content "Menos: valor de adquisición de los bienes raíces reajustados"
-                    format LABEL                    
+                    format LABEL
+                    #colSpan 5                    
                 }cell {
                     style "fw-2019-codigoCampo"
                     content "1056"
@@ -6365,7 +6366,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1983"
+                    content "$cod1983.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6373,7 +6374,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1984"
+                    content "$cod1984.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6400,7 +6401,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1985"
+                    content "$cod1985.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6408,7 +6409,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1986"
+                    content "$cod1986.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6423,11 +6424,11 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Mayor o menor valor percibido o devengado"
+                    content "$cod1058.glosa"
                     format LABEL                    
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1058"
+                    content "$cod1058.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6435,7 +6436,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1987"
+                    content "$cod1987.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6443,7 +6444,7 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1988"
+                    content "$cod1988.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
@@ -6610,11 +6611,11 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Mayor valor percibido según códigos 1099, 1114, o devengado según código1987 afectos al IGC o IA, trasladar a códigos 1891; según código 1988 afecto a IDPC e IGC o IA a trasladar a código 1895 o 1912, y a código 1891, según corresponda"
+                    content "$cod1063.glosa"
                     format LABEL                    
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1063"
+                    content "$cod1063.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
