@@ -6623,13 +6623,22 @@ section {
                     format TEXTBOX
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1989"
+                    content "$cod1989.codigo"
+                    format LABEL
+                }cell {
+                    style "fw-valorCampo"
+                    content "$cod1989"
+                    format TEXTBOX
+                }cell {
+                    style "fw-2019-codigoCampo"
+                    content "$cod1990.codigo"
                     format LABEL
                 }cell {
                     style "fw-valorCampo"
                     content "$cod1990"
                     format TEXTBOX
-                }cell {
+                }
+                cell {
                     style "fw-2019-codigoCampo"
                     content " "
                     format LABEL					
