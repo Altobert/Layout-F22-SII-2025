@@ -359,7 +359,7 @@ layout f22DefaultLayout {
 
                 cell{
                     style "fw-2019-descripcionCampo"
-                    content "a) Rentas propias de la actividad de renta presunta"
+                    content "$cod1920.glosa"
                     format LABEL
                     colSpan 11
                 }cell{
@@ -388,12 +388,12 @@ layout f22DefaultLayout {
             row{                                
                 cell{
                     style "fw-2019-descripcionCampo"
-                    content "b) Rentas por participaciones o cuotas de comunidades obtenidas por la empresa que determina su renta presunta"
+                    content "$cod1922.glosa"
                     format LABEL
                     colSpan 11
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1922"
+                    content "$cod1922.codigo"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"
@@ -1061,7 +1061,7 @@ layout f22DefaultLayout {
            row {
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "c) Retiros de ELD del art. 42 ter LIR efectuados durante el año 2024, que no excedan los límites exentos de impuesto de 200 u 800 UTM"
+                    content "$cod1884.glosa"
                     format LABEL
                     colSpan 13
                 }
@@ -1348,7 +1348,7 @@ layout f22DefaultLayout {
                     format LABEL
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "Impuesto Territorial pagado en el año 2024, según art. 55 letra a) LIR"
+                    content "cod166.glosa"
                     format LABEL
                     colSpan 13
                 }cell {
@@ -2538,7 +2538,7 @@ layout f22DefaultLayout {
                     rowSpan 5
                 }cell {
                     style "fw-2019-descripcionCampo"
-                    content "IDPC sobre rentas presuntas, según art. 34 LIR"
+                    content "$cod187.glosa"
                     format LABEL                 
 					colSpan 9
                 }cell {
@@ -2577,7 +2577,7 @@ layout f22DefaultLayout {
             row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "a) Rentas propias de actividad de renta presunta agrícola"
+                    content "$cod1924.glosa"
                     format LABEL                 
 					colSpan 9
                 }
@@ -2614,7 +2614,7 @@ layout f22DefaultLayout {
             }row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "b) Rentas propias de actividad de renta presunta transporte de pasajeros"
+                    content "$cod1927.glosa"
                     format LABEL                 
 					colSpan 9
                 }cell{
@@ -2653,7 +2653,7 @@ layout f22DefaultLayout {
 
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "c) Rentas propias de actividad de renta presunta transporte de carga"
+                    content "$cod1929.glosa"
                     format LABEL
                     colSpan 9
                 }cell{
@@ -2692,7 +2692,7 @@ layout f22DefaultLayout {
 
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "d) Rentas propias de actividad de renta presunta minera"
+                    content "$cod1931.glosa"
                     format LABEL
                     colSpan 9
                 }cell{
@@ -3173,7 +3173,7 @@ layout f22DefaultLayout {
             }row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "a) Componente ad valorem según art. 2 Ley N° 21.591"
+                    content "$cod1977.glosa"
                     format LABEL
                     colSpan 9
                 }cell{
@@ -3210,7 +3210,7 @@ layout f22DefaultLayout {
             }row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "b) Componente del margen según art 3 o art 4 Ley N° 21.591"
+                    content "$cod1979.glosa"
                     format LABEL
                     colSpan 9
                 }cell{ 
@@ -4037,7 +4037,7 @@ layout f22DefaultLayout {
             row {
                 cell {
                     style "fw-2019-descripcionCampo"                    
-					content "a) PPM arts. 84 letras a), c) , e), y h) y 14 D N° 3 letra (k) LIR  y PPM royalty minero según art. 7 Ley N° 21.591"
+					content "$cod1904.glosa"
                     format LABEL                 
                     colSpan 13
                 }
@@ -9999,12 +9999,12 @@ section {
 			}row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Ingresos no operacionales mineros"
+                    content "$cod1964.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1964"
+                    content "$cod1964.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10022,12 +10022,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Cuota depreciación normal"
+                    content "$cod1965.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1965"
+                    content "$cod1965.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10045,12 +10045,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Cuota gastos de organización y puesta en marcha"
+                    content "$cod1966.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1966"
+                    content "$cod1966.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10068,12 +10068,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Renta Imponible Operacional Minera Ajustada"
+                    content "$cod1967.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1967"
+                    content "$cod1967.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10100,12 +10100,12 @@ section {
 			}row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Promedio TMCF (incluídos los ingresos de explotadores mineros relacionados) art. 5 Ley N° 21.591"
+                    content "$cod1968.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1968"
+                    content "$cod1968.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10123,12 +10123,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Total ingresos de productos mineros del ejercicio (Indistintamente del mineral de que se trata)"
+                    content "$cod1969.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1969"
+                    content "$cod1969.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10146,12 +10146,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Total ingresos de productos mineros del ejercicio (Sólo Cobre)"
+                    content "$cod1970.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1970"
+                    content "$cod1970.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10169,12 +10169,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Margen operacional minero según N° 6 del art 1 Ley N° 21.591"
+                    content "$cod1971.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1971"
+                    content "$cod1971.codigo"
                     format LABEL
 					width "20px"
 					
@@ -10192,12 +10192,12 @@ section {
             }row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Tasa margen operacional aplicada según art. 3 o art. 4 Ley N° 21.591"
+                    content "$cod1972.glosa"
                     format LABEL    
 					width "400px"					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1972"
+                    content "$cod1972.codigo"
                     format LABEL
 					width "20px"
 					
@@ -11142,12 +11142,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Componente ad valorem del Royalty Minero según art. 2 Ley N° 21.591"
+                    content "$cod1974.glosa"
                     format LABEL    
 					 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1974"
+                    content "$cod1974.codigo"
                     format LABEL
 					width "20px"
 					
@@ -11165,12 +11165,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Componente del margen del Royalty Minero según art. 3 o art. 4 Ley N° 21.591"
+                    content "$cod1975.glosa"
                     format LABEL    
 					 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1975"
+                    content "$cod1975.codigo"
                     format LABEL
 					width "20px"
 					
@@ -11464,12 +11464,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-tituloGrupoIzq"
-                    content "Renta líquida imponible afecta a IDPC (o pérdida tributaria antes de imputar dividendos o retiros percibidos) del ejercicio"
+                    content "$cod1690.glosa"
                     format LABEL    
 					 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1690"
+                    content "$cod1690.codigo"
                     format LABEL
 					width "20px"
 					
@@ -11964,12 +11964,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Renta líquida imponible afecta a IDPC del ejercicio"
+                    content "$cod1694.glosa"
                     format LABEL    
 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1694"
+                    content "$cod1694.codigo"
                     format LABEL
 					
 					
@@ -12716,12 +12716,12 @@ section {
 			}row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto acogido al ISIF art. 10 Ley N° 21.681, reajustado"
+                    content "$cod1933.glosa"
                     format LABEL    
 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1933"
+                    content "$cod1933.codigo"
                     format LABEL
 					width "30px"
 					
@@ -12745,7 +12745,7 @@ section {
 					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1934"
+                    content "$cod1934.codigo"
                     format LABEL
 					width "30px"
 					
@@ -12789,7 +12789,7 @@ section {
 					width "110px"
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1935"
+                    content "$cod1935.codigo"
                     format LABEL
 					width "30px"
 					
@@ -14145,11 +14145,11 @@ section {
                 
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto extinguido por ISIF art. 10  Ley N° 21.681, reajustado"
+                    content "$cod1936.glosa"
                     format LABEL					
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1936"
+                    content "$cod1936.codigo"
                     format LABEL
 					width "30px"					
                 }cell {
@@ -16233,12 +16233,12 @@ section {
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Base Imponible afecta a IDPC o pérdida tributaria del ejercicio"
+                    content "$cod1440.glosa"
                     format LABEL
 					width "600px"
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1440"
+                    content "$cod1440.codigo"
                     format LABEL
 					width "30px"
                 }cell {
@@ -17307,11 +17307,11 @@ section {
             row {
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto acogido al ISIF según arts. 10 y 11 Ley N° 21.681"
+                    content "$cod1942.glosa"
                     format LABEL
                 }cell {
                     style "fw-2019-codigoCampo"
-                    content "1942"
+                    content "$cod1942.codigo"
                     format LABEL
 					width "30px"
                 }cell {
@@ -17331,7 +17331,7 @@ section {
 					width "30px"					
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1943"
+                    content "$cod1943.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -17371,7 +17371,7 @@ section {
 					width "30px"					
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1944"
+                    content "$cod1944.codigo"
                     format LABEL
                     width "30px"
                 }cell{
@@ -18535,11 +18535,11 @@ section {
 			}row{
                 cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto imputado al ISIF arts. 10 y 11 Ley N° 21.681"
+                    content "$cod1945.glosa"
                     format LABEL                    
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1945"
+                    content "$cod1945.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -18549,7 +18549,7 @@ section {
                     width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1946"
+                    content "$cod1946.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -18559,7 +18559,7 @@ section {
                     width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1947"
+                    content "$cod1947.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -18569,7 +18569,7 @@ section {
                     width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1948"
+                    content "$cod1948.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -18589,7 +18589,7 @@ section {
 					width "120px" 
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1949"
+                    content "$cod1949.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -18599,7 +18599,7 @@ section {
                     width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1950"
+                    content "$cod1950.codigo"
                     format LABEL
 					width "30px"
                 }cell{
@@ -20972,7 +20972,7 @@ row {
                     colSpan 3               
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1951"
+                    content "$cod1951.codigo"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"
@@ -20981,7 +20981,7 @@ row {
                 }
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "1787"
+                    content "$cod1787.codigo"
                     format LABEL
                 }
                 cell {
@@ -20998,12 +20998,12 @@ row {
             row {
 				cell {
                     style "fw-2019-descripcionCampo"
-                    content "Monto a pagar de la(s) cuota(s) después de anticipos"
+                    content "$cod1952.glosa"
                     format LABEL  
                     colSpan 3               
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1952"
+                    content "$cod1952.codigo"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"
@@ -21012,7 +21012,7 @@ row {
                 }
                 cell {
                     style "fw-2019-codigoCampo"
-                    content "1788"
+                    content "$cod1788.codigo"
                     format LABEL
                 }
                 cell {
@@ -21043,7 +21043,7 @@ row {
 					width "120px"
                 }cell{
                     style "fw-2019-codigoCampo"
-                    content "1953"
+                    content "$cod1953.codigo"
                     format LABEL
                 }cell{
                     style "fw-valorCampo"

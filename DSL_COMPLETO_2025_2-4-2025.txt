@@ -2011,7 +2011,7 @@ formulario f22_DSL_COMPLETO_2025
         } 
         
         campo cod166 { 
-            glosa "Impuesto Territorial pagado en el año 2024, según art. 55 letra a) LIR " 
+            glosa "Impuesto Territorial pagado en el año 2024, según art. 55 letra a) LIR" 
             codigo "166" 
             caracterizable TRUE
             tipo entero0
@@ -7128,7 +7128,7 @@ formulario f22_DSL_COMPLETO_2025
         #Sino 0"
         #Sino; 0
         campo cod1109 {
-            glosa "BASE IMPONIBLE IDPC de empresas acogidas al régimen de imputación parcial de créditos, según art. 14 letra A) LIR"
+            glosa "Renta líquida imponible afecta a IDPC o pérdida tributaria del ejercicio"
             codigo "1109"
             tipo entero0
             largo 15
@@ -13285,7 +13285,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1884{
-            glosa "c) Retiros de ELD del art. 42 ter LIR efectuados durante el año 2024, que no excedan los límites exentos de impuesto de 200 u 800 UTM "
+            glosa "c) Retiros de ELD del art. 42 ter LIR efectuados durante el año 2024, que no excedan los límites exentos de impuesto de 200 u 800 UTM"
             codigo "1884"
             tipo entero0
             largo 15
@@ -13508,7 +13508,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1920 {
-            glosa "CIDPC / Sin Oblig.Rest. / Con Derecho Dev /a) Rentas propias de la actividad de renta presunta"
+            glosa "CIDPC / Sin Oblig.Rest. / Con Derecho Dev /a) Rentas propias de actividad de renta presunta "
             codigo "1920"
             tipo entero0
             largo 15
@@ -13532,7 +13532,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1924 {
-            glosa "Base imponible / a) Rentas propias de actividad de renta presunta agrícola"
+            #glosa "Base imponible / a) Rentas propias de actividad de renta presunta agrícola"
+            glosa  "Base imponible / a) Rentas propias de actividad de renta presunta agrícola"
             codigo "1924"
             tipo entero0
             largo 15
@@ -13586,7 +13587,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1933 {
-            glosa "Monto acogido al ISIF art 10 Ley N° 21.681, reajustado / RAI"
+            glosa "Monto acogido al ISIF art 10 Ley N° 21.681, reajustado"
             codigo "1933"
             tipo entero0
             largo 15
@@ -13604,7 +13605,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1936 {
-            glosa "Monto extinguido por ISIF art. 10 Ley N° 21.681, reajustado / Sin D° Devolución / No Sujeto a Restitución / Acumulados a contar desde el 01.01.2017"
+            glosa "Monto extinguido por ISIF art 10  Ley N° 21.681, reajustado"
             codigo "1936"
             tipo entero0
             largo 15
@@ -13640,7 +13641,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1942 {
-            glosa "Monto acogido al ISIF según arts. 10 y 11 Ley N° 21.681 / RAI"
+            glosa "Monto acogido al ISIF según arts. 10 y 11 Ley N° 21.681"
             codigo "1942"
             tipo entero0
             largo 15
@@ -13658,7 +13659,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1945 {
-            glosa "Monto imputado al ISIF arts. 10 y 11 Ley N° 21.681 / Sin D° Devolución / No Sujeto a Restitución / Acumulados a contar desde el 01.01.2017"
+            glosa "Monto imputado al ISIF arts. 10 y 11 Ley N° 21.681"
             codigo "1945"
             tipo entero0
             largo 15
@@ -13701,7 +13702,7 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1952 {
-            glosa "Monto a pagar de la(s) cuota(s) después de anticipos / Préstamo AC 2020"
+            glosa "Monto a pagar de la(s) cuota(s) después de anticipos"
             codigo "1952"
             tipo entero0
             largo 15
@@ -13714,7 +13715,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
 
-        campo cod1954 {
+        campo cod1954 {            
             glosa "Componente del margen minero art. 3 o art. 4 Ley N° 21.591"
             codigo "1954"
             tipo entero0
@@ -13722,14 +13723,14 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1955 {
-            glosa "Costos asociados a ingresos no operacionales mineros"
+            glosa "Costos asociados a Ingresos no operacionales mineros"
             codigo "1955"
             tipo entero0
             largo 15
         }
 
         campo cod1956 {
-            glosa "Gastos asociados a ingresos no operacionales mineros"
+            glosa "Gastos asociados a Ingresos no operacionales mineros"
             codigo "1956"
             tipo entero0
             largo 15
@@ -13743,14 +13744,14 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1958 {
-            glosa "Gastos de intereses"
+            glosa "Gastos de Intereses"
             codigo "1958"
             tipo entero0
             largo 15
         }
 
         campo cod1959 {
-            glosa "Depreciación acelerada"
+            glosa "Depreciación Acelerada"
             codigo "1959"
             tipo entero0
             largo 15
@@ -13763,19 +13764,19 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1961 {
-            glosa "Gastos de organización y puesta en marcha"
+            glosa "Gastos de organización y puesta en Marcha"
             codigo "1961"
             tipo entero0
             largo 15
         }
         campo cod1962 {
-            glosa "Contratos de avío y otras contraprestaciones"
+            glosa "Contratos de Avio y otras contraprestaciones"
             codigo "1962"
             tipo entero0
             largo 15
         }
         campo cod1963 {
-            glosa "Cierre de faenas (art 58 de la Ley N° 20.551)"
+            glosa "Cierre de Faenas (art 58 de la Ley N° 20.551)"
             codigo "1963"
             tipo entero0
             largo 15
@@ -13793,13 +13794,13 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1966 {
-            glosa "Cuota gastos de organización y puesta en marcha"
+            glosa "Cuota Gastos de organización y puesta en marcha"
             codigo "1966"
             tipo entero0
             largo 15
         }
         campo cod1967 {
-            glosa "Renta imponible operacional minera ajustada"
+            glosa "Renta Imponible Operacional Minera Ajustada"
             codigo "1967"
             tipo entero0
             largo 15
@@ -13817,13 +13818,13 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1970 {
-            glosa "Total ingresos de productos mineros del ejercicio (solo Cobre)"
+            glosa "Total ingresos de productos mineros del ejercicio (Sólo Cobre)"
             codigo "1970"
             tipo entero0
             largo 15
         }
         campo cod1971 {
-            glosa "Margen operacional minero según N° 6 del art 1 Ley N° 21.591"
+            glosa "Margen operacional minero según art 2 Ley N° 21.591"
             codigo "1971"
             tipo entero0
             largo 15
@@ -13834,7 +13835,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
         }
-        campo cod1974 {
+        campo cod1974 {            
             glosa "Componente ad valorem del Royalty Minero según art. 2 Ley N° 21.591"
             codigo "1974"
             tipo entero0
@@ -14957,6 +14958,8 @@ formulario f22_DSL_COMPLETO_2025
         
         
     }
+
+    
 
 
     seccion auxiliaresNo {
