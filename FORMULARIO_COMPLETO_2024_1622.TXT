@@ -11507,76 +11507,7 @@ section {
 					format LABEL
 					colSpan 4
 				}
-			} 
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Dividendos o retiros percibidos afectos a impuestos finales, que absorben la pérdida tributaria"
-                    format LABEL    
-					width "705px"					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1155"
-                    format LABEL
-					width "30px"
-					
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1155"
-                    format TEXTBOX
-					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "+"
-                    format LABEL					
-                }
-            }
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Incremento por IDPC de los dividendos o retiros percibidos afectos a impuestos finales, que absorben la pérdida tributaria"
-                    format LABEL    
-					width "705px"					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1156"
-                    format LABEL
-					width "30px"
-					
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1156"
-                    format TEXTBOX
-					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "+"
-                    format LABEL					
-                }
-            }
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Pérdida tributaria del ejercicio al 31 de diciembre"
-                    format LABEL    
-					width "705px"					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1143"
-                    format LABEL
-					width "30px"
-					
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1143"
-                    format TEXTBOX
-					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "="
-                    format LABEL					
-                }
-            }
+			} 									
 		}
 	}#FIN RECUADRO 12
 	#RECUADRO 13
@@ -12098,30 +12029,7 @@ section {
                     content "+"
                     format LABEL					
                 }
-            }
-		row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Utilidades percibidas afectas a impuestos finales imputadas a la pérdida tributaria del ejercicio"
-                    format LABEL    
-					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1181"
-                    format LABEL
-					
-					
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1181"
-                    format TEXTBOX
-					
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "-"
-                    format LABEL					
-                }
-            }
+            }		
 		row {
 				cell {
                     style "fw-2019-descripcionCampo"
@@ -16777,30 +16685,7 @@ section {
                     format LABEL
 					width "30px"
                 }
-            }
-			row {
-				cell {
-                    style "fw-2019-descripcionCampo"
-                    content "Utilidades percibidas afectas a impuestos finales imputadas a la pérdida tributaria del ejercicio"
-                    format LABEL
-					width "600px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "1591"
-                    format LABEL
-					width "30px"
-                }cell {
-                    style "fw-valorCampo"
-                    content "$cod1591"
-                    format TEXTBOX
-					width "200px"
-                }cell {
-                    style "fw-2019-codigoCampo"
-                    content "-"
-                    format LABEL
-					width "30px"
-                }
-            }
+            }			
 			row {
 				cell {
                     style "fw-2019-descripcionCampo"
@@ -21242,17 +21127,7 @@ row {
                     style "fw-2019-descripcionCampo"
                     content "Monto del código 1795 destinado voluntariamente a pagar el saldo pendiente de los préstamos tasa 0% o futuras cuotas de dichos préstamos"
                     format LABEL                
-                }
-                cell {
-                    style "fw-2019-codigoCampo"
-                    content "1797"
-                    format LABEL
-                }
-                cell {
-                    style "fw-valorCampo"
-                    content "$cod1797"
-                    format TEXTBOX
-                }
+                }                
                 cell {
                     style "fw-2019-codigoCampo"
                     content "1842"

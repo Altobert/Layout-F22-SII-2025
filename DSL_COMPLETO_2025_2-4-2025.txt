@@ -13854,7 +13854,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1977 {
-            glosa "Base imponible / a) Componente ad valorem según art. 2 Ley N° 21.591 "
+            glosa "Base imponible / a) Componente Ad Valorem según art. 2 Ley N° 21.591 "
             codigo "1977"
             tipo entero0
             largo 15
@@ -13866,7 +13866,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1979 {
-            glosa "Base imponible / b) Componente del margen según art 3 o art 4 Ley N° 21.591"
+            glosa "Base imponible / b) Componente del margen según art 3 o art 4 N° 21.591"
             codigo "1979"
             tipo entero0
             largo 15
@@ -15282,4 +15282,10 @@ formulario f22_DSL_COMPLETO_2025
             formula { ($cod32==0) }
         }
     }
+
+    regla rBloqueo {
+         glosa "Debe habilitarse el AT2025. "
+         condicion { ""!="" }
+         severidad error
+     }
 } 
