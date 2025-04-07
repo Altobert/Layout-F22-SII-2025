@@ -1715,8 +1715,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
         }
 
-        campo cod104 { 
-            glosa "Retiros o remesas afectos al IGC o IA, según art. 14 letras A) y/o D) N° 3 LIR" 
+        campo cod104 {             
+            glosa "Retiros o remesas (art.14 letras A y/o D N° 3 de la LIR)"
             codigo "104" 
             tipo entero0
             largo 15 
@@ -1730,7 +1730,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
         } 
         campo cod105 { 
-            glosa "Dividendos afectos al IGC o IA, según art.14 letras A) y/o D) N° 3 LIR" 
+            #glosa "Dividendos afectos al IGC o IA, según art.14 letras A) y/o D) N° 3 LIR" 
+            glosa "Dividendos (art.14 letras A y/o D N° 3 de la LIR)"
             codigo "105" 
             tipo entero0
             largo 15 
@@ -1738,7 +1739,7 @@ formulario f22_DSL_COMPLETO_2025
         } 
         
         campo cod106 { 
-            glosa "Gastos rechazados y otras partidas referidos en el art. 21 inc. 3° LIR" 
+            glosa "Gastos rechazados pagados y otras partidas a que se refiere el Inc.3° Art. 21." 
             codigo "106" 
             tipo entero0
             largo 15 
@@ -1890,8 +1891,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
             caracterizable TRUE
         } 
-        campo cod108 { 
-            glosa "Rentas presuntas propias y/o de terceros, según art. 14 letra B) N° 2 y art. 34 LIR"
+        campo cod108 {             
+            glosa "Rentas presuntas propias o de terceros (art. 14 letra B)  N° 2 y art. 34 de la LIR)."
             codigo "108" 
             tipo entero0
             largo 15 
