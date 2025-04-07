@@ -15283,9 +15283,12 @@ formulario f22_DSL_COMPLETO_2025
         }
     }
 
+    #### Reglas de aca hacia abajo.
+    
     regla rBloqueo {
          glosa "Debe habilitarse el AT2025. "
          condicion { ""!="" }
          severidad error
      }
+     
 } 
