@@ -2071,15 +2071,16 @@ formulario f22_DSL_COMPLETO_2025
         }
             
         campo cod750 { 
-            glosa "Intereses pagados por créditos con garantía hipotecaria, según art. 55 bis LIR" 
+            #glosa "Intereses pagados por créditos con garantía hipotecaria, según art. 55 bis LIR" 
+            glosa "Intereses pagados por créditos con garantía hipotecaria."
             codigo "750" 
             tipo entero0
             caracterizable TRUE
             largo 15 
         } 
         
-        campo cod740 { 
-            glosa "Dividendos hipotecarios pagados por viviendas nuevas acogidas al D.F.L. Nº 2 de 1959, según Ley N°19.622" 
+        campo cod740 {             
+            glosa "Dividendos hipotecarios pagados por viviendas nuevas acogidas al DFL N° 2 según Ley N° 19.622."
             codigo "740" 
             tipo entero0
             caracterizable TRUE
@@ -2099,7 +2100,8 @@ formulario f22_DSL_COMPLETO_2025
         
         
         campo cod822 { 
-            glosa "20% cuotas fondos de inversión adquiridas antes del 04.06.93, según art. 6 Transitorio Ley N° 19.247" 
+            #glosa "20% cuotas fondos de inversión adquiridas antes del 04.06.93, según art. 6 Transitorio Ley N° 19.247" 
+            glosa "20% Cuotas Fdos. Inversiones adquiridas antes del 04.06.93."
             codigo "822" 
             tipo entero0
             caracterizable TRUE
@@ -2107,7 +2109,8 @@ formulario f22_DSL_COMPLETO_2025
         } 
         
         campo cod765 { 
-            glosa "Ahorro previsional, según art.42 bis inc. 1° LIR" 
+            #glosa "Ahorro previsional, según art.42 bis inc. 1° LIR" 
+            glosa "Ahorro Previsional Voluntario según Inciso 1° Art. 42 bis"
             codigo "765" 
             tipo entero0
             caracterizable TRUE
@@ -2126,8 +2129,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         
-        campo cod170 { 
-            glosa "BASE IMPONIBLE ANUAL DE IUSC o IGC (registre solo si diferencia es positiva)" 
+        campo cod170 {            
+            glosa "Base Imponible Anual de Impuesto Global Complementario o Impuesto Único de Segunda Categoría"
             codigo "170" 
             tipo entero0
             caracterizable TRUE
@@ -2163,8 +2166,8 @@ formulario f22_DSL_COMPLETO_2025
         #[157]	=	"TGL{ [170] - (([152] + [749] - [169] ) * [ lambda ])}
         #[lambda] = Si ([104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1891] + [1104] + [166] + [1030] = 0) .y. { [161] > 0 .o. [152] > 0}; entonces 1
         #sino 0
-        campo cod157 { 
-            glosa "IGC o IUSC, según tabla (arts. 47, 52 o 52 bis LIR)" 
+        campo cod157 {                                    
+            glosa "Impuesto Global Complementario o Impuesto Único de Segunda Categoría (Art. 47 o Art. 52 o 52 bis) (según tabla)"
             codigo "157" 
             tipo entero0
             caracterizable TRUE
@@ -2180,8 +2183,8 @@ formulario f22_DSL_COMPLETO_2025
             formula {  ROUND_DECIMAL($valor157,$decimales) }
         }
         
-        campo cod201 { 
-            glosa "Débito fiscal por ahorro neto negativo (Recuadro N° 3), según art. 3° transitorio numeral VI) Ley N° 20.780 (ex. art. 57 bis LIR)" 
+        campo cod201 {             
+            glosa "Débito Fiscal por Ahorro Neto Negativo (N°5 letra A y ex letra B Art. 57 bis)." 
             codigo "201" 
             tipo entero0
             caracterizable TRUE
@@ -7086,8 +7089,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         
-        campo cod1035 {
-            glosa "Débito fiscal por restitución crédito por IDPC, según art. 56 N° 3 inc. final LIR"
+        campo cod1035 {            
+            glosa "Débito Fiscal por restitución crédito por Impuesto de Primera Categoría, según inciso final Art. 56."
             codigo "1035"
             tipo entero0
             largo 15

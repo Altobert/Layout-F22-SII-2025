@@ -713,7 +713,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
 					format LABEL
-					content "Rebajas a las Rentas afectas al Impuesto Global Complementario o Impuesto Ãºnico de Segunda CategorÃ­a:"
+					content "Rebajas a las Rentas afectas al Impuesto Global Complementario o Impuesto Ãºnico de Segunda Categoría:"
 					width "620px"
 					colSpan 4
 				}
@@ -731,7 +731,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
 					format LABEL
-					content "CÃ³digo"
+					content "Código"
 					width "50px"
 				}
 				
@@ -754,8 +754,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod750.glosa"
-					#content "Intereses pagados por crÃ©ditos con garantÃ­a hipotecaria."
+					content "$cod750.glosa"					
 					width "440px"
 				}
 
@@ -828,8 +827,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod822.glosa"
-					#content "20% Cuotas Fdos. InversiÃ³n adquiridas antes del 04.06.93."
+					content "$cod822.glosa"					
 					width "440px"
 				}
 
@@ -865,8 +863,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod765.glosa"
-					#content "Ahorro Previsional Voluntario segÃºn Inciso 1Â° Art. 42 bis"
+					content "$cod765.glosa"					
 					width "440px"
 				}
 				cell {
@@ -901,8 +898,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
 					format LABEL
-					content "$cod170.glosa"
-					#content "Base Imponible Anual de Impuesto Global Complementario o Impuesto Ãšnico de Segunda CategorÃ­a"
+					content "$cod170.glosa"					
 					width "445px"
 				}        
 				
@@ -938,8 +934,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod157.glosa"
-					#content "Impuesto Global Complementario o Impuesto Ãšnico de Segunda CategorÃ­a  (segÃºn tabla)"
+					content "$cod157.glosa"					
 					width "440px"
 				}
 
@@ -975,8 +970,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod201.glosa"
-					#content "DÃ©bito Fiscal por Ahorro Neto Negativo (NÂ°5 letra A y ex letra B Art. 57 bis)."
+					content "$cod201.glosa"					
 					width "440px"
 				}        
 				
