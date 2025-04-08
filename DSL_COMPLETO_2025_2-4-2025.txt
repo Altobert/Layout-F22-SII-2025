@@ -1858,8 +1858,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
         }
         
-        campo cod955 {             
-            glosa "Otras rentas propias y/o de terceros, provenientes de empresas que determinan su renta efectiva sin contabilidad completa, según art. 14 letra B) N° 1 LIR"
+        campo cod955 {                         
+            glosa "Otras Rentas propias y/o de terceros atribuida (Art. 14 letra C N° 1). (Ve detalle)"
             codigo "955" 
             tipo entero0
             largo 15 
@@ -1892,7 +1892,7 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
         } 
         campo cod108 {             
-            glosa "Rentas presuntas propias o de terceros (art. 14 letra B)  N° 2 y art. 34 de la LIR)."
+            glosa "Rentas presuntas propias o de terceros (art. 14 letra B)  N° 2 y art. 34 de la LIR). (Ve detalle)"
             codigo "108" 
             tipo entero0
             largo 15 
@@ -1916,8 +1916,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             formula {$cod955 + $cod957 + $cod959}
         } 
-        campo cod110 { 
-            glosa "Rentas percibidas de los arts. 42 Nº 2 (honorarios) y 48 (rem. directores S.A.) LIR, según Recuadro N° 1" 
+        campo cod110 {             
+            glosa "Rentas de Honorarios y Remuneraciones de Directores S.A. (Ver Recuadro N° 1)"
             codigo "110" 
             tipo entero0
             largo 15 
@@ -1936,8 +1936,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         } 
 
-        campo cod155 { 
-            glosa "Rentas de capitales mobiliarios (art. 20 N° 2 LIR), mayor valor en rescate de cuotas fondos mutuos y enajenación de acciones y derechos sociales (art. 17 N° 8 LIR) y retiros de ELD (arts. 42 ter y quáter LIR)" 
+        campo cod155 {             
+            glosa "Rentas de capitales mobiliarios, Mayor valor rescate Fondos Mutuos y enajenación de acciones y derechos sociales y retiros de ELD. (Ver detalle)"
             codigo "155" 
             tipo entero0
             caracterizable TRUE
@@ -1966,7 +1966,8 @@ formulario f22_DSL_COMPLETO_2025
         } 
         
         campo cod161 { 
-            glosa "Rta Art 42 Nro 1" 
+            #glosa "Rta Art 42 Nro 1" 
+            glosa "Rentas de sueldos, pensiones y otras rentas similares."
             codigo "161" 
             tipo entero0
             caracterizable TRUE
@@ -7063,8 +7064,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         
-        campo cod1032 {
-            glosa "Otras rentas de fuente chilena afectas al IGC o IA (según instrucciones), rtas y rebajas"
+        campo cod1032 {            
+            glosa "Otras rentas de fuente chilena afecta a IGC o IA."
             codigo "1032"
             tipo entero0
             largo 15
@@ -11434,8 +11435,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
         }
-        campo cod1632 { 
-            glosa "Renta asignada propias y/o de terceros, provenientes de empresas sujetas al art. 14 letra D) N° 8 LIR"
+        campo cod1632 {             
+            glosa "Rentas asignadas propias y/o de terceros (art.14 letras A y/o D N° 3 de la LIR)"
             codigo "1632"
             tipo entero0
             caracterizable TRUE
@@ -13327,7 +13328,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
         }
-        campo cod1891{
+        campo cod1891{            
             glosa "Mayor valor en la enajenación de bienes raíces situados en Chile"
             codigo "1891"
             tipo entero0

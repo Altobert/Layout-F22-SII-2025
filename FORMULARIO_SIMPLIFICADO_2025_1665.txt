@@ -266,8 +266,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod955.glosa"
-					#content "Otras Rentas propias y/o de terceros atribuida (Art. 14 letra C NÂ° 1)."
+					content "$cod955.glosa"					
 					width "440px"
 				}       
 
@@ -303,8 +302,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1632.glosa"
-					#content "Rentas atribuidas propias y/o de terceros (Art. 14 letra A)."
+					content "$cod1632.glosa"					
 					width "440px"
 				}       
 
@@ -341,8 +339,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod110.glosa"
-					#content "Rentas de Honorarios y Remuneraciones de Directores S.A.(Ver Recuadro NÂ° 1)"
+					content "$cod110.glosa"					
 					width "440px"
 				}
 
@@ -378,8 +375,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod155.glosa"
-					#content "Rentas de capitales mobiliarios, Mayor valor rescate Fondos Mutuos y enajenaciÃ³n de acciones y derechos sociales y retiros de ELD."
+					content "$cod155.glosa"					
 					width "440px"
 				}
 
@@ -453,8 +449,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1032.glosa"
-					#content "Otras rentas de fuente chilena afecta a IGC o IA."
+					content "$cod1032.glosa"					
 					width "440px"
 				}
 
@@ -492,8 +487,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod161.glosa"
-					#content "Rentas de sueldos, pensiones y otras rentas similares."
+					content "$cod161.glosa"					
 					width "440px"
 				}
 
@@ -530,8 +524,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod159.glosa"
-					#content "Incremento por Impuesto de Primera CategorÃ­a."
+					content "$cod159.glosa"					
 					width "440px"
 				}
 
@@ -605,7 +598,6 @@ layout simplificado {
 					style "fw-2019-descripcionCampo"
 					format LABEL
 					content "$cod166.glosa"
-					#content "Impuesto Territorial pagado en el aÃ±o 20xx"
 					width "440px"
 				}
 
@@ -2579,9 +2571,50 @@ layout simplificado {
 					content "+"
 					width "8px"
 				}
+
 			}
 		}#fin tablaCodigo1827 
 	}#fin Seccion recuadro10
+
+
+	table tablaCodigo1891 {
+		style "fw-2019-tablaFormulario"
+		width "620px"
+		row {
+
+			style "fw-filaFormulario"
+
+			cell {
+				style "fw-2019-tituloGrupoIzq"
+				format LABEL
+				content "$cod1891.glosa"
+				width "620px"
+				colSpan 4
+			}
+
+			cell {
+				style "fw-2019-codigoCampo"
+				format LABEL
+				content "$cod1891.codigo"
+				width "50px"
+			}
+			
+			cell {
+				style "fw-valorCampo"
+				content "$cod1891"
+				format LABEL
+				width "102px"
+			}
+
+			cell {
+				style "fw-numeroLinea"
+				format LABEL
+				content "+"
+				width "8px"
+			}
+
+		}
+	}#fin tablaCodigo1891
 
     section recuadro8{
 		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
@@ -2613,8 +2646,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod87.glosa"
-					#content "Monto DevoluciÃ³n Solicitada"
+					content "$cod87.glosa"					
 					width "440px"
 				}
 				
@@ -2936,13 +2968,5 @@ layout simplificado {
 			}
 		}
 	}#fin Seccion recuadro8
-	
-	
-
-
-
-	
-
-
-
+		
 }
