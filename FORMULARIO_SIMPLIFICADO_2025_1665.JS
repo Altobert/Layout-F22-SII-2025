@@ -560,8 +560,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod748.glosa"
-					#content "Incremento por impuestos pagados o retenidos en el exterior."
+					content "$cod748.glosa"					
 					width "440px"
 				}
 
@@ -632,8 +631,7 @@ layout simplificado {
 				style "fw-filaFormulario"
 				cell {
 					style "fw-2019-descripcionCampo"
-					format LABEL
-					#content "PÃ©rdida en operaciones de capitales mobiliarios y ganancias de capital."
+					format LABEL					
 					content "$cod169.glosa"
 					width "440px"
 				}
@@ -2573,7 +2571,48 @@ layout simplificado {
 				}
 
 			}
+
+
 		}#fin tablaCodigo1827 
+
+	table tablaCodigo1833 {
+		style "fw-2019-tablaFormulario"
+		width "620px"      
+		
+		row {
+			style "fw-filaFormulario"
+			cell {
+				style "fw-2019-descripcionCampo"
+				format LABEL
+				content "$cod1833.glosa"				
+				width "440px"
+			}
+
+			cell {
+				style "fw-2019-codigoCampo"
+				format LABEL
+				content "$cod1833.codigo"
+				width "50px"
+			}
+			
+			cell {
+				style "fw-valorCampo"
+				content "$cod1833"
+				format LABEL
+				width "102px"
+			}
+
+			cell {
+				style "fw-numeroLinea"
+				format LABEL
+				content "-"
+				width "8px"
+			}
+		}
+
+	}#fin tablaCodigo1833		
+
+		
 	}#fin Seccion recuadro10
 
 

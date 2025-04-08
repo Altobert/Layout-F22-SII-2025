@@ -1976,8 +1976,8 @@ formulario f22_DSL_COMPLETO_2025
             formula { $cod1098 + $cod1030 }
         } 
         
-        campo cod159 { 
-            glosa "Incremento por IDPC, según arts. 54 N° 1 y 62 LIR" 
+        campo cod159 {             
+            glosa "Incremento por Impuesto de Primera Categoría."
             codigo "159" 
             tipo entero0
             caracterizable TRUE
@@ -1985,7 +1985,8 @@ formulario f22_DSL_COMPLETO_2025
         } 
         
         campo cod748 { 
-            glosa "Incremento por impuestos soportados en el exterior, según art. 41 A LIR" 
+            #glosa "Incremento por impuestos soportados en el exterior, según art. 41 A LIR" 
+            glosa "Incremento por impuestos pagados o retenidos en el exterior."
             codigo "748" 
             tipo entero0
             caracterizable TRUE
@@ -2038,11 +2039,10 @@ formulario f22_DSL_COMPLETO_2025
             #[764]	=	[166]+ [907]
             formula { $cod166 + $cod907 }
         }
-        
-
-        
+                
         campo cod169 {                    
-            glosa "Pérdida en operaciones de capitales mobiliarios y ganancias de capital según códigos 105, 155,152 ,1032, 1891, 1104 , 1063 y 1989 (arts. 54 N° 1 y 62 LIR)"
+            #glosa "Pérdida en operaciones de capitales mobiliarios y ganancias de capital según códigos 105, 155,152 ,1032, 1891, 1104 , 1063 y 1989 (arts. 54 N° 1 y 62 LIR)"
+            glosa "Pérdida en operaciones de capitales mobiliarios y ganancias de capital."
             codigo "169" 
             tipo entero0
             caracterizable TRUE
@@ -2050,7 +2050,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod158 { 
-            glosa "SUB TOTAL (Si declara IA trasladar a código 133 o  32)" 
+            #glosa "SUB TOTAL (Si declara IA trasladar a código 133 o  32)" 
+            glosa "Total rentas afectas al Impuesto Global Complementario y/o Impuesto Único de Segunda Categoría y/o Impuesto Adicional."
             codigo "158" 
             tipo entero0
             largo 16 
@@ -12986,7 +12987,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1833{
-            glosa "Rebaja por donaciones a entidades sin fines de lucro según Título VIII bis D.L. N° 3.063 de 1979 (incorporado por Ley N° 21.440), efectuadas por contribuyentes del IUSC, IGC o IA"
+            #glosa "Rebaja por donaciones a entidades sin fines de lucro según Título VIII bis D.L. N° 3.063 de 1979 (incorporado por Ley N° 21.440), efectuadas por contribuyentes del IUSC, IGC o IA"
+            glosa "Rebaja por donaciones a entidades sin fines de lucro, efectuadas por contribuyentes del IUSC, IGC o IA"
             codigo "1833"
             tipo entero0
             largo 15
