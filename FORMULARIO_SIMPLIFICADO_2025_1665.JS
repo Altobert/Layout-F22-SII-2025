@@ -2344,8 +2344,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					#content "$cod1796.glosa"
-					content "Monto a pagar cuota prÃ©stamo Tasa 0%"
+					content "$cod1796.glosa"					
 					width "440px"
 				}
 
@@ -2381,8 +2380,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					#content "$cod1795.glosa"
-					content "Monto de excedentes a devolver por retenciones adicionales del 3%"
+					content "$cod1795.glosa"					
 					width "440px"
 				}
 
@@ -2419,8 +2417,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					#content "$cod1797.glosa"
-					content "Monto destinado voluntariamente a pagar el saldo pendiente del prÃ©stamo solidario del Estado para futuras cuotas de dicho prÃ©stamo 2020"
+					content "$cod1797.glosa"					
 					width "440px"
 				}
 
@@ -2456,8 +2453,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					#content "$cod1842.glosa"
-					content "Monto destinado voluntariamente a pagar el saldo pendiente del prÃ©stamo solidario del Estado para futuras cuotas de PrÃ©stamo 2021"
+					content "$cod1842.glosa"					
 					width "440px"
 				}
 
@@ -2517,8 +2513,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					#content "$cod1827.glosa"
-					content "Pago de anticipo solidario por pago de cotizaciones, segÃºn art. 21 inc. 3Â° Ley NÂ° 21.354"
+					content "$cod1827.glosa"					
 					width "440px"
 				}
 
@@ -2736,8 +2731,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod90.glosa"
-					#content "Impuesto adeudado"
+					content "$cod90.glosa"					
 					width "440px"
 				}
 				
@@ -2809,8 +2803,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod91.glosa"
-					#content "Monto Impuesto a Pagar"
+					content "$cod91.glosa"					
 					width "440px"
 				}
 				
@@ -2846,8 +2839,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod92.glosa"
-					#content "Reajuste Fuera de Plazo"
+					content "$cod92.glosa"					
 					width "440px"
 				}
         
@@ -2920,8 +2912,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod93.glosa"
-					#content "Total a Pagar"
+					content "$cod93.glosa"					
 					width "440px"
 				}
 				
@@ -2957,8 +2948,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod823.glosa"
-					#content "Monto Pago Diferido"
+					content "$cod823.glosa"					
 					width "440px"
 				}
 				
@@ -2994,8 +2984,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod98.glosa"
-					#content "Monto a Pagar de Impuesto"
+					content "$cod98.glosa"					
 					width "440px"
 				}
 				

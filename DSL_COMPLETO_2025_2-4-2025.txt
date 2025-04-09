@@ -4785,8 +4785,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
 
-        campo cod87 { 
-            glosa "Monto devolución solicitada" 
+        campo cod87 {             
+            glosa "Monto Devolución Solicitada"
             codigo "87" 
             tipo entero0
             caracterizable TRUE
@@ -4808,7 +4808,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod90 { 
-            glosa "Impuesto Adeudado" 
+            #glosa "Impuesto Adeudado" 
+            glosa "Impuesto adeudado"
             codigo "90" 
             caracterizable TRUE
             tipo entero0
@@ -4856,8 +4857,8 @@ formulario f22_DSL_COMPLETO_2025
             #formula { NOT(GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(1) OR GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(2) OR GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(3)) ? (  ($aVx014442 == 1)? ROUND_DECIMAL($p729 * $cod90,$decimales) :ROUND_DECIMAL($p30 * $cod90,$decimales)  ) : 0 }  
             formula { ROUND_DECIMAL($p30 * $cod90,$decimales) }  
         }
-        campo cod39 { 
-            glosa "Reajuste art.72 LIR, código 305      %" 
+        campo cod39 {             
+            glosa "Reajuste Art. 72: %"
             codigo "39" 
             tipo entero0
             caracterizable TRUE
@@ -4866,8 +4867,8 @@ formulario f22_DSL_COMPLETO_2025
             formula {(EXISTE_DATO($codMonedaDecla) AND $codMonedaDecla!="1")?0:($reajArt72a + $reajArt72b + $reajArt72c + $reajArt72d)} 
         }
         
-        campo cod91 { 
-            glosa "TOTAL A PAGAR (códigos 90 y 39)" 
+        campo cod91 {             
+            glosa "Monto Impuesto a Pagar"
             codigo "91" 
             caracterizable TRUE
             tipo entero0
@@ -4889,7 +4890,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod92 { 
-            glosa "Reajustes Declaración Fuera de Plazo" 
+            #glosa "Reajustes Declaración Fuera de Plazo" 
+            glosa "Reajuste Fuera de Plazo"
             codigo "92" 
             caracterizable TRUE
             tipo entero0
@@ -4897,8 +4899,8 @@ formulario f22_DSL_COMPLETO_2025
             tipoContable REAJUSTE
         }
         
-        campo cod93 { 
-            glosa "Intereses y Multas Declaración Fuera de Plazo" 
+        campo cod93 {             
+            glosa "Intereses y Multas declaración Fuera de Plazo"
             codigo "93" 
             tipo entero0
             caracterizable TRUE
@@ -4915,8 +4917,8 @@ formulario f22_DSL_COMPLETO_2025
             tipoContable CONDONACION
         }
         
-        campo cod94 { 
-            glosa "TOTAL A PAGAR (códigos 91+92+ 93)" 
+        campo cod94 {        
+            glosa "Total a Pagar"
             codigo "94" 
             tipo entero0
             caracterizable TRUE
@@ -4936,7 +4938,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod823 { 
-            glosa "Valor diferido cancelado" 
+            #glosa "Valor diferido cancelado" 
+            glosa "Monto Pago Diferido"
             codigo "823" 
             caracterizable TRUE
             tipo entero
@@ -6399,7 +6402,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         campo cod900 { 
-            glosa "Cargo por cotizaciones previsionales, según arts. 89 y sgtes. D.L. N° 3.500 de 1980" 
+            #glosa "Cargo por cotizaciones previsionales, según arts. 89 y sgtes. D.L. N° 3.500 de 1980"
+            glosa "Cargo por Cotizaciones Previsionales según arts.89 y sgtes. DL N° 3500/80."
             codigo "900" 
             caracterizable TRUE
             tipo entero0
@@ -12731,7 +12735,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1795 {
-            glosa "Saldo a devolver por retenciones adicionales y PPMA en exceso"
+            #glosa "Saldo a devolver por retenciones adicionales y PPMA en exceso"
+            glosa "Monto de excedentes a devolver por retenciones adicionales del 3%"
             codigo "1795"
             tipo entero0
             largo 15
@@ -12740,8 +12745,8 @@ formulario f22_DSL_COMPLETO_2025
             formula {NEG($cod1788 - $cod1793)>0 ? (PSTV(NEG($cod1788 - $cod1793) - $cod1842)):0}
         }
 
-        campo cod1796 {
-            glosa "Monto a pagar cuota(s) préstamo(s) tasa 0% (préstamos solidarios del Estado)"
+        campo cod1796 {            
+            glosa "Monto a pagar cuota préstamo Tasa 0%"
             codigo "1796"
             tipo entero0
             largo 15
@@ -12749,12 +12754,14 @@ formulario f22_DSL_COMPLETO_2025
                         formula {$cod1794}
         }
         
-        #campo cod1797 {
-        #    glosa "Monto del código 1795 destinado voluntariamente a pagar el saldo pendiente de los préstamos tasa 0% o futuras cuotas de dichos préstamos / Préstamo AC 2020 (Leyes N° 21.242 y N° 21.252)"
-        #    codigo "1797"
-        #    tipo entero0
-        #    largo 15
-        #}
+        campo cod1797 {
+            #glosa "Monto del código 1795 destinado voluntariamente a pagar el saldo pendiente de los préstamos tasa 0% o futuras cuotas de dichos préstamos / Préstamo AC 2020 (Leyes N° 21.242 y N° 21.252)"
+            glosa "Monto destinado voluntariamente a pagar el saldo pendiente del préstamo solidario del Estado para futuras cuotas de Préstamo 2020"
+            glosa "1797"
+            codigo "1797"
+            tipo entero0
+            largo 15
+        }
 
         campo cod1798{
             glosa "Saldo pendiente cuota año anterior / Préstamo AC 2020 (Leyes N° 21.242 y N° 21.252)"
@@ -12959,7 +12966,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod1827{
-            glosa "Monto a pagar cuota anticipo solidario para pago de cotizaciones, según art. 21 inc. 1° y 3° Ley N° 21.354  "
+            #glosa "Monto a pagar cuota anticipo solidario para pago de cotizaciones, según art. 21 inc. 1° y 3° Ley N° 21.354  "
+            glosa "Pago de anticipo solidario por pago de cotizaciones, según art. 21 inc. 3° Ley N° 21.354"
             codigo "1827"
             tipo entero0
             largo 15
@@ -13063,7 +13071,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod1842{
-            glosa "Monto destinado voluntario pago cuota "
+            #glosa "Monto destinado voluntario pago cuota"
+            glosa "Monto destinado voluntariamente a pagar el saldo pendiente del préstamo solidario del Estado para futuras cuotas de Préstamo 2021"
             codigo "1842"
             tipo entero0
             largo 15
