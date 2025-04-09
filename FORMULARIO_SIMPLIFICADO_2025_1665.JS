@@ -1002,12 +1002,12 @@ layout simplificado {
 			width "620px"      
 			
 			row {
+
 				style "fw-filaFormulario"
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
 					content "$cod1035.glosa"
-					#content "DÃ©bito Fiscal por restituciÃ³n crÃ©dito por Impuesto de Primera CategorÃ­a, segÃºn inciso final Art. 56."
 					width "440px"
 				}        
 				
@@ -1043,8 +1043,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod910.glosa"
-					#content "10% Tasa Adicional de Impuesto Global Complementario, sobre cantidades declaradas en el cÃ³digo 106 (Inc. 3Â°, art. 21)."
+					content "$cod910.glosa"					
 					width "440px"
 				}
 				
@@ -1130,8 +1129,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod136.glosa"
-					#content "CrÃ©dito proporcional al IGC por rentas exentas declaradas en el cÃ³digo 152 (Art. 56 NÂ° 2)."
+					content "$cod136.glosa"					
 					width "440px"
 				}
 
@@ -1242,8 +1240,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1637.glosa"
-					#content "CrÃ©dito al IGC por Impuesto de Primera CategorÃ­a sin derecho a devoluciÃ³n (Arts. 41 A letra E NÂ°7 y 56 NÂ°3)."
+					content "$cod1637.glosa"					
 					width "440px"
 				}
 
@@ -1391,8 +1388,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1639.glosa"
-					#content "CrÃ©dito al IGC por Impuesto de Primera CategorÃ­a sin derecho a devoluciÃ³n (Arts. 41 A letra E NÂ°7 y 56 NÂ°3)."
+					content "$cod1639.glosa"					
 					width "440px"
 				}
 
@@ -1428,8 +1424,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod162.glosa"
-					#content "CrÃ©dito al IGC o IUSC por Impuesto Ãšnico de Segunda CategorÃ­a (Art. 56 NÂ° 2)."
+					content "$cod162.glosa"					
 					width "440px"
 				}
 
@@ -1466,8 +1461,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod610.glosa"
-					#content "CrÃ©dito al IGC o IUSC por Impuesto de Primera CategorÃ­a con derecho a devoluciÃ³n (Art. 56 NÂ° 3)."
+					content "$cod610.glosa"					
 					width "440px"
 				}
 
@@ -1539,8 +1533,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod746.glosa"
-					#content "CrÃ©dito al IGC o IUSC por impuestos pagados o retenidos en el exterior (Arts. 41 A letras A y D y 41 C)."
+					content "$cod746.glosa"					
 					width "440px"
 				}
 
@@ -1577,8 +1570,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-tituloGrupoIzq"
 					format LABEL
-					content "$cod304.glosa"
-					#content "Impuesto Global Complementario o Impuesto Ãšnico de Segunda CategorÃ­a, DÃ©bito Fiscal y/o Tasa Adicional luego de la rebaja de crÃ©ditos."
+					content "$cod304.glosa"					
 					width "445px"
 				}        
 				
@@ -1663,8 +1655,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod20.glosa"
-					#content "Impuesto Primera CategorÃ­a de empresas acogidas al rÃ©gimen de renta atribuida y de entidades sin vinculaciÃ³n con propietarios afectos a IGC Ã³ IA. (Ver Detalle)"
+					content "$cod20.glosa"					
 					width "440px"
 				}        
 				
@@ -1702,8 +1693,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod189.glosa"
-					#content "Impuesto de Primera CategorÃ­a sobre rentas efectivas determinadas sin contabilidad completa. (Ver Detalle)"
+					content "$cod189.glosa"					
 					width "440px"
 				}
 
@@ -1739,8 +1729,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1039.glosa"
-					#content "Impuesto de Primera CategorÃ­a sobre rentas efectivas determinadas sin contabilidad completa. (Ver Detalle)"
+					content "$cod1039.glosa"					
 					width "440px"
 				}
 
@@ -1777,8 +1766,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1044.glosa"
-					#content "Impuesto Ãšnico de 10% por enajenaciÃ³n de bienes raÃ­ces, segÃºn letra b) NÂ° 8 del Art. 17 y/o Art. 4 Ley  NÂ° 21.078."
+					content "$cod1044.glosa"					
 					width "440px"
 				}
 
@@ -1814,8 +1802,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod21.glosa"
-					#content "Impuesto Ãšnico Talleres Artesanales."
+					content "$cod21.glosa"					
 					width "440px"
 				}
 
@@ -1853,8 +1840,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod767.glosa"
-					#content "Impuesto Ãšnico por Retiros de Ahorro Previsional Voluntario (segÃºn NÂ° 3 inciso 1Â° Art. 42 bis)."
+					content "$cod767.glosa"					
 					width "440px"
 				}        
 				
@@ -1976,8 +1962,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod36.glosa"
-					#content "Pagos Provisionales (Art. 84)"
+					content "$cod36.glosa"					
 					width "440px"
 				}
         
@@ -2013,8 +1998,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod82.glosa"
-					#content "CrÃ©dito por Gastos de CapacitaciÃ³n"
+					content "$cod82.glosa"					
 					width "440px"
 				}
 				
@@ -2050,8 +2034,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod198.glosa"
-					#content "RetenciÃ³n por rentas declaradas en cÃ³digo 110 (Ver Recuadro NÂ° 1)"
+					content "$cod198.glosa"					
 					width "440px"
 				}
 
@@ -2124,8 +2107,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod832.glosa"
-					#content "Retenciones por rentas declaradas en los cÃ³digos 155 y/o 767."
+					content "$cod832.glosa"					
 					width "440px"
 				}        
 				
@@ -2162,8 +2144,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod119.glosa"
-					#content "Remanente de crÃ©dito por ReliquidaciÃ³n del Impuesto Ãšnico de Segunda CategorÃ­a y/o por Ahorro Neto Positivo, proveniente de los cÃ³digos 162 y/o 174"
+					content "$cod119.glosa"					
 					width "440px"
 				}
 
@@ -2199,8 +2180,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod116.glosa"
-					#content "Remanente de crÃ©dito por impuesto de Primera CategorÃ­a proveniente del cÃ³digo 610."
+					content "$cod116.glosa"					
 					width "440px"
 				}
 
@@ -2237,8 +2217,7 @@ layout simplificado {
 				cell {
 					style "fw-2019-descripcionCampo"
 					format LABEL
-					content "$cod1645.glosa"
-					#content "Remanente de crÃ©dito por impuesto de Primera CategorÃ­a proveniente del cÃ³digo 610."
+					content "$cod1645.glosa"					
 					width "440px"
 				}
 
@@ -2648,6 +2627,48 @@ layout simplificado {
 
 		}
 	}#fin tablaCodigo1891
+
+
+	table tablaCodigo1907 {
+		style "fw-2019-tablaFormulario"
+		width "620px"
+		row {
+			style "fw-filaFormulario"
+			cell {
+				style "fw-2019-tituloGrupoIzq"
+				format LABEL
+				content "$cod1907.glosa"
+				width "620px"
+				colSpan 4
+			}
+			cell {
+				style "fw-2019-codigoCampo"
+				format LABEL
+				content "$cod1907.codigo"
+				width "50px"
+			}
+			
+			cell {
+				style "fw-valorCampo"
+				content "$cod1907"
+				format LABEL
+				width "102px"
+			}
+
+			cell {
+				style "fw-numeroLinea"
+				format LABEL
+				content "-"
+				width "8px"
+			}
+
+		}
+	}#fin tablaCodigo1907
+
+
+
+
+
 
     section recuadro8{
 		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"

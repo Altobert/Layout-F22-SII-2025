@@ -1772,8 +1772,8 @@ formulario f22_DSL_COMPLETO_2025
             formula{ ROUND_DECIMAL($cod908 * $p25,$decimales) } 
         }
 
-        campo cod910 { 
-            glosa "Tasa adicional de 10% de IGC, sobre cantidades declaradas en código 106, según art. 21 inc. 3° LIR" 
+        campo cod910 {            
+            glosa "10% Tasa Adicional de Impuesto Global Complementario, sobre cantidades declaradas en el código 106 (Inc. 3°, art. 21)."
             codigo "910" 
             tipo entero0
             caracterizable TRUE
@@ -2199,8 +2199,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod136 { 
-            glosa "Crédito proporcional al IGC por rentas exentas declaradas en código 152, según art. 56 N° 2 LIR" 
+        campo cod136 {             
+            glosa "Crédito proporcional al IGC por rentas exentas declaradas en el código 152 (Art. 56 N° 2)."
             codigo "136" 
             tipo entero0
             caracterizable TRUE
@@ -2215,8 +2215,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod176 { 
-            glosa "Crédito al IGC por Impuesto Tasa Adicional, según ex. art. 21 LIR" 
+        campo cod176 {             
+            glosa "Crédito al IGC por Impuesto Tasa Adicional según ex. Art. 21."
             codigo "176" 
             tipo entero0
             caracterizable TRUE
@@ -2239,8 +2239,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod608 { 
-            glosa "Crédito al IGC por IDPC sin derecho a devolución, según arts. 20 N° 1 letra a), 41 A N° 4 letra A) letra a) y 56 N° 3 LIR" 
+        campo cod608 {            
+            glosa "Crédito al IGC por Impuesto de Primera Categoría sin derecho a devolución (Arts. 41 A N° 4 letra A y 56 N°3)."
             codigo "608" 
             tipo entero0
             caracterizable TRUE
@@ -2258,8 +2258,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod162 { 
-            glosa "Crédito al IGC o IUSC por IUSC, según art. 56 N° 2 LIR" 
+        campo cod162 {             
+            glosa "Crédito al IGC o IUSC por Impuesto Único de Segunda Categoría (Art. 56 N° 2)."
             codigo "162" 
             tipo entero0
             caracterizable TRUE
@@ -2274,8 +2274,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod610 { 
-            glosa "Crédito al IGC o IUSC por IPDC con derecho a devolución, según art. 56 N° 3 LIR" 
+        campo cod610 {            
+            glosa "Crédito al IGC o IUSC por Impuesto de Primera Categoría con derecho a devolución (Art. 56 N° 3)." 
             codigo "610" 
             tipo entero0
             caracterizable TRUE
@@ -2285,8 +2285,8 @@ formulario f22_DSL_COMPLETO_2025
 
         }
         
-        campo cod746 { 
-            glosa "Crédito al IGC por impuestos soportados en el exterior, según arts. 41 A N° 4 letra A) letra b) LIR" 
+        campo cod746 {            
+            glosa "Crédito al IGC o IUSC por impuestos pagados o retenidos en el exterior (arts. 41 A N° 4 letra A) letra b) LIR)."
             codigo "746" 
             tipo entero0
             # formula {$cod748 + $cod856}
@@ -2303,7 +2303,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod304 { 
-            glosa "IGC O IUSC, DÉBITO FISCAL Y/O TASA ADICIONAL DETERMINADO" 
+            #glosa "IGC O IUSC, DÉBITO FISCAL Y/O TASA ADICIONAL DETERMINADO" 
+            glosa "Impuesto Global Complementario o Impuesto Único de Segunda Categoría, Débito Fiscal y/o Tasa Adicional luego de la rebaja de créditos."
             codigo "304" 
             tipo entero
             caracterizable TRUE
@@ -2334,7 +2335,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod20 { 
-            glosa "Impto. 1° categ. Reg. Propyme" 
+            #glosa "Impto. 1° categ. Reg. Propyme"
+            glosa "IDPC de empresas acogidas al régimen Pro Pyme, según art. 14 letra D) N° 3 LIR"
             codigo "20" 
             tipo entero0
             caracterizable TRUE
@@ -2391,7 +2393,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod189 { 
-            glosa "IDPC sobre rentas presuntas, según art. 34 LIR" 
+            #glosa "IDPC sobre rentas presuntas, según art. 34 LIR" 
+            glosa "IDPC sobre rentas presuntas, según art. 34 LIR. (Ver Detalle)"
             codigo "189" 
             #[189]	= 	Si (TIPO{[03]} = 1 .y. [187] < P01); entonces 0
             #Sino POS {P84 * [187] - [188]}
@@ -2694,7 +2697,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod21 { 
-            glosa "Impuesto único talleres artesanales" 
+            #glosa "Impuesto único talleres artesanales" 
+            glosa "Impuesto Único Talleres Artesanales"
             codigo "21" 
             tipo entero0
             caracterizable TRUE
@@ -2730,7 +2734,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod767 { 
-            glosa "Impuesto único por retiros de ahorro previsional, según art. 42 bis inc. 1° N° 3 LIR" 
+            #glosa "Impuesto único por retiros de ahorro previsional, según art. 42 bis inc. 1° N° 3 LIR" 
+            glosa "Impuesto Único por Retiros de Ahorro Previsional Voluntario (según N° 3 inciso 1° Art. 42 bis)."
             codigo "767" 
             caracterizable TRUE
             tipo entero0
@@ -2789,7 +2794,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod36 { 
-            glosa "Pagos provisionales, según arts. 14 letra D) N° 3 letra (k) y 84 LIR" 
+            #glosa "Pagos provisionales, según arts. 14 letra D) N° 3 letra (k) y 84 LIR" 
+            glosa "Pagos Provisionales (art. 84 y 14 letra D) N° 3 letra (k) LIR) (Ver Detalle)"
             codigo "36" 
             tipo entero0
             caracterizable TRUE
@@ -2827,7 +2833,8 @@ formulario f22_DSL_COMPLETO_2025
         }
 
         campo cod82 { 
-            glosa "Crédito por gastos de capacitación, según Ley N° 19.518" 
+            #glosa "Crédito por gastos de capacitación, según Ley N° 19.518" 
+            glosa "Crédito por Gastos de Capacitación"
             codigo "82" 
             tipo entero0
             caracterizable TRUE
@@ -2887,8 +2894,8 @@ formulario f22_DSL_COMPLETO_2025
             formula { $cod619 }
         }
         
-        campo cod54 { 
-            glosa "Mayor retención por sueldos, pensiones y otras rentas similares declaradas en código 1098" 
+        campo cod54 {            
+            glosa "Mayor Retención por sueldos y pensiones declaradas en el código 161"
             codigo "54" 
             tipo entero0
             caracterizable TRUE
@@ -2906,8 +2913,8 @@ formulario f22_DSL_COMPLETO_2025
             #formula { $cod198 + $cod54 }
         }
 
-        campo cod832 { 
-            glosa "Retenciones por rentas declaradas en códigos 155 y/o 767" 
+        campo cod832 {             
+            glosa "Retenciones por rentas declaradas en los códigos 155 y/o 767."
             codigo "832" 
             tipo entero0
             caracterizable TRUE
@@ -3004,7 +3011,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod119 { 
-            glosa "Remanente de crédito por reliquidación del IUSC y/o por ahorro neto positivo, proveniente de códigos 162 y/o 174" 
+            #glosa "Remanente de crédito por reliquidación del IUSC y/o por ahorro neto positivo, proveniente de códigos 162 y/o 174" 
+            glosa "Remanente de crédito por Reliquidación del Impuesto Único de Segunda Categoría y/o por Ahorro Neto Positivo, proveniente de los códigos 162 y/o 174"
             codigo "119" 
             tipo entero0
             caracterizable TRUE
@@ -3024,7 +3032,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod116 { 
-            glosa "Remanente de crédito por IDPC proveniente de códigos 1638 y/o 610" 
+            #glosa "Remanente de crédito por IDPC proveniente de códigos 1638 y/o 610" 
+            glosa "Remanente de crédito por impuesto de Primera Categoría proveniente del código 610."
             codigo "116" 
             tipo entero0
             caracterizable TRUE
@@ -6305,8 +6314,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
         }
         
-        campo cod867 { 
-            glosa "Crédito al IGC o IUSC por donaciones para fines sociales, según art. 1° bis Ley N° 19.885" 
+        campo cod867 {             
+            glosa "Crédito al IGC o IUSC por donaciones para fines sociales (Art. 1° bis Ley N° 19.885)."
             codigo "867" 
             tipo entero0
             caracterizable TRUE
@@ -6354,7 +6363,8 @@ formulario f22_DSL_COMPLETO_2025
         }
         
         campo cod895 { 
-            glosa "Crédito al IGC o IUSC por gastos en educación, según art. 55 ter LIR" 
+            #glosa "Crédito al IGC o IUSC por gastos en educación, según art. 55 ter LIR" 
+            glosa "Crédito al IGC o IUSC por gasto en educación (Art. 55 ter)."
             codigo "895" 
             tipo entero0
             largo 15 
@@ -7089,7 +7099,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         
-        campo cod1035 {            
+        campo cod1035 {
             glosa "Débito Fiscal por restitución crédito por Impuesto de Primera Categoría, según inciso final Art. 56."
             codigo "1035"
             tipo entero0
@@ -7222,7 +7232,8 @@ formulario f22_DSL_COMPLETO_2025
         }
     
         campo cod1039 {
-            glosa "IDPC sobre rentas efectivas determinadas sin contabilidad completa"
+            #glosa "IDPC sobre rentas efectivas determinadas sin contabilidad completa"
+            glosa "IDPC sobre rentas efectivas determinadas sin contabilidad completa. (Ver Detalle)"
             codigo "1039"
             tipo entero0
             largo 15
@@ -7265,8 +7276,8 @@ formulario f22_DSL_COMPLETO_2025
             formula { $cod1065 }
         }
 
-        campo cod1044 {
-            glosa "Impuesto único de 10% por enajenación de bienes raíces, según art. 17 N° 8 letra b) LIR y/o art. 4 Ley N° 21.078"
+        campo cod1044 {            
+            glosa "Impuesto Único de 10% por enajenación de bienes raíces, según letra b) N° 8 del Art. 17 y/o Art. 4 Ley  N° 21.078."
             codigo "1044"
             tipo entero0
             largo 15
@@ -11478,21 +11489,21 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
         }
-        campo cod1637 { 
+        campo cod1637 {             
             glosa "Crédito al IGC por Impuesto Territorial pagado por explotación de bienes raíces no agrícolas, según art. 56 N° 5 LIR"
             codigo "1637"
             tipo entero0
             caracterizable TRUE
             largo 15 
         }
-        campo cod1638 { 
-            glosa "Crédito al IGC por art. 33 bis LIR, según art. 14 letra D) N°8 letra a) numeral (v) LIR"
+        campo cod1638 {            
+            glosa "Crédito al IGC por art. 33 bis, según art. 14 letra D) N°8 letra a) numeral (v) LIR"
             codigo "1638"
             tipo entero0
             caracterizable TRUE
             largo 15 
         }
-        campo cod1639 { 
+        campo cod1639 {             
             glosa "Crédito al IGC por ingreso diferido, según art. 14 letra D) N°8 letra d) numeral (ii) LIR"
             codigo "1639"
             tipo entero0
@@ -11545,6 +11556,7 @@ formulario f22_DSL_COMPLETO_2025
         formula { ROUND_DECIMAL($cod1643 * $p64,$decimales) }
         }
         campo cod1645 { 
+            #glosa "PPM puestos a disposición de los propietarios de empresas del régimen de transparencia tributaria del art. 14 letra D) N° 8 LIR"
             glosa "PPM puestos a disposición de los propietarios de empresas del régimen de transparencia tributaria del art. 14 letra D) N° 8 LIR"
             codigo "1645"
             tipo entero0
@@ -12967,14 +12979,17 @@ formulario f22_DSL_COMPLETO_2025
             #b.96 [1829] = POS {[1816]}
             formula {PSTV($cod1816)}
         }
+
         campo cod1830{
-            glosa "Impuesto único de 10% por enajenación o rescate de acciones de S.A. con presencia bursátil, de cuotas de fondos de inversión y fondos mutuos, según art. 107 LIR vigente a partir del 02.09.2022"
+            #glosa "Impuesto único de 10% por enajenación o rescate de acciones de S.A. con presencia bursátil, de cuotas de fondos de inversión y fondos mutuos, según art. 107 LIR vigente a partir del 02.09.2022"
+            glosa "Impuesto único de 10%, según art. 107 LIR vigente a partir del 02.09.2022"
             codigo "1830"
             tipo entero0
             largo 15
             #b.97 [1830] = [1829] * P24
             formula { ROUND_DECIMAL($cod1829 * $p24,$decimales) }
         }
+
         campo cod1831{
             glosa "ELIMINADO"
             codigo "1831"
@@ -13437,7 +13452,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
         }
-        campo cod1907{
+        campo cod1907{                        
             glosa "Retenciones por retiros de seguros de vida con ahorro y seguros dotales, y retenciones efectuadas sobre las rentas de capitales mobiliarios"
             codigo "1907"
             tipo entero0
@@ -13488,6 +13503,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         campo cod1915{
+            #glosa "Crédito por la compra de viviendas nuevas adquiridas con créditos con garantía hipotecaria, según Ley N° 21.631"
             glosa "Crédito por la compra de viviendas nuevas adquiridas con créditos con garantía hipotecaria, según Ley N° 21.631"
             codigo "1915"
             tipo entero0
