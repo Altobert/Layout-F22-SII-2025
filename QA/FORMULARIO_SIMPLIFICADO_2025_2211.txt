@@ -1,0 +1,2949 @@
+####05-04-2023
+# Layout SIMPLIFICADO 2024
+# VERSION 1.3.1
+
+
+layout simplificado { 
+
+    style "fw-formulario" 
+
+    section recuadro1 {
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		
+
+		table actividadEconomica {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+
+			row {
+				cell {
+					style "fw-2019-descripcionCampo"
+					content "$actividadProfesion.glosa"
+					#content "Actividad, Profesión O Giro Negocio"
+					format LABEL
+					colSpan 2
+					width "265px"
+				}
+				cell {
+					style "fw-2019-descripcionCampo"
+					content "Código Actividad Económica"
+					format LABEL
+					colSpan 2
+					width "335px"
+				}                
+			}
+			row {
+				cell {
+					style "fw-2019-codigoCampo"
+					content "$actividadProfesion.codigo"
+					format LABEL
+					width "15px"
+				}
+				cell {
+					style "fw-valorCampo"
+					content "$actividadProfesion"
+					format LABEL
+					width "250px"
+				}                
+				cell {
+					style "fw-2019-codigoCampo"
+					content "$codActividad.codigo"
+					format LABEL
+					width "50px"
+				}
+				cell codActividad{
+					style "fw-valorCampo"
+					content "$codActividad"
+					format LISTBOX {
+						"" :""
+						"111111":"111111 Glosa 1"
+						"222222":"222222 Glosa 2" 
+						"333333":"333333 Glosa 3" 
+					}
+					width "285px"
+				}                
+			}
+		}#fin actividadEconomica  
+ 
+ 
+		table rentasAfectas {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+
+			row {
+				style "fw-filaFormulario"
+          
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Rentas afectas al Impuesto Global Complementario o Impuesto Único de Segunda Categoría o Impuesto Adicional"
+					width "620px"
+					colSpan 4
+				}	
+			}
+	  
+			row {
+				style "fw-filaFormulario"
+			  
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Concepto"
+					width "445px"
+				}
+			  
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Código"
+					width "50px"
+				}
+			
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Monto"
+					width "110px"
+					colSpan 2
+				}	
+			}
+		}#fin rentasAfectas  
+
+		table tablaCodigo104 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+	  
+			row {
+				style "fw-filaFormulario"
+			  
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod104.glosa"
+					width "440px"
+				}
+			  
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod104.codigo"
+					width "50px"
+				}   
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod104"
+					format LABEL
+					width "102px"
+				}          
+			
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo104
+
+		table tablaCodigo105 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod105.glosa"
+					#content "Dividendos distribuidos por S.A., C.P.A., y S.p.A. (Art. 14, 14 bis y 14 quáter)"
+					width "440px"
+				}    
+		  
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod105.codigo"
+					width "50px"
+				} 
+		  
+				cell {
+					style "fw-valorCampo"
+					content "$cod105"
+					format LABEL
+					width "102px"
+				} 
+		  
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo105
+  
+		table tablaCodigo106 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod106.glosa"					
+					width "440px"
+				}   
+		  
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod106.codigo"
+					width "50px"
+				}  
+		  
+				cell {
+					style "fw-valorCampo"
+					content "$cod106"
+					format LABEL
+					width "102px"
+				}
+		  
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo106
+
+		table tablaCodigo108 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+	  
+			row {
+				style "fw-filaFormulario"
+          
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod108.glosa"					
+					width "440px"
+				}       
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod108.codigo"
+					width "50px"
+				}   
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod108"
+					format LABEL
+					width "102px"
+				}   
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo108
+  
+  table tablaCodigo955 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod955.glosa"
+					#content "Otras Rentas propias y/o de terceros atribuida (Art. 14 letra C N° 1)."
+					width "440px"
+				}       
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod955.codigo"
+					width "50px"
+				}   
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod955"
+					format LABEL
+					width "102px"
+				}          
+			
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo955
+		
+		table tablaCodigo1632 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+		
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1632.glosa"
+					#content "Rentas atribuidas propias y/o de terceros (Art. 14 letra A)."
+					width "440px"
+				}       
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1632.codigo"
+					width "50px"
+				}   
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1632"
+					format LABEL
+					width "102px"
+				}          
+			
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1632
+  
+		
+		table tablaCodigo110 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod110.glosa"
+					#content "Rentas de Honorarios y Remuneraciones de Directores S.A.(Ver Recuadro N° 1)"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod110.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod110"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo110 
+    
+		table tablaCodigo155 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod155.glosa"
+					#content "Rentas de capitales mobiliarios, Mayor valor rescate Fondos Mutuos y enajenación de acciones y derechos sociales y retiros de ELD."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod155.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod155"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo155 
+
+		table tablaCodigo152 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+		  
+			row {
+				style "fw-filaFormulario"
+			  
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod152.glosa"
+					#content "Rentas exentas del Impuesto Global Complementario."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod152.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod152"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo152 
+		
+		table tablaCodigo1032 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1032.glosa"
+					#content "Otras rentas de fuente chilena afecta a IGC o IA."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1032.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1032"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1032 
+	
+
+    
+		table tablaCodigo161 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod161.glosa"
+					#content "Rentas de sueldos, pensiones y otras rentas similares."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod161.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod161"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo161 
+		
+			
+		table tablaCodigo159 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod159.glosa"
+					#content "Incremento por Impuesto de Primera Categoría."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod159.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod159"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo159 
+
+		table tablaCodigo748 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod748.glosa"
+					#content "Incremento por impuestos pagados o retenidos en el exterior."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod748.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod748"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo748 
+
+		table tablaCodigo166 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod166.glosa"
+					#content "Impuesto Territorial pagado en el año 20xx"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod166.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod166"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo166 
+
+		table tablaCodigo169 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "Pérdida en operaciones de capitales mobiliarios y ganancias de capital."
+					content "$cod169.glosa"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod169.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod169"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo169 
+  
+		table tablaCodigo158 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod158.glosa"
+					#content "Total rentas afectas al Impuesto Global Complementario y/o Impuesto Único de Segunda Categoría y/o Impuesto Adicional."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod158.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod158"
+					format LABEL
+					width "102px"
+				}
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo158 
+
+	}#fin Seccion recuadro1
+
+
+    section recuadro2{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+  
+		table rebajasRenta {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Rebajas a las Rentas afectas al Impuesto Global Complementario o Impuesto único de Segunda Categoría:"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Concepto"
+					width "445px"
+				}
+				
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Código"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Monto"
+					width "110px"
+					colSpan 2
+				}
+			}
+		}#fin rebajasRenta 
+
+		table tablaCodigo750 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod750.glosa"
+					#content "Intereses pagados por créditos con garantía hipotecaria."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod750.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod750"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo750 
+		
+		table tablaCodigo740 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod740.glosa"
+					#content "Dividendos hipotecarios pagados por viviendas nuevas acogidas al DFL N° 2 según Ley N° 19.622."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod740.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod740"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo740 
+
+		table tablaCodigo822 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod822.glosa"
+					#content "20% Cuotas Fdos. Inversión adquiridas antes del 04.06.93."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod822.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod822"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo822 
+
+		table tablaCodigo765 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod765.glosa"
+					#content "Ahorro Previsional Voluntario según Inciso 1° Art. 42 bis"
+					width "440px"
+				}
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod765.codigo"
+					width "50px"
+				}
+				cell {
+					style "fw-valorCampo"
+					content "$cod765"
+					format LABEL
+					width "102px"
+				}
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo765 
+		
+		
+		
+		table tablaCodigo170 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "$cod170.glosa"
+					#content "Base Imponible Anual de Impuesto Global Complementario o Impuesto Único de Segunda Categoría"
+					width "445px"
+				}        
+				
+				cell {
+					style "fw-2019-tituloGrupo"
+					format LABEL
+					content "$cod170.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-2019-tituloGrupo"
+					content "$cod170"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-2019-tituloGrupo"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo170 
+
+		table tablaCodigo157 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod157.glosa"
+					#content "Impuesto Global Complementario o Impuesto Único de Segunda Categoría  (según tabla)"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod157.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod157"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo157 
+  
+		table tablaCodigo201 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod201.glosa"
+					#content "Débito Fiscal por Ahorro Neto Negativo (N°5 letra A y ex letra B Art. 57 bis)."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod201.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod201"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo201
+
+		table tablaCodigo1035 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1035.glosa"
+					#content "Débito Fiscal por restitución crédito por Impuesto de Primera Categoría, según inciso final Art. 56."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1035.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1035"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1035		
+		
+		table tablaCodigo910 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod910.glosa"
+					#content "10% Tasa Adicional de Impuesto Global Complementario, sobre cantidades declaradas en el código 106 (Inc. 3°, art. 21)."
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod910.codigo"
+					width "50px"
+				}     
+				
+				cell {
+				   style "fw-valorCampo"
+				   content "$cod910"
+				   format LABEL
+					width "102px"
+				}
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo910 
+		
+
+    }#fin Seccion recuadro2
+
+	
+    section recuadro3{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+  
+		table creditosImpuesto {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Créditos al Impuesto Global Complementario o Impuesto Único de Segunda Categoría."
+					width "620px"
+					colSpan 4
+				}	
+			}
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Concepto"
+					width "445px"
+				}
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Código"
+					width "50px"
+				}
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Monto"
+					width "110px"
+					colSpan 2
+				}
+			}
+		}#fin creditosImpuesto  
+
+ 
+				
+		table tablaCodigo136 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod136.glosa"
+					#content "Crédito proporcional al IGC por rentas exentas declaradas en el código 152 (Art. 56 N° 2)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod136.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod136"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo136 
+
+		table tablaCodigo176 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod176.glosa"
+					#content "Crédito al IGC por Impuesto Tasa Adicional según ex. Art. 21."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod176.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod176"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo176 
+
+		table tablaCodigo608 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod608.glosa"
+					#content "Crédito al IGC por Impuesto de Primera Categoría sin derecho a devolución (Arts. 41 A letra E N°7 y 56 N°3)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod608.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod608"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo608
+		
+		
+		table tablaCodigo1637 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1637.glosa"
+					#content "Crédito al IGC por Impuesto de Primera Categoría sin derecho a devolución (Arts. 41 A letra E N°7 y 56 N°3)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1637.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1637"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1637
+		
+		
+		table tablaCodigo1638 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1638.glosa"
+					#content "Crédito al IGC por Impuesto de Primera Categoría sin derecho a devolución (Arts. 41 A letra E N°7 y 56 N°3)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1638.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1638"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1638
+
+		table tablaCodigo895 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod895.glosa"
+					#content "Crédito al IGC o IUSC por gasto en educación (Art. 55 ter)."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod895.codigo"
+					width "50px"
+				}         
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod895"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo895 
+
+		table tablaCodigo867 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod867.glosa"
+					#content "Crédito al IGC o IUSC por donaciones para fines sociales (Art. 1° bis Ley N° 19.885)."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod867.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod867"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo867 
+		
+		table tablaCodigo1639 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1639.glosa"
+					#content "Crédito al IGC por Impuesto de Primera Categoría sin derecho a devolución (Arts. 41 A letra E N°7 y 56 N°3)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1639.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1639"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1639
+
+		table tablaCodigo162 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod162.glosa"
+					#content "Crédito al IGC o IUSC por Impuesto Único de Segunda Categoría (Art. 56 N° 2)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod162.codigo"
+					width "50px"
+				}
+	
+				cell {
+					style "fw-valorCampo"
+					content "$cod162"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo162 
+		
+		
+		table tablaCodigo610 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod610.glosa"
+					#content "Crédito al IGC o IUSC por Impuesto de Primera Categoría con derecho a devolución (Art. 56 N° 3)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod610.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod610"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo610
+		
+		table tablaCodigo1915 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1915.glosa"					
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1915.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1915"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1915
+
+		table tablaCodigo746 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod746.glosa"
+					#content "Crédito al IGC o IUSC por impuestos pagados o retenidos en el exterior (Arts. 41 A letras A y D y 41 C)."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod746.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod746"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo746 
+		
+		
+		table tablaCodigo304 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "$cod304.glosa"
+					#content "Impuesto Global Complementario o Impuesto Único de Segunda Categoría, Débito Fiscal y/o Tasa Adicional luego de la rebaja de créditos."
+					width "445px"
+				}        
+				
+				cell {
+					style "fw-2019-tituloGrupo"
+					format LABEL
+					content "$cod304.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-2019-tituloGrupo"
+					content "$cod304"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-2019-tituloGrupo"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo304 
+
+}#fin Seccion recuadro3	
+
+	
+    section recuadro4{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+  
+		table impuestosDeterminados {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+  
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Impuestos de Primera Categoría o Impuestos Único determinados"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Concepto"
+					width "445px"
+				}
+				
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Código"
+					width "50px"
+				}
+          
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Monto"
+					width "110px"
+					colSpan 2
+				}
+			}
+		}#fin impuestosDeterminados  
+
+		table tablaCodigo20 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod20.glosa"
+					#content "Impuesto Primera Categoría de empresas acogidas al régimen de renta atribuida y de entidades sin vinculación con propietarios afectos a IGC ó IA. (Ver Detalle)"
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod20.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod20"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo20 
+		
+		
+		
+		table tablaCodigo189 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod189.glosa"
+					#content "Impuesto de Primera Categoría sobre rentas efectivas determinadas sin contabilidad completa. (Ver Detalle)"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod189.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod189"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo189
+		
+		table tablaCodigo1039 {
+			style "fw-2019-tablaFormulario"
+			width "620px"     
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1039.glosa"
+					#content "Impuesto de Primera Categoría sobre rentas efectivas determinadas sin contabilidad completa. (Ver Detalle)"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1039.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1039"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1039 
+		
+		
+		table tablaCodigo1044 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1044.glosa"
+					#content "Impuesto Único de 10% por enajenación de bienes raíces, según letra b) N° 8 del Art. 17 y/o Art. 4 Ley  N° 21.078."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1044.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1044"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1044 		
+
+		table tablaCodigo21 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod21.glosa"
+					#content "Impuesto Único Talleres Artesanales."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod21.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod21"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo21 
+		
+
+		
+		table tablaCodigo767 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod767.glosa"
+					#content "Impuesto Único por Retiros de Ahorro Previsional Voluntario (según N° 3 inciso 1° Art. 42 bis)."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod767.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod767"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo767 
+		
+		table tablaCodigo1830 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1830.glosa"					
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1830.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1830"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1830 
+					
+	}#fin Seccion recuadro4
+	
+
+
+    section recuadro5{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+  
+		table deduccionesImpuestosDeterminados {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Deducciones a los Impuestos determinados"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Concepto"
+					width "445px"
+				}
+				
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Código"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Monto"
+					width "110px"
+					colSpan 2
+				}
+			}
+		}#fin deduccionesImpuestosDeterminados  
+
+		table tablaCodigo36 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod36.glosa"
+					#content "Pagos Provisionales (Art. 84)"
+					width "440px"
+				}
+        
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod36.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod36"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo36 
+
+		table tablaCodigo82 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod82.glosa"
+					#content "Crédito por Gastos de Capacitación"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod82.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod82"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo82 
+
+		table tablaCodigo198 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod198.glosa"
+					#content "Retención por rentas declaradas en código 110 (Ver Recuadro N° 1)"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod198.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod198"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo198 
+
+		table tablaCodigo54 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod54.glosa"
+					#content "Mayor Retención por sueldos y pensiones declaradas en el código 161"
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod54.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod54"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo54 
+
+		table tablaCodigo832 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod832.glosa"
+					#content "Retenciones por rentas declaradas en los códigos 155 y/o 767."
+					width "440px"
+				}        
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod832.codigo"
+					width "50px"
+				}          
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod832"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo832 
+
+
+		table tablaCodigo119 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod119.glosa"
+					#content "Remanente de crédito por Reliquidación del Impuesto Único de Segunda Categoría y/o por Ahorro Neto Positivo, proveniente de los códigos 162 y/o 174"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod119.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod119"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo119 
+		
+		table tablaCodigo116 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod116.glosa"
+					#content "Remanente de crédito por impuesto de Primera Categoría proveniente del código 610."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod116.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod116"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo116 
+
+		
+		table tablaCodigo1645 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod1645.glosa"
+					#content "Remanente de crédito por impuesto de Primera Categoría proveniente del código 610."
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1645.codigo"
+					width "50px"
+				}
+
+				cell {
+					style "fw-valorCampo"
+					content "$cod1645"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1645 
+
+		
+	}#fin Seccion recuadro5
+
+	
+	
+    section recuadro7{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		
+		table calculoCotizacionesPrecisionales {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Cotizaciones Previsionales"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+		}#fin calculoCotizacionesPrecisionales
+
+
+		table tablaCodigo900 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod900.glosa"
+					#content "Cargo por Cotizaciones Previsionales según Arts.89 y sgtes. DL N° 3500/80"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod900.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod900"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo900 
+
+		
+    }#fin Seccion recuadro7	
+
+    section recuadro9{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		
+		table tituloPrestamo {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Préstamo Solidario del Estado"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+		}#fin tituloPrestamo
+
+
+		table tablaCodigo1796 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "$cod1796.glosa"
+					content "Monto a pagar cuota préstamo Tasa 0%"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1796.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1796"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1796 
+
+		table tablaCodigo1795 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "$cod1795.glosa"
+					content "Monto de excedentes a devolver por retenciones adicionales del 3%"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1795.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1795"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content " "
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1795 
+
+
+		table tablaCodigo1797 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "$cod1797.glosa"
+					content "Monto destinado voluntariamente a pagar el saldo pendiente del préstamo solidario del Estado para futuras cuotas de dicho préstamo 2020"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1797.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1797"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content " "
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1797 
+
+		table tablaCodigo1842 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "$cod1842.glosa"
+					content "Monto destinado voluntariamente a pagar el saldo pendiente del préstamo solidario del Estado para futuras cuotas de Préstamo 2021"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1842.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1842"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content " "
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1842 
+		
+    }#fin Seccion recuadro9
+
+	section recuadro10{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		
+		table tituloPrestamo {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Préstamo para el pago de Cotizaciones"
+					width "620px"
+					colSpan 4
+				}
+			}
+			
+		}#fin tituloPrestamo
+
+		table tablaCodigo1827 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					#content "$cod1827.glosa"
+					content "Pago de anticipo solidario por pago de cotizaciones, según art. 21 inc. 3° Ley N° 21.354"
+					width "440px"
+				}
+
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod1827.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod1827"
+					format LABEL
+					width "102px"
+				}
+
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}#fin tablaCodigo1827 
+	}#fin Seccion recuadro10
+
+    section recuadro8{
+		title "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+		style "fw-seccionFormulario"
+		anchor "BASE IMPONIBLE GLOBAL COMPLEMENTARIO O ADICIONAL"
+  
+		table remanenteCredito {
+			style "fw-2019-tablaFormulario"
+			width "620px"
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-tituloGrupoIzq"
+					format LABEL
+					content "Resultado liquidación anual Impuesto a la Renta"
+					width "620px"
+					colSpan 4
+				}
+			}
+		}
+
+
+		table tablaCodigo87 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod87.glosa"
+					#content "Monto Devolución Solicitada"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod87.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod87"
+					format LABEL
+					width "102px"
+				}          
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}
+
+		table tablaCodigo90 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod90.glosa"
+					#content "Impuesto adeudado"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod90.codigo"
+					width "50px"
+				}		
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod90"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}
+		
+		table tablaCodigo39 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod39.glosa"
+					width "440px"
+				}
+        
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod39.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod39"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}
+		
+		table tablaCodigo91 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod91.glosa"
+					#content "Monto Impuesto a Pagar"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod91.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod91"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}
+
+		table tablaCodigo92 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod92.glosa"
+					#content "Reajuste Fuera de Plazo"
+					width "440px"
+				}
+        
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod92.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod92"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}	
+		}
+
+		table tablaCodigo93 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod93.glosa"
+					#content "Intereses y Multas declaración Fuera de Plazo"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod93.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod93"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "+"
+					width "8px"
+				}
+			}
+		}
+
+		table tablaCodigo94 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod93.glosa"
+					#content "Total a Pagar"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod94.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod94"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}
+
+		table tablaCodigo823 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod823.glosa"
+					#content "Monto Pago Diferido"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod823.codigo"
+					width "50px"
+				}
+				
+				cell {
+					style "fw-valorCampo"
+					content "$cod823"
+					format LABEL
+					width "102px"
+				} 
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "-"
+					width "8px"
+				}
+			}
+		}
+		
+		table tablaCodigo98 {
+			style "fw-2019-tablaFormulario"
+			width "620px"      
+			
+			row {
+				style "fw-filaFormulario"
+				cell {
+					style "fw-2019-descripcionCampo"
+					format LABEL
+					content "$cod98.glosa"
+					#content "Monto a Pagar de Impuesto"
+					width "440px"
+				}
+				
+				cell {
+					style "fw-2019-codigoCampo"
+					format LABEL
+					content "$cod98.codigo"
+					width "50px"
+				}		
+			
+				cell {
+					style "fw-valorCampo"
+					content "$cod98"
+					format LABEL
+					width "102px"
+				}
+				
+				cell {
+					style "fw-numeroLinea"
+					format LABEL
+					content "="
+					width "8px"
+				}
+			}
+		}
+	}#fin Seccion recuadro8
+	
+	
+
+
+
+	
+
+
+
+}

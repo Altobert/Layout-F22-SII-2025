@@ -4926,8 +4926,8 @@ formulario f22_DSL_COMPLETO_2025
             #formula { $cod91 + $cod92 + $cod93 }
         }
         
-        campo cod98 { 
-            glosa "Total Pagado (Pago Diferido)" 
+        campo cod98 {             
+            glosa "Monto a Pagar de Impuesto"
             codigo "98" 
             caracterizable TRUE
             tipo string
