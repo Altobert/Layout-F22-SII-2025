@@ -8270,6 +8270,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
+            #POS {[1718] - [1693] - [844] - [982] - [1198]}
             formula {PSTV($cod1718 - $cod1693- $cod844- $cod982- $cod1198)}			
         }
         campo cod1200 { 
@@ -11897,18 +11898,18 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero
             caracterizable TRUE
             largo 15
-            #[1690]	=	Si [1728] > 0; Pos([1728]- [1154]-[1157])
-            #                   Si no; [1728]            
+            #[1690]	=	Si [1728] > 0; Pos([1728]- [1154]-[1157])  Si no; [1728]            
             formula { $cod1728 > 0 ? PSTV($cod1728 - $cod1154 - $cod1157) : $cod1728 }
-
         }
-        campo cod1691 { 
+
+        campo cod1691 {         
             glosa "Saldo exceso de retiros de 2014, determinados al 31 de diciembre para ejercicios siguientes"
             codigo "1691"
             tipo entero0
             caracterizable TRUE
             largo 15 
         }
+
         campo cod1692 { 
             glosa "Saldo negativo del registro REX al término del ejercicio"
             codigo "1692"
@@ -11943,7 +11944,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #[1695]	=	 NEG([1690])
+            #[1695]	=	 NEG([1690])            
             formula {NEG($cod1690)} 			
         }
         campo cod1696 { 
@@ -11967,9 +11968,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1698"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1698]	=	"Si atributo = M14A; entonces [645]
-            #Sino 0"
+            largo 15            
+            # Si atributo = M14A; entonces ([1185] + [1369] + [1184] + [1362])
+            # Sino 0            
             formula {$aM14A!=0 ? $cod645:0} 			
         }
         campo cod1699 { 
@@ -12153,7 +12154,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #     [1718]=	Si 1698 > 0; ([1698] + [1692] + [1699])
+            #a.55     [1718]=	Si 1698 > 0; ([1698] + [1692] + [1699])
             #                   Sino; Pos ([1692] + [1699] - [1717])
             formula {$cod1698 > 0 ? ($cod1698 + $cod1692 + $cod1699) : PSTV($cod1692 + $cod1699 - $cod1717) }			
         }
@@ -12167,6 +12168,7 @@ formulario f22_DSL_COMPLETO_2025
             #[1719]	=	[1546]
             formula {$cod1546} 			
         }
+
         campo cod1720 { 
             glosa "Subtotal"
             codigo "1720"
