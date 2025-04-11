@@ -2502,7 +2502,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
             # [953]	=	POS {[999] Â¿ [998]} 
-            formula{ PSTV($cod999 - $cod998) }
+            # POS {[999] - [998]}
+            formula{ PSTV($cod999 - $cod998)}
         }
         
         campo cod951 {
@@ -3291,8 +3292,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "547" 
             caracterizable TRUE
             tipo entero0
-            valorPorDefecto "0"
-            #[547]	=	[545]+ [461]+ [856] + [1650]
+            valorPorDefecto "0"            
+            #formula definicion [547]  = [545] + [461] + [856] + [1650] 
             formula { $cod545 + $cod461 + $cod856 + $cod1650 }
             largo 16 
         }
@@ -3352,7 +3353,7 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             tipo entero0
             largo 15 
-            # [494]	=	MIN{ P08*[547] ; P42 } ; si   [465] = 0 .y. TIPO{[03]}=1
+            # MIN{ P08 * [547] ; P42 } ; si   [465] = 0 .y. TIPO{[03]}=1
             formula { ($cod465 == 0 AND $auxRut < 50000000) ? MINL(ROUND_DECIMAL(($p08 * $cod547),$decimales), $p42):0 }
         }
         
@@ -3395,9 +3396,10 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             tipo entero
             largo 16 
-            valorPorDefecto "0"
-            #[618]	=	POS {[467] + [479]} 
-            formula { PSTV($cod467) + $cod479 } 
+            valorPorDefecto "0"            
+            #[618]  =   POS{[467] + [479]} 
+            #**formula { PSTV($cod467) + $cod479 } 
+            formula  { PSTV($cod467 + $cod479) }
         }
         
         campo cod619 { 
@@ -3406,8 +3408,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             tipo entero
             largo 16 
-            valorPorDefecto "0"
-            #[619]	=	[492]+ [491]
+            valorPorDefecto "0"            
+            #[619]  = [492] + [491]
             formula { $cod492 + $cod491 }
         }
         
@@ -3957,8 +3959,8 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 16 
-            valorPorDefecto "0"
-            #[703]	=	POS{ [701]-[702] }
+            valorPorDefecto "0"            
+            #[703] =    POS{[701] - [702]}
             formula { PSTV($cod701 - $cod702) }
         }
         
@@ -7398,7 +7400,7 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             tipo entero
             largo 15
-            #[1058]	=	{[1055] - [1056] - [1057]}
+            #[1058]	=	{[1055] - [1056] - [1057]}            
             formula { $cod1055 - $cod1056 - $cod1057 }
         }
         
@@ -7416,9 +7418,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1061"
             tipo entero0
             largo 15
-            caracterizable TRUE
-            #[1061]	=	Si [1058] - [1060] > 0, entonces: POS([1058] - [1060]) Sino:[1061] = 0 
-            formula { ($cod1058 - $cod1060 > 0)?(PSTV($cod1058 - $cod1060)):0 }
+            caracterizable TRUE            
+            #POS {[1058] - [1060]} 
+            formula { PSTV($cod1058 - $cod1060) }            
         }
         
         campo cod1062 {
@@ -7427,8 +7429,8 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
             caracterizable TRUE
-            #           [1062]	=	"Si [1058] ? 0; entonces [1060]
-            #                            Sino POS {[1060] - [1058]}"
+            #Si [1058] ≤ 0; entonces [1060]
+            #   Sino POS {[1060] - [1058]}
             formula { ($cod1058 < 0) ? ($cod1060) : PSTV($cod1060 - $cod1058) }
         }
         
@@ -7453,14 +7455,15 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
         }
         
-        #[1066]	=	[938] + [949] + [1158] - [950]
+        
         campo cod1066 {
             glosa "Diferencia entre depreciaciones aceleradas y/o instantáneas y normales del ejercicio, anteriores"
             codigo "1066"
             caracterizable TRUE
             tipo entero
-            largo 15
-            formula { $cod938 + $cod949 + $cod1158 - $cod950 } 
+            largo 15            
+            #[1066] = [938] + [949] - [950]
+            #formula { $cod938 + $cod949 - $cod950 }            
         }
         
         campo cod1067 {
@@ -7694,6 +7697,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1100"
             tipo entero0
             largo 15
+            # POS {[1061] - [1099] - [1847]}             
             formula { PSTV($cod1061 - $cod1099 - $cod1847) }
         }
         
