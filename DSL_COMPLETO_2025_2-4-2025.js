@@ -11898,8 +11898,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15
             #[1690]	=	Si [1728] > 0; Pos([1728]- [1154]-[1157])
-            #                   Si no; [1728]
-            formula {$cod1728 > 0 ? PSTV($cod1728- $cod1154-$cod1157) : $cod1728 }
+            #                   Si no; [1728]            
+            formula { $cod1728 > 0 ? PSTV($cod1728 - $cod1154 - $cod1157) : $cod1728 }
 
         }
         campo cod1691 { 
