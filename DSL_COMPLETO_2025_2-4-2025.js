@@ -3889,10 +3889,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "645" 
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[645]	=	Pos ([1145]- [1146]+ [1177] + [893] - [894]+ [1694] - [1695] + [1696] + [1178]  - [1179] + [1180] - [1181] - [1182] - [1697] + [1186] - [1187]- [1700] - [1188] + [1701] + [1702] + [1189] - [1190])
-            #formula {PSTV( ($cod1145 - $cod1146 + $cod1177)   + ($cod893 - $cod894 + $cod1694 - $cod1695) + ($cod1696 + $cod1178  - $cod1179 + $cod1180 - $cod1181 - $cod1182 - $cod1697) + ($cod1186 - $cod1187 - $cod1700 - $cod1188 + $cod1701 + $cod1702 + $cod1189 - $cod1190))}
-            formula {PSTV( ($cod1145 - $cod1146 + $cod1177)   + ($cod893 - $cod894 + $cod1694 - $cod1695) + ($cod1696 + $cod1178  - $cod1179 + $cod1180  - $cod1182 - $cod1697) + ($cod1186 - $cod1187 - $cod1700 - $cod1188 + $cod1701 + $cod1702 + $cod1189 - $cod1190))}	
+            largo 15               
+            ##POS {[1145] - [1146] + [1177] + [893] - [894] + [1694] - [1695] + [1696] + [1178] - [1179] + [1180] - [1182] - [1697] + [1186] - [1187] - [1700] - [1188] + [1701] + [1702] + [1189] - [1190]}
+            formula { PSTV( ($cod1145 - $cod1146 + $cod1177) + ($cod893 - $cod894 + $cod1694 - $cod1695) + ($cod1696 + $cod1178  - $cod1179 + $cod1180  - $cod1182 - $cod1697) + ($cod1186 - $cod1187 - $cod1700 - $cod1188 + $cod1701 + $cod1702 + $cod1189 - $cod1190))}
         }
         
         campo cod893 { 
@@ -3916,9 +3915,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "646" 
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[646]	=	 NEG ([1145]- [1146]+ [1177] + [893] - [894]+ [1694] - [1695] + [1696] + [1178]   - [1179] + [1180] - [1181] - [1182] - [1697] + [1186] - [1187]- [1700] - [1188] + [1701] + [1702] + [1189] - [1190])
-            formula {NEG( ($cod1145 - $cod1146 + $cod1177 + $cod893 - $cod894) + ($cod1694 - $cod1695 + $cod1696 + $cod1178  - $cod1179) + ($cod1180  - $cod1182 - $cod1697) + ($cod1186 - $cod1187 - $cod1700 - $cod1188) + ($cod1701 + $cod1702 + $cod1189 - $cod1190))} 			
+            largo 15             
+            #NEG {[1145] - [1146] + [1177] + [893] - [894] + [1694] - [1695] + [1696] + [1178] - [1179] + [1180] - [1182] - [1697] + [1186] - [1187] - [1700] - [1188] + [1701] + [1702] + [1189] - [1190]}
+            formula { NEG( ($cod1145 - $cod1146 + $cod1177 + $cod893 - $cod894) + ($cod1694 - $cod1695 + $cod1696 + $cod1178  - $cod1179) + ($cod1180  - $cod1182 - $cod1697) + ($cod1186 - $cod1187 - $cod1700 - $cod1188) + ($cod1701 + $cod1702 + $cod1189 - $cod1190))}
         }
         
         campo cod843 { 
@@ -8356,9 +8355,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1210"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1210]	=	Pos ([1200] - [ 1201] + [1202]   - [1203] - [1204] + [1205] + [1206] - [1207] - [1208] - [1209])            
-            formula {PSTV(( $cod1200 + $cod1202 - $cod1203 - $cod1204  +  $cod1205 + $cod1206 - $cod1207 - $cod1208 - $cod1209))}	
+            largo 15            
+            #POS {[1200] - [1933] + [[1202]  - [1203] - [1204] + [1205] + [1206] - [1207] - [1208] - [1209]}
+            formula {PSTV($cod1200 - $cod1933 + $cod1202 - $cod1203 - $cod1204 + $cod1205 + $cod1206 - $cod1207 - $cod1208 - $cod1209)}
         }
         campo cod1211 { 
             glosa "REGISTRO DE RENTAS EMPRESARIALES Y MOVIMIENTO STUT (ART. 14 LETRA A) LIR) / DDAN / Remanente ejercicio anterior o saldo inicial reajustado (saldo positivo)"
@@ -12143,9 +12142,9 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #[1717]	=	"Si atributo = M14A; entonces [646]
-            #Sino 0"
-            formula {$aM14A!=0 ? $cod646:0} 			
+            #[1717]	=	"Si atributo = M14A; entonces [646] sino 0"
+            #Sino 0
+            #formula {$aM14A!=0 ? $cod646:0}            
         }
 
         campo cod1718 { 
@@ -12392,9 +12391,9 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #a.75
-            #[1749]	=	[1730] + [1733] - [1735] - [1737] + [1741] - [1743] - [1745] - [1747]	        
-            formula {$cod1730 + $cod1733 - $cod1735 - $cod1737 + $cod1741 - $cod1743 - $cod1745 - $cod1747}	
+            #a.75   [1749]	=	POS  {[1730] + [1934] + [1733] - [1735] - [1737] + [1741] - [1743] - [1745] - [1747]}            
+            #[1730] + [1934] + [1733] - [1735] - [1737] + [1741] - [1743] - [1745] - [1747]
+            formula {$cod1730 + $cod1934 + $cod1733 - $cod1735 - $cod1737 + $cod1741 - $cod1743 - $cod1745 - $cod1747}
         }
         campo cod1750 { 
             glosa "REX/Renta con tributación cumplida/Otras/ Remanente ejercicio siguiente (saldo positivo)"
