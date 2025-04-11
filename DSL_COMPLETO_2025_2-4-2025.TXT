@@ -8087,7 +8087,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #a.50	[1174]	=	1171-1172+1173
+            #a.50	[1174]	=	1171-1172+1173            
             formula {$cod1171 - $cod1172 + $cod1173} 
         }
         campo cod1175 { 
