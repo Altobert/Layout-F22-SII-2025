@@ -8786,9 +8786,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1269"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1269]	=	[1260] + [1262] - [1263] - [1264] + [1265] - [1266] - [1267]  -[1268]
-            formula {$cod1260  + $cod1262 - $cod1263 - $cod1264 + $cod1265 - $cod1266 - $cod1267  -$cod1268}			
+            largo 15             
+            #[1260] - [1935] + [1262] - [1263] - [1264] + [1265] - [1266] - [1267] - [1268]
+            formula {$cod1260 - $cod1935 + $cod1262 - $cod1263 - $cod1264 + $cod1265 - $cod1266 - $cod1267 - $cod1268}
         }
         campo cod1270 { 
             glosa "REGISTRO SAC (ART. 14 LETRA A) LIR) / Acumulados a contar desde el 01.01.2017 / No Sujeto a Restitución  / Sin D° Devolución / Remanente ejercicio anterior o saldo inicial (saldo positivo)"
@@ -8851,9 +8851,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1278"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1278]	=Pos([1270] -  [1821] +   [1271] -   [1272]  +  [1273] +   [1274] -   [1275] -   [1276] -   [1277])
-            formula {PSTV($cod1270 -$cod1821 + $cod1271 - $cod1272  +$cod1273 + $cod1274 - $cod1275 - $cod1276 - $cod1277)} 			
+            largo 15            
+            #POS {[1270] - [1821] - [1936] + [1271] - [1272]  + [1273] + [1274] - [1275] - [1276] - [1277]}
+            formula {PSTV($cod1270 - $cod1821 - $cod1936 + $cod1271 - $cod1272  + $cod1273 + $cod1274 - $cod1275 - $cod1276 - $cod1277)}
         }
         campo cod1279 { 
             glosa "REGISTRO SAC (ART. 14 LETRA A) LIR) / Acumulados a contar desde el 01.01.2017 / No Sujeto a Restitución  / con D° Devolución / Remanente ejercicio anterior o saldo inicial (saldo positivo)"
@@ -9255,9 +9255,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1334"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1334]	=	[1324] - [1325] + [1326] - [1327] + [1328] + [1329] - [1330] - [1331] - [1332] - [1333]
-            formula {$cod1324 - $cod1325 + $cod1326 - $cod1327 + $cod1328 + $cod1329 - $cod1330 - $cod1331 - $cod1332 - $cod1333}			
+            largo 15             
+            #[1324] - [1940] + [1326] - [1327] + [1328] + [1329] - [1330] - [1331] - [1332] - [1333]
+            formula {$cod1324 - $cod1940 + $cod1326 - $cod1327 + $cod1328 + $cod1329 - $cod1330 - $cod1331 - $cod1332 - $cod1333}
         }
         campo cod1335 { 
             glosa "REGISTRO SAC (ART. 14 LETRA A) LIR) / Acumulados hasta el 31.12.2016 /  Con D° Devolución / Remanente ejercicio anterior o saldo inicial (saldo positivo)"
@@ -9406,9 +9406,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1355"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1355]	=	[1346] + [1347] - [1348] + [1349] + [1350] - [1351] - [1352] - [1353] -[1354]
-            formula {$cod1346 + $cod1347 - $cod1348 + $cod1349 + $cod1350 - $cod1351 - $cod1352 - $cod1353 -$cod1354} 			
+            largo 15             
+            #[1355] = [1346] + [1347] - [1348] + [1349] + [1350] - [1351] - [1352] - [1353] - [1354]
+            formula {$cod1346 + $cod1347 - $cod1348 + $cod1349 + $cod1350 - $cod1351 - $cod1352 - $cod1353 -$cod1354}
         }
         campo cod1356 { 
             glosa "Crédito/ Saldo de ingreso diferido pendiente de tributación correspondiente a lo dispuesto en el ex art. 14 ter letra A) N° 2 LIR "
@@ -9955,6 +9955,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15            
             #1430=  [1406] + [1407] + [1408] + [1409] + [1818] + [1429] + [1411] + [1412] + [1413]  + [1415] + [1416] + [1417] + [1418] + [1419] + [1421] + [1422] + [1423] + [1424] + [1425] + [1426] + [1427] + [1428]
             formula { $cod1406 + $cod1407 + $cod1408 + $cod1409 + $cod1818   + $cod1429 + $cod1411 + $cod1412 + $cod1413  + $cod1415 + $cod1416 + $cod1417 + $cod1418 + $cod1419 + $cod1421 + $cod1422 + $cod1423 + $cod1424 + $cod1425 + $cod1426 + $cod1427 + $cod1428}
+            #1430 = [1406] + [1407] + [1408] + [1409] + [1818] + [1429] + [1411] + [1412] + [1413]  + [1415] + [1416] + [1417] + [1418] + [1419] + [1421] + [1422] + [1423] + [1424] + [1425] + [1426] + [1427] + [1428]
+            formula {$cod1406 + $cod1407 + $cod1408 + $cod1409 + $cod1818   + $cod1429 + $cod1411 + $cod1412 + $cod1413  + $cod1415 + $cod1416 + $cod1417 + $cod1418 + $cod1419 + $cod1421 + $cod1422 + $cod1423 + $cod1424 + $cod1425 + $cod1426 + $cod1427 + $cod1428}
         }
         campo cod1431 { 
             glosa "Partidas del inc. 1° no afectas al IU de tasa 40% y del inc. 2° del art. 21 LIR (históricos), incluidos en el total de egresos"
