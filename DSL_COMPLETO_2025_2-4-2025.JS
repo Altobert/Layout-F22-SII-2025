@@ -7742,9 +7742,8 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Crédito No sujeto a restitución/ TOTAL Saldo ingreso diferido a imputar en los ejercicios siguientes"
             codigo "1106"
             tipo entero0
-            largo 15
-            #[1106]	=  Pos(   [1010]-    [1013]+    [1360]-    [1363]+    [1367]-    [1370])
-            #formula { PSTV($cod1010 - $cod1013 + $cod1360 - $cod1363 + $cod1367 - $cod1370)}
+            largo 15            
+            #a.47	[1106]
             #POS {[1360] - [1363] + [1367] - [1370]}
             formula { PSTV($cod1360 - $cod1363 + $cod1367 - $cod1370)}
         }
@@ -9534,9 +9533,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1372"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1372]=   Pos(   [1356]-    [1357]+    [1361]-    [1364])
-            formula { PSTV($cod1356 - $cod1357 + $cod1361 - $cod1364)}
+            largo 15             
+            #a.48 [1372] = POS {[1361] - [1364]}
+            formula {PSTV($cod1361 - $cod1364)}
         }
         campo cod1373 { 
             glosa "Acumulados a contar desde el 01.01.2017 /Sujeto a Restitución/Con D° Devolución/Remanente ejercicio siguiente (saldo negativo)"
