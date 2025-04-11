@@ -7663,18 +7663,18 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Saldo rentas tributables acumuladas/TOTAL Saldo ingreso diferido a imputar en los ejercicios siguientes"
             codigo "1096"
             tipo entero0
-            largo 15
-            #[1096]	= Pos (   [1008]-    [1011]+    [1358]-    [1184]+    [1365]-    [1185])
-            formula { PSTV($cod1008 - $cod1011 + $cod1358 - $cod1184 + $cod1365 - $cod1185)}
+            largo 15            
+            #POS {[1358] - [1184] + [1365] - [1185]}
+            formula { PSTV($cod1358 - $cod1184 + $cod1365 - $cod1185)}
         }
         
         campo cod1097 {
             glosa "Incremento / TOTAL Saldo ingreso diferido a imputar en los ejercicios siguientes"
             codigo "1097"
             tipo entero0
-            largo 15
-            #[1097]	= Pos (   [1009]-    [1012]+    [1359]-    [1362]+    [1366]-    [1369])
-            formula { PSTV($cod1009 - $cod1012 + $cod1359 - $cod1362 + $cod1366 - $cod1369)}
+            largo 15            
+            #a.46 POS {[1359] - [1362] + [1366] - [1369]}
+            formula { PSTV($cod1359 - $cod1362 + $cod1366 - $cod1369)}
         }
         
         campo cod1098 {
@@ -7744,7 +7744,9 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
             #[1106]	=  Pos(   [1010]-    [1013]+    [1360]-    [1363]+    [1367]-    [1370])
-            formula { PSTV($cod1010 - $cod1013 + $cod1360 - $cod1363 + $cod1367 - $cod1370)}
+            #formula { PSTV($cod1010 - $cod1013 + $cod1360 - $cod1363 + $cod1367 - $cod1370)}
+            #POS {[1360] - [1363] + [1367] - [1370]}
+            formula { PSTV($cod1360 - $cod1363 + $cod1367 - $cod1370)}
         }
 
         campo cod1128 {
