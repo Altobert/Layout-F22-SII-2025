@@ -11763,9 +11763,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1672"
             tipo entero
             caracterizable TRUE
-            largo 15 
-            #[1672]	=	 [1657]+     [1658]+     [1659]+   [1660] -   [1661]-   [1662]-   [1140]-   [1663]-   [1664] -   [1665]-   [1666]-   [1667]-   [1668]-   [1141]-   [1142]-   [1669]-   [1670]-   [1671]			
-            formula { $cod1657+   $cod1658+   $cod1659+ $cod1660 - $cod1661- $cod1662- $cod1140- $cod1663- $cod1664 - $cod1665- $cod1666- $cod1667- $cod1668- $cod1141- $cod1142- $cod1669- $cod1670- $cod1671} 
+            largo 15            
+            #a.51 [1657] + [1658] + [1659] + [1660] - [1661] - [1662] - [1140] - [1663] - [1664] - [1665] - [1666] - [1667] - [1668] - [1141] - [1142] - [1669] - [1670] - [1671]
+            formula {$cod1657 + $cod1658 + $cod1659 + $cod1660 - $cod1661 - $cod1662 - $cod1140 - $cod1663 - $cod1664 - $cod1665 - $cod1666 - $cod1667 - $cod1668 - $cod1141 - $cod1142 - $cod1669 - $cod1670 - $cod1671}
         }
         campo cod1673 { 
             glosa "Corrección monetaria saldo deudor (art. 32 N° 1 LIR)"
@@ -12238,9 +12238,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1728"
             tipo entero
             caracterizable TRUE
-            largo 15 
-            #[1728]=	[1672]-  [1673]+    [1674]+    [1144]+    [1675]+    [1175]+    [1676]+    [1677]+    [1678]+    [1150]+    [1147]+   [1148]+ [1149]+ [1151]- [1152]- [1176] - [1159]- [1679]- [1680]- [1681]- [1682]- [1683]- [1684]- [1685]- [1686]- [1183]- [1687]- [1688]- [1689]			
-            formula { $cod1672 - $cod1673 + $cod1674 + $cod1144 + $cod1675 + $cod1175 + $cod1676 + $cod1677 + $cod1678 + $cod1150 + $cod1147 + $cod1148 + $cod1149 + $cod1151 - $cod1152 - $cod1176 - $cod1679 - $cod1680 - $cod1681 - $cod1682 - $cod1683 - $cod1684 - $cod1685 - $cod1686 - $cod1183 - $cod1687 - $cod1688 - $cod1689}
+            largo 15            
+            #a.52 [1672] - [1673] + [1674] + [1144] + [1675] + [1175] + [1676] + [1677] + [1678] + [1150] + [1147] + [1148] + [1149] + [1151] - [1152] - [1176] - [1679] - [1680] - [1681] - [1974] - [1975] - [1682] - [1683] - [1684] - [1685] - [1686] - [1183] - [1687] - [1688] - [1689]
+            formula { $cod1672 - $cod1673 + $cod1674 + $cod1144 + $cod1675 + $cod1175 + $cod1676 + $cod1677 + $cod1678 + $cod1150 + $cod1147 + $cod1148 + $cod1149 + $cod1151 - $cod1152 - $cod1176 - $cod1679 - $cod1680 - $cod1681 - $cod1974 - $cod1975 - $cod1682 - $cod1683 - $cod1684 - $cod1685 - $cod1686 - $cod1183 - $cod1687 - $cod1688 - $cod1689}
         }
         campo cod1729 { 
             glosa "Base imponible antes de rebaja por incentivo al ahorro (art. 14 letra E) LIR) y/o por pago de IDPC voluntario (art. 14 letra A) N°6 LIR y art. 42° transitorio Ley N° 21.210) o pérdida tributaria"
