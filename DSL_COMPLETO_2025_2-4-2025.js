@@ -9954,7 +9954,7 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15            
             #1430 = [1406] + [1407] + [1408] + [1409] + [1818] + [1429] + [1411] + [1412] + [1413]  + [1415] + [1416] + [1417] + [1418] + [1419] + [1421] + [1422] + [1423] + [1424] + [1425] + [1426] + [1427] + [1428]
-            formula {$cod1406 + $cod1407 + $cod1408 + $cod1409 + $cod1818   + $cod1429 + $cod1411 + $cod1412 + $cod1413  + $cod1415 + $cod1416 + $cod1417 + $cod1418 + $cod1419 + $cod1421 + $cod1422 + $cod1423 + $cod1424 + $cod1425 + $cod1426 + $cod1427 + $cod1428}
+            formula {$cod1406 + $cod1407 + $cod1408 + $cod1409 + $cod1818   + $cod1429 + $cod1411 + $cod1412 + $cod1413  + $cod1415 + $cod1416 + $cod1417 + $cod1418 + $cod1419 + $cod1421 + $cod1422 + $cod1423 + $cod1424 + $cod1425 + $cod1426 + $cod1427 + $cod1428}            
         }
         campo cod1431 { 
             glosa "Partidas del inc. 1° no afectas al IU de tasa 40% y del inc. 2° del art. 21 LIR (históricos), incluidos en el total de egresos"
