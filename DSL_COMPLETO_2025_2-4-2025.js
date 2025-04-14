@@ -8307,10 +8307,10 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1204"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #a.181 [1204]=POS ([1200] - [1201] +    [1202] -    [1203])
-            #			  POS {[1200] + [1202] - [1203]}				
-            formula  {PSTV($cod1200 + $cod1202 - $cod1203)}
+            largo 15                         
+            #            POS {[1200] - [1933]   + [1202]   - [1203]}            
+            formula  {PSTV($cod1200  - $cod1933 + $cod1202 - $cod1203)}
+            
         }
         campo cod1205 { 
             glosa "RAI/Aumentos del ejercicio (propios)"
@@ -9499,10 +9499,10 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1368"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1368]	=	NEG ([1495] - [1655] + [1590] - [1444] + [1512] + [1515] + [1523] - [1531] - [1539] - [1549] - [1557])
-            #           NEG {[1495] - [1655] + [1590] - [1444] + [1512] + [1515] + [1523] - [1531] - [1539] - [1549] - [1557]}
-            formula { NEG($cod1495 - $cod1655 + $cod1590 - $cod1444 + $cod1512 + $cod1515 + $cod1523 - $cod1531 - $cod1539 - $cod1549 - $cod1557)}				
+            largo 15             
+            #           NEG {[1495] - [1655] - [1945] + [1590] - [1444] + [1512] + [1515] + [1523] - [1531] - [1539] - [1549] - [1557]}
+            formula  { NEG($cod1495 - $cod1655 - $cod1945 + $cod1590 - $cod1444 + $cod1512 + $cod1515 + $cod1523 - $cod1531 - $cod1539 - $cod1549 - $cod1557)}
+            
         }
         campo cod1369 { 
             glosa "Incremento/ Ingreso  diferido a  imputar  en  el ejercicio "
@@ -9523,10 +9523,10 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1371"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1371]	=	NEG ([1496] - [1656] + [1436] - [1447] + [1513] + [1516] + [1524] - [1532] - [1540] - [1550] - [1558])
-            #           NEG {[1496] - [1656] + [1436] - [1447] + [1513] + [1516] + [1524] - [1532] - [1540] - [1550] - [1558]}
-            formula { NEG($cod1496 - $cod1656 + $cod1436 - $cod1447 + $cod1513 + $cod1516 + $cod1524 - $cod1532 - $cod1540 - $cod1550 - $cod1558)}			
+            largo 15             
+                     #NEG{[1496] -   [1656] -   [1946] +   [1436] -   [1447] +   [1513] +  [1516] +   [1524] -    [1532] -   [1540] -  [1550] -   [1558]}
+            formula { NEG($cod1496 - $cod1656 - $cod1946 + $cod1436 - $cod1447 + $cod1513 + $cod1516 + $cod1524 - $cod1532 - $cod1540 - $cod1550 - $cod1558)}
+            
         }
         campo cod1372 { 
             glosa "Crédito / Sujeto a restitución/ TOTAL Saldo ingreso diferido a imputar en los ejercicios siguientes"
@@ -9670,9 +9670,11 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1391"
             tipo entero0
             caracterizable TRUE
-            largo 15             
-            #[1391]	=	[1382] 			+ [1384] - [1385] - [1386] + [1387] - [1388] - [1389]  -[1390]            
-            formula {$cod1382 + $cod1384 - $cod1385 - $cod1386 + $cod1387 - $cod1388 - $cod1389 - $cod1390}	
+            largo 15                        
+            #        [1382] -   [1944] +   [1384] -     [1385] - [1386] +   [1387] -    [1388] -  [1389]  -  [1390]
+            formula {$cod1382 - $cod1944 + $cod1384 - $cod1385 - $cod1386 + $cod1387 - $cod1388 - $cod1389 - $cod1390}
+
+            
         }
         campo cod1392 { 
             glosa "RAI/Aumentos del ejercicio (por reorganizaciones)RAI/Disminuciones del ejercicio (por reorganizaciones)"
@@ -10349,9 +10351,11 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1484"
             tipo entero0
             caracterizable TRUE
-            largo 15             
-            #[1484] =   POS {[1451] + [1392] - [1396] - [1459] + [1463] + [1467] - [1471] - [1475] - [1480]}            
-            formula { PSTV($cod1451 + $cod1392 - $cod1396 - $cod1459 + $cod1463 + $cod1467 - $cod1471 - $cod1475 - $cod1480)}
+            largo 15                    
+            #POS {[1451] - [1942] +    [1392] -   [1396] -   [1459] +  [1463] +   [1467] -    [1471] -   [1475] -  [1480]}
+            formula { PSTV($cod1451 - $cod1942 + $cod1392 - $cod1396 - $cod1459 + $cod1463 + $cod1467 - $cod1471 - $cod1475 - $cod1480)}
+            
+            
         }
         campo cod1485 { 
             glosa "REX/Rentas con tributación cumplida Remanente ejercicio siguiente (saldo positivo)REX/Rentas con tributación cumplida Remanente ejercicio siguiente (saldo negativo)"
@@ -10484,7 +10488,7 @@ formulario f22_DSL_COMPLETO_2025
             #[1500]	=	 ([1720] - [1493] - [1494] - [1725] -[1727]) ,
             #                    si ([1720] - [1493] - [1494] - [1725] -[1727]) >0, 
             #                    Sino, 0
-            formula {($cod1720 - $cod1493 - $cod1494 - $cod1725 -$cod1727) >0 ? ($cod1720 - $cod1493 - $cod1494 - $cod1725 -$cod1727) : 0 }			
+            formula {($cod1720 - $cod1493 - $cod1494 - $cod1725 -$cod1727) > 0 ? ($cod1720 - $cod1493 - $cod1494 - $cod1725 -$cod1727) : 0 }			
         }
         campo cod1501 { 
             glosa "REGISTRO SAC (ART. 14 LETRA D) N° 3 LIR) / Acumulados hasta el 31.12.2016 / Sin D° Devolución / Remanente ejercicio anterior o saldo inicial (saldo positivo)"
@@ -10800,8 +10804,8 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #[1545]	=	Pos([1445]  -[1446] + [1374]+  [1375] - [1376] + [1705] - [1706] + [1707]  + [1377]- [1378] + [1726] - [1479]-  [1708] - [1709]- [1379] +[1710]  +[1711] +  [1380] - [1381])            
-            formula  { PSTV($cod1445 - $cod1446 + $cod1374 +  $cod1375 - $cod1376 + $cod1705 - $cod1706 + $cod1707 + $cod1377 - $cod1378 + $cod1726  - $cod1479 -  $cod1708 - $cod1709 - $cod1379 + $cod1710 + $cod1711 + $cod1380 - $cod1381) }
+            #[1545]	=	Pos([1445]  -[1446] + [1374]+  [1375] - [1376] + [1705] - [1706] + [1707]  + [1377]-  [1378] + [1726] - [1479]-  [1708] - [1709]-  [1379] + [1710]  +[1711] +  [1380] - [1381])
+            formula  { PSTV($cod1445 - $cod1446 + $cod1374 +  $cod1375 - $cod1376 + $cod1705 - $cod1706 + $cod1707 + $cod1377 - $cod1378 + $cod1726 - $cod1479 -  $cod1708 - $cod1709  - $cod1379 + $cod1710 + $cod1711 + $cod1380 - $cod1381) }            
         }
         campo cod1546 { 
             glosa "CPTS negativo final"
@@ -10810,6 +10814,7 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
             #[1546]	=	NEG {[1445] - [1446] + [1374] + [1375] - [1376] + [1705] - [1706] + [1707] + [1377] - [1378] + [1726] - [1479] - [1708] - [1709] - [1379] + [1710] + [1711] + [1380] - [1381]}
+            #           NEG {[1445] - [1446] + [1374] + [1375] - [1376] + [1705] - [1706] + [1707] + [1377] - [1378] + [1726] - [1479] - [1708] - [1709] - [1379] + [1710] + [1711] + [1380] - [1381]}            
             formula  { NEG($cod1445 - $cod1446 + $cod1374 + $cod1375 - $cod1376 + $cod1705 - $cod1706 + $cod1707 + $cod1377 - $cod1378 + $cod1726 - $cod1479 - $cod1708 - $cod1709 - $cod1379 + $cod1710 + $cod1711 + $cod1380 - $cod1381) }			
         }
         campo cod1547 { 
@@ -10930,40 +10935,39 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #[1563]	=	Pos([1495] - [1655] + [1590] - [1444] + [1512] + [1515] + [1523] - [1531] - [1539] - [1549] - [1557])
-            #           POS{[1495] - [1655] + [1590] - [1444] + [1512] + [1515] + [1523] - [1531] - [1539] - [1549] - [1557]}
-            formula { PSTV($cod1495 - $cod1655 + $cod1590 - $cod1444 + $cod1512 + $cod1515 + $cod1523 - $cod1531 - $cod1539 - $cod1549 - $cod1557)}			
+                        #POS {[1495] - [1655] -  [1945] +   [1590] -   [1444] +   [1512] +   [1515] +   [1523] -   [1531] -   [1539]   - [1549] -   [1557]}
+            formula { PSTV($cod1495 - $cod1655 - $cod1945 + $cod1590 - $cod1444 + $cod1512 + $cod1515 + $cod1523 - $cod1531 - $cod1539 - $cod1549 - $cod1557)}
         }
         campo cod1564 { 
             glosa "Acumulados a contar desde el 01.01.2017/No Sujeto a Restitución/Con D° Devolución /Remanente ejercicio siguiente (saldo positivo)"
             codigo "1564"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1564]	=	Pos([1496] - [1656] + [1436] - [1447] + [1513] + [1516] + [1524] - [1532] - [1540] - [1550] - [1558])
-            #			POS{[1496] - [1656] + [1436] - [1447] + [1513] + [1516] + [1524] - [1532] - [1540] - [1550] - [1558]}
-            formula { PSTV($cod1496 - $cod1656 + $cod1436 - $cod1447 + $cod1513 + $cod1516 + $cod1524 - $cod1532 - $cod1540 - $cod1550 - $cod1558)}			
+            largo 15             
+                      #POS{[1496] -   [1656]   - [1946]   + [1436]   - [1447]   + [1513]   + [1516]   + [1524]   - [1532]   - [1540]   - [1550]   - [1558]}
+            formula { PSTV($cod1496 - $cod1656 - $cod1946 + $cod1436 - $cod1447 + $cod1513 + $cod1516 + $cod1524 - $cod1532 - $cod1540 - $cod1550 - $cod1558)}
+            
         }
         campo cod1565 { 
             glosa "Acumulados a contar desde el 01.01.2017/Sujeto a Restitución/Sin D° Devolución /Remanente ejercicio siguiente (saldo positivo)"
             codigo "1565"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1565]	=	Pos([1497] - [1504] + [1437] - [1448] + [1517] + [1525] - [1533] - [1541] -[1551])
-            #           POS{[1497] - [1504] + [1437] - [1448] + [1517] + [1525] - [1533] - [1541] -[1551]}
-            formula { PSTV($cod1497 - $cod1504 + $cod1437 - $cod1448 + $cod1517 + $cod1525 - $cod1533 - $cod1541 -$cod1551)}			
+            largo 15             
+            #          POS {[1497] - [1504] - [1947] + [1437] - [1448] + [1517] + [1525] - [1533] - [1541] -[1551]}            
+            formula { PSTV($cod1497 - $cod1504 - $cod1947 + $cod1437 - $cod1448 + $cod1517 + $cod1525 - $cod1533 - $cod1541 -$cod1551)}
+
+            
         }
         campo cod1566 { 
             glosa "Acumulados a contar desde el 01.01.2017/Sujeto a Restitución/Con D° Devolución /Remanente ejercicio siguiente (saldo positivo)"
             codigo "1566"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1566]	=	Pos([1498] - [1505]+  [1438] - [1449]  +[1518]+  [1526]  -[1534] - [1542]  -[1552])
-            #			POS{[1498] - [1505] +  [1438] - [1449] + [1518] + [1526] - [1534] - [1542] - [1552]}
-
-            formula { PSTV($cod1498 - $cod1505+  $cod1438 - $cod1449  +$cod1518+  $cod1526  -$cod1534 - $cod1542  -$cod1552)}			
+            largo 15                                     
+                      #POS {[1498] -  [1505] -   [1948] +     [1438] -   [1449] +   [1518] +   [1526] -   [1534] -   [1542]    - [1552]}
+            formula { PSTV($cod1498 - $cod1505 - $cod1948 +  $cod1438 - $cod1449 + $cod1518 + $cod1526 - $cod1534 - $cod1542 - $cod1552)}
+            
         }
         campo cod1567 { 
             glosa "Acumulados a contar desde el 01.01.2017/IPE/Remanente ejercicio siguiente (saldo positivo)Acumulados hasta 31.12.2016/Sin D° Devolución/Remanente ejercicio anterior (saldo positivo)"
@@ -10981,17 +10985,17 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 	    
-            #[1568]	=  POS {[1501]  + [1441]   - [1509]   + [1520]   + [1528]   - [1536]   - [1544]   - [1554]   - [1560]}	    
-            formula { PSTV($cod1501 + $cod1441 - $cod1509 + $cod1520 + $cod1528 - $cod1536 - $cod1544 - $cod1554 - $cod1560)}
+            #[1568]	= POS {[1501] -   [1949] +   [1441] -   [1509] +   [1520] +   [1528] -   [1536] -   [1544] -   [1554] -   [1560]}            
+            formula { PSTV($cod1501 - $cod1949 + $cod1441 - $cod1509 + $cod1520 + $cod1528 - $cod1536 - $cod1544 - $cod1554 - $cod1560)}
         }
         campo cod1569 { 
             glosa "Acumulados hasta 31.12.2016/Con D° Devolución/Remanente ejercicio siguiente (saldo positivo)Acumulados hasta 31.12.2016/IPE/ Remanente ejercicio anterior (saldo positivo)"
             codigo "1569"
             tipo entero0
             caracterizable TRUE
-            largo 15 	    
-            #[1569]	=   POS {[1502] +   [1442] -   [1510] +   [1521] +   [1529] -  [1537] -   [1547] -   [1555] -   [1561]}	    
-            formula {   PSTV($cod1502 + $cod1442 - $cod1510 + $cod1521 + $cod1529 - $cod1537 - $cod1547 - $cod1555 - $cod1561)}
+            largo 15 	                
+            #          POS {[1502] - [1950] +   [1442] -    [1510] +    [1521] +  [1529] -      [1537] -   [1547] - [1555] - [1561]} 
+            formula { PSTV($cod1502 - $cod1950 + $cod1442 - $cod1510 + $cod1521 + $cod1529 - $cod1537 - $cod1547 - $cod1555 - $cod1561)}
         }
         campo cod1570 { 
             glosa "Acumulados hasta 31.12.2016/IPE/Remanente ejercicio siguiente (saldo positivo)Ingresos percibidos"
@@ -11008,20 +11012,19 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1571"
             tipo entero0
             caracterizable TRUE
-            largo 15
-            #[1571]	=	NEG ([1497] - [1504] + [1437] - [1448] + [1517] + [1525] - [1533] - [1541] - [1551])
-            #           NEG {[1497] - [1504] + [1437] - [1448] + [1517] + [1525] - [1533] - [1541] - [1551]}
-            formula { NEG($cod1497 - $cod1504 + $cod1437 - $cod1448 + $cod1517 + $cod1525 - $cod1533 - $cod1541 - $cod1551)}			
+            largo 15                        
+            #          NEG {[1497] -  [1504] -   [1947] +   [1437] -  [1448] +   [1517] +    [1525] -   [1533] -   [1541] - [1551]}
+            formula  { NEG($cod1497 - $cod1504 - $cod1947 + $cod1437 - $cod1448 + $cod1517 + $cod1525 - $cod1533 - $cod1541 - $cod1551)}
+                        
         }
         campo cod1572 { 
             glosa "Acumulados a contar desde el 01.01.2017/ Sujeto a Restitución/Con D° Devolución /Remanente ejercicio siguiente (saldo negativo) "
             codigo "1572"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1572]	=	NEG ([1498] - [1505] + [1438] - [1449] + [1518] + [1526] - [1534] - [1542] - [1552])
-            #           NEG {[1498] - [1505] + [1438] - [1449] + [1518] + [1526] - [1534] - [1542] - [1552]}
-            formula { NEG($cod1498 - $cod1505 + $cod1438 - $cod1449 +$cod1518 + $cod1526 - $cod1534 - $cod1542 - $cod1552)}
+            largo 15    
+            #           NEG {[1498] -   [1505] +   [1438] -   [1449] +   [1518] +   [1526] -   [1534] -   [1542] -   [1552]}
+            formula {   NEG ($cod1498 - $cod1505 + $cod1438 - $cod1449 + $cod1518 + $cod1526 - $cod1534 - $cod1542 - $cod1552)}
         }
         campo cod1573 { 
             glosa "Capital aportado empresas que inician actividades en el año comercial que corresponda a esta declaración"
@@ -12174,17 +12177,16 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #[1720]	=	Pos ([1703]  - [1719] +  [1492] + [1704])
+            #[1720]	=	Pos ([1703]  - [1719] +  [1492] + [1704])            
             formula { PSTV($cod1703  - $cod1719 +  $cod1492 + $cod1704)}			
         }
         campo cod1721 { 
             glosa "CRÉDITO POR IMPUESTO DE PRIMERA CATEGOR¿?A/ CON OBLIGACIÓN DE RESTITUCIÓN/ Sin derecho a devolución"
-            codigo "1721"
-        #[1721]	=	[1853] + [1858]
-        formula { $cod1853 + $cod1858}
+            codigo "1721"                
             tipo entero0
             caracterizable TRUE
             largo 15 
+            formula { $cod1853 + $cod1858}
         }
         campo cod1722 { 
             glosa "CRÉDITO POR IMPUESTO DE PRIMERA CATEGOR¿?A/ CON OBLIGACIÓN DE RESTITUCIÓN/ Con derecho a devolución"
@@ -12249,7 +12251,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero
             caracterizable TRUE
             largo 15
-            #[1729]	=	[1410]- [1430]+ [1431]
+            #[1729]	=	[1410]- [1430]+ [1431]                        
             formula {$cod1410- $cod1430+ $cod1431}			
         }
         campo cod1730 { 
@@ -12552,9 +12554,9 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            #a.121	        
-            #[1771]	=   POS {[1752] + [1755] - [1757] - [1759] + [1763] - [1765] - [1767] - [1769]}
-            formula { PSTV($cod1752 + $cod1755 - $cod1757 - $cod1759 + $cod1763 - $cod1765 - $cod1767 - $cod1769)}			
+            #a.121            
+            #[1771]	=   POS {[1752] + [1943] + [1755] - [1757] - [1759] + [1763] - [1765] - [1767] - [1769]}
+            formula{   PSTV($cod1752 + $cod1943 + $cod1755 - $cod1757 - $cod1759 + $cod1763 - $cod1765 - $cod1767 - $cod1769)}
         }
         campo cod1772 { 
             glosa "REX/Renta con tributación cumplida/Otras/ Remanente ejercicio siguiente (saldo positivo)"
