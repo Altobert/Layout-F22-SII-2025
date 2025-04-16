@@ -10045,7 +10045,11 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
             #[1440]	=	Si [1729]>0; Pos([1729]- [1432]-[1433])
             #                   Si no; [1729]
-            formula {$cod1729 > 0 ? PSTV($cod1729 - $cod1432 - $cod1433) : $cod1729 }			
+            formula {
+                $cod1729 > 0 ?
+                 PSTV($cod1729 - $cod1432 - $cod1433) : 
+                 $cod1729 
+            }			
         }
         campo cod1441 { 
             glosa "REGISTRO SAC (ART. 14 LETRA D) N° 3 LIR) / Acumulados hasta el 31.12.2016 / Sin D° Devolución / Aumentos del ejercicio (por reorganizaciones)"
@@ -12168,7 +12172,10 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
             #a.55     [1718]=	Si 1698 > 0; ([1698] + [1692] + [1699])
             #                   Sino; Pos ([1692] + [1699] - [1717])
-            formula {$cod1698 > 0 ? ($cod1698 + $cod1692 + $cod1699) : PSTV($cod1692 + $cod1699 - $cod1717) }			
+            formula {
+                $cod1698 > 0 ?
+                 ($cod1698 + $cod1692 + $cod1699) :
+                  PSTV($cod1692 + $cod1699 - $cod1717) }			
         }
 
         campo cod1719 { 
