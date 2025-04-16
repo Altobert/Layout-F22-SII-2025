@@ -1925,10 +1925,13 @@ formulario f22_DSL_COMPLETO_2025
             codigo "110" 
             tipo entero0
             largo 15 
-            caracterizable TRUE
-            #[110]  	= POS(POS{[547] - [770]} - [872]-[465]-[494]-[850]) + POS([617]-POS{[770]-[547]}) + [479], si TIPO{[03]} = 1
-            #             0, si no
-            formula { ($auxRut < 50000000)?(PSTV(PSTV($cod547 - $cod770) - $cod872 - $cod465 - $cod494 - $cod850) + PSTV($cod617 - PSTV($cod770 - $cod547)) + $cod479):0 }
+            caracterizable TRUE            
+            #Si TIPO {[03]} = 1; entonces POS {POS {[547] - [770]} - [872] - [465] -[494] - [850]} + POS {[617] - POS{[770] - [547]}} + [479]
+            #Sino; 0
+            formula{                
+                ($auxRut < 50000000) ?
+                (PSTV(PSTV($cod547 - $cod770) - $cod872 - $cod465 - $cod494 - $cod850) + PSTV($cod617 - PSTV($cod770 - $cod547)) + $cod479 : 0)
+            }
         } 
         
         campo cod605 { 
@@ -2063,7 +2066,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             #b.4	    
             #[158]=  POS {[104]   + [105]      + [106]    + [108]     + [955]      + [1632]   + [110]   + [155]   + [152]   + [1032]   + [1891]   + [1104]   + [161]   + [749]   - [166]   - [907]   - [169]   - [1833]}
-            formula {PSTV($cod104 +   $cod105  +  $cod106 +   $cod108 +    $cod955 + $cod1632 + $cod110 + $cod155 + $cod152 + $cod1032 + $cod1891 + $cod1104 + $cod161 + $cod749 - $cod166 - $cod907 - $cod169 - $cod1833) }
+            #        POS {[104]   + [105]      + [106]    + [108]     + [955]      + [1632]   + [110]   + [155]   + [152]   + [1032]   + [1891]   + [1104]   + [161]   + [749]   - [166]   - [907]   - [169]   - [1833]}
+            formula {PSTV($cod104 +   $cod105  +  $cod106 +   $cod108 + $cod955    + $cod1632 + $cod110 + $cod155 + $cod152 + $cod1032 + $cod1891 + $cod1104 + $cod161 + $cod749 - $cod166 - $cod907 - $cod169 - $cod1833) }
         }
 
         campo cod111 { 
