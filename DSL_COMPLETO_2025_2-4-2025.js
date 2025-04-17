@@ -2145,6 +2145,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 16
             valorPorDefecto "0"
             #[170]=	POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
+            #       POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
             formula { PSTV($cod158 - $cod111 - $cod751 - $cod822 - $cod765 - $cod133 - $cod32) }
         }
         
