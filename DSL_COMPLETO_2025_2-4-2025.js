@@ -2144,8 +2144,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 16
             valorPorDefecto "0"
-            #[170]=	POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
-            #       POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
+            #[170]=	    POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}            
+            #           POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
             formula { PSTV($cod158 - $cod111 - $cod751 - $cod822 - $cod765 - $cod133 - $cod32) }
         }
         
@@ -2174,7 +2174,7 @@ formulario f22_DSL_COMPLETO_2025
 
         #[157]	=	"TGL{ [170] - (([152] + [749] - [169] ) * [ lambda ])}
         #[lambda] = Si ([104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1891] + [1104] + [166] + [1030] = 0) .y. { [161] > 0 .o. [152] > 0}; entonces 1
-        #sino 0
+        #sino 0        
         campo cod157 {                                    
             glosa "Impuesto Global Complementario o Impuesto Único de Segunda Categoría (Art. 47 o Art. 52 o 52 bis) (según tabla)"
             codigo "157" 
@@ -2321,7 +2321,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 16
             valorPorDefecto "0"
-            # [304]=	[157] + [1017] + [1033] +  [201] + [1035] + [910] - [1036] - [1101] - [135] - [136] -[176] - [752] - [608] - [1636] - [1637] - [1638] - [895] - [867] - [609] - [1639] - [1018] - [162] - [174] - [610] - [746] - [866] - [607]
+            # [304]=	[157] +  [1017] +  [1033] +    [201] +   [1035] +   [910] -   [1036] -   [1101]   - [135]   - [136]   - [176]  - [752]   - [608]   - [1636]   - [1637]   - [1638]   - [895]   - [867]   - [609]   - [1639]   - [1018]   - [162]   - [174]   - [610]   - [746]   - [866]   - [607]
+            #           [157] +  [1017] +  [1033] +    [201] +   [1035] +   [910]   - [1036]   - [1101]   - [135]   - [136]   - [176]  - [752]   - [608]   - [1636]   - [1637]   - [1638]   - [895]   - [867]   - [609]   - [1639]   - [1018]   - [162]   - [174]   - [610]   - [746]   - [866]   - [607]
             formula { $cod157 + $cod1017 + $cod1033 +  $cod201 + $cod1035 + $cod910 - $cod1036 - $cod1101 - $cod135 - $cod136 -$cod176 - $cod752 - $cod608 - $cod1636 - $cod1637 - $cod1638 - $cod895 - $cod867 - $cod609 - $cod1639 - $cod1018 - $cod162 - $cod174 - $cod610 - $cod746 - $cod866 - $cod607 }
         }
         
@@ -2545,9 +2546,7 @@ formulario f22_DSL_COMPLETO_2025
             #1925
             formula { ($cod1925) }
         }
-        
-
-        
+                
         campo cod79 { 
             glosa "Impuesto de 40% empresas del Estado, según art. 2º D.L. N° 2.398 de 1978" 
             codigo "79" 
@@ -2557,6 +2556,7 @@ formulario f22_DSL_COMPLETO_2025
             #[79]	=	POS { P28 * [77] - [74]}
             formula { ROUND_DECIMAL(PSTV(($p28 * $cod77) - $cod74),$decimales) }
         }
+
         campo cod79aux { 
             glosa "Impuesto Art.2º D.L. Nº 2398/78." 
             tipo entero0
@@ -3054,9 +3054,9 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 16 
             #b.36
-            # [116]	=	"Si {[104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1104] + [166] > 0 .y. [304] < 0}; 
+            # [116]	=	"Si {[104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1104] + [166] > 0 .y. [304] < 0};
             # MIN { {[174] + [162]};  POS{ (NEG[304]) - [1638] - [610] - [746] - [866] }}
-            # Si no; MIN { {[174] + [162]};  POS{ (NEG[304]) - [610] - [866] }}"
+            # Si no; MIN { {[174] + [162]};  POS{ (NEG[304]) - [610] - [866] }}
             formula { ($cod104 + $cod105 + $cod106 + $cod108 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104 + $cod166 > 0 AND $cod304 < 0)? 	    MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod746 - $cod866)):MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod866))  }
         }
         
@@ -4876,6 +4876,7 @@ formulario f22_DSL_COMPLETO_2025
             #formula { NOT(GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(1) OR GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(2) OR GET_PERIODO($fechaPresentacion) == GET_PERIODO_ACTUAL_MES(3)) ? (  ($aVx014442 == 1)? ROUND_DECIMAL($p729 * $cod90,$decimales) :ROUND_DECIMAL($p30 * $cod90,$decimales)  ) : 0 }  
             formula { ROUND_DECIMAL($p30 * $cod90,$decimales) }  
         }
+
         campo cod39 {             
             glosa "Reajuste Art. 72: %"
             codigo "39" 
@@ -4895,6 +4896,7 @@ formulario f22_DSL_COMPLETO_2025
             valorPorDefecto "0"
             tipoContable PAGO
             #formula { ($cod305 == 0)?0:($cod90 + $cod39) }
+            #formula [90] + [39]
             formula { $cod90 + $cod39 }
         }
         
@@ -14780,13 +14782,14 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
             formula { $cod170 - (($cod152 + $cod749 - $cod169) * $auxImpGlobComp)} 
         }
+
         campo valor157 { 
             glosa "Valor Aux 157" 
             codigo "" 
             tipo entero
             largo 15
             #formula {$esTGC ? TGC($valorAux157):TGL($valorAux157)}
-        formula {$esTGC ? ROUND_DECIMAL(TGC($valorAux157),$decimales) : ROUND_DECIMAL(TGL($valorAux157),$decimales) }
+            formula  {$esTGC ? ROUND_DECIMAL(TGC($valorAux157),$decimales) : ROUND_DECIMAL(TGL($valorAux157),$decimales) }
         }
 
         campo cod170aux { 
