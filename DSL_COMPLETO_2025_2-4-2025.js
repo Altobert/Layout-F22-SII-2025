@@ -2257,7 +2257,12 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
             #[608]	=	"Si { ([32]  + [133]) > 0 .y. [158] > 0} .o. {([104] + [105] + [106] + [955] + [1632] + [110] + [155] + [1032] + [1104]) = 0}; entonces 0 :  sino ([1592] + [1593] + [1594] + [1595] + [1721] + [1596] + [1597] + [1599] + [1633] + [1634] + [1635])"
-            formula {( (($cod32 + $cod133) > 0 AND $cod158 > 0) OR (($cod104 + $cod105 + $cod106 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104) == 0) ) ? 0 : ($cod1592 + $cod1593 + $cod1594 + $cod1595 + $cod1721 + $cod1596 + $cod1597 + $cod1599 + $cod1633 + $cod1634 + $cod1635)}
+            #Si     {([32] + [133]) > 0 .y. [158] > 0} .o.      {([104] + [105]   + [106]   + [955]   + [1632]   + [110]   + [155]   + [1032]   + [1104]) = 0}; entonces 0             
+            #sino    ([1592] + [1593] + [1594] + [1595] + [1721] + [1596] + [1597] + [1599] + [1633] + [1634] + [1635])
+            formula {
+                ( (($cod32 + $cod133) > 0 AND $cod158 > 0) OR (($cod104 + $cod105 + $cod106 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104) == 0) ) ? 0 : 
+                    ($cod1592 + $cod1593 + $cod1594 + $cod1595 + $cod1721 + $cod1596 + $cod1597 + $cod1599 + $cod1633 + $cod1634 + $cod1635)
+            }
 
         }
         
@@ -2292,8 +2297,8 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
             #[610] = Si ([32] + [133]) = 0;     ([1024] + [1025]   + [1026]   + [1027]   + [603]   + [1722]   + [954]   + [1598]   +  [1631]   + [605]   + [1105]   + [606]   + [1031]   + [1890]   + [1914]) sino 0
-            formula { ($cod32 + $cod133)==0 ? ($cod1024 + $cod1025 + $cod1026 + $cod1027 + $cod603 + $cod1722 + $cod954 + $cod1598 +  $cod1631 + $cod605 + $cod1105 + $cod606 + $cod1031 + $cod1890 + $cod1914): 0}
-
+            # Si ([32] + [133]) = 0; entonces ([1024]   + [1025]   + [1026]   + [1027]   + [603]   + [1722]   + [954]   + [1598]   +  [1631]   + [605]   + [1105]   + [606]   + [1031]   + [1890]   + [1914]) sino 0            
+            formula { ($cod32 + $cod133)==0 ? ($cod1024 + $cod1025 + $cod1026 + $cod1027 + $cod603 + $cod1722 + $cod954 + $cod1598 +  $cod1631 + $cod605 + $cod1105 + $cod606 + $cod1031 + $cod1890 + $cod1914) : 0}
         }
         
         campo cod746 {            
@@ -2374,7 +2379,9 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
             #[18]	=	"Si ((Pos {[1440]} > P720)  .y. TIPO{[03]} = 1 .y. atributo = 14D1)          .o. ([1440] > 0 .y. TIPO {[03]} = 2, 3, 4, 5, 6, 7, 8  .y. atributo = 14D1); entonces [1440]
             #Sino 0
-            formula {( (PSTV($cod1440) > $p720  AND $tipoContribuyente == 1 AND ($a14D1!=0)) OR (PSTV($cod1440)>0 AND IN_LIST($tipoContribuyente, "2|3|4|5|6|7|8")  AND ($a14D1!=0))) ? $cod1440 : 0 }
+            formula {
+                ( (PSTV($cod1440) > $p720  AND $tipoContribuyente == 1 AND ($a14D1!=0)) OR (PSTV($cod1440) > 0 AND IN_LIST($tipoContribuyente, "2|3|4|5|6|7|8")  AND ($a14D1!=0))) ? $cod1440 : 0 
+            }
         }
         
         campo cod19 { 
@@ -2384,6 +2391,8 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
             #b.89	[19]	=	"Si {atributo = 14D1 .y. ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855]) > 0}; entonces Min {([18] * P704); ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855])}
+            #Sino 0
+            #Si {  atributo = 14D1 .y. ([898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855]) > 0}; entonces        MIN {([18] * P704);                ([898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855])}
             #Sino 0
             formula { ($a14D1!=0 AND ($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)>0) ? MINL( ROUND_DECIMAL($cod18 * $p704,$decimales) ,($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)):0} 
         }
@@ -3035,7 +3044,9 @@ formulario f22_DSL_COMPLETO_2025
             #b.37	[119]	=	Si {[104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1104] + [166] > 0 .y. 304< 0};   
             #                                                                                                          MIN { {[174] + [162]};  POS{ (NEG[304]) - [1638] - [610] - [746] - [866] }}
             #Si no;                                                                                                                                                                                             MIN { {[174] + [162]};  POS{ (NEG[304]) - [610]  - [866] }}
-            formula {( ($cod104+$cod105+$cod106+$cod108+$cod955+$cod1632+$cod110+$cod155+$cod1032+$cod1104+$cod166) > 0 AND $cod304 < 0)? MINL(($cod174 + $cod162 ), PSTV(NEG($cod304) - $cod1638 - $cod610 - $cod746 - $cod866 )):MINL(($cod174 + $cod162 ), PSTV(NEG($cod304) - $cod610 - $cod866 ))} 
+            formula {( ($cod104+$cod105+$cod106+$cod108+$cod955+$cod1632+$cod110+$cod155+$cod1032+$cod1104+$cod166) > 0 AND $cod304 < 0)? 
+                MINL(($cod174 + $cod162 ), PSTV(NEG($cod304) - $cod1638 - $cod610 - $cod746 - $cod866 )) : 
+                    MINL(($cod174 + $cod162 ), PSTV(NEG($cod304) - $cod610 - $cod866 ))} 
         }
         
         campo cod119aux { 
@@ -3057,7 +3068,8 @@ formulario f22_DSL_COMPLETO_2025
             # [116]	=	"Si {[104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1104] + [166] > 0 .y. [304] < 0};
             # MIN { {[174] + [162]};  POS{ (NEG[304]) - [1638] - [610] - [746] - [866] }}
             # Si no; MIN { {[174] + [162]};  POS{ (NEG[304]) - [610] - [866] }}
-            formula { ($cod104 + $cod105 + $cod106 + $cod108 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104 + $cod166 > 0 AND $cod304 < 0)? 	    MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod746 - $cod866)):MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod866))  }
+            formula { ($cod104 + $cod105 + $cod106 + $cod108 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104 + $cod166 > 0 AND $cod304 < 0)? 
+                	    MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod746 - $cod866)): MINL(($cod1638 + $cod610), PSTV(NEG($cod304) - $cod866))  }
         }
         
         campo cod116aux { 
@@ -7184,6 +7196,8 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
             #b.88	[1111]	=	"Si {atributo = M14A .y. ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855]) > 0}; entonces Min {([1109] * P647); ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855])}
             #Sino 0
+            #Si {atributo = M14A .y. (  [898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855]) > 0}; entonces        MIN {([1109]  * P647);             ([898]   + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984] +   [839] +   [384]   + [390] +   [742] +   [841] +  [855])}
+            #Sino 0
             formula { ($aM14A!=0 AND ($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)>0) ? MINL( ROUND_DECIMAL($cod1109 * $p647,$decimales) ,($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)):0} 
 
         }
@@ -7282,7 +7296,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15
             #[1041]	= Si (atributo = M14A);  entonces POS {P647 * [1040]}
             #Sino POS {P704 * [1040]}
-            formula { ($aM14A == 1) ? ROUND_DECIMAL(PSTV($p647 * $cod1040),$decimales) : ROUND_DECIMAL(PSTV($p704 * $cod1040),$decimales) } 
+            formula { ($aM14A != 0) ? ROUND_DECIMAL(PSTV($p647 * $cod1040),$decimales) : ROUND_DECIMAL(PSTV($p704 * $cod1040),$decimales) } 
         }
         
         campo cod1042 {
@@ -11241,6 +11255,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             #[1596]=	[1850] + [1855]   + [1860]   + [1863]   + [1917]
+            #           [1850] + [1855]   + [1860]   + [1863]   + [1917]
             formula { $cod1850 + $cod1855 + $cod1860 + $cod1863 + $cod1917}
             largo 15 
         }
@@ -11571,9 +11586,10 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
             #[1640]	=	"Si ([1690] > 0 . y. [1109]=0 .y. atributo = M14G); entonces [1690]
-            #Sino 0"
+            #Sino 0
             formula {PSTV($cod1690) > 0 AND $cod1109==0 AND ($aM14G!=0)? $cod1690 : 0 }
         }
+
         campo cod1641 { 
             glosa "REBAJAS AL IMPUESTO/IDPC contribuyentes  o entidades sin vínculo directo o indirecto con propietarios afectos a IGC o IA, según art. 14 letra G) LIR"
             codigo "1641"
@@ -11582,8 +11598,11 @@ formulario f22_DSL_COMPLETO_2025
             largo 15 
             #b.90	[1641]	=	"Si {atributo = M14G .y. ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855]) > 0}; entonces Min {([1640] * P84); ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855])}
             #Sino 0
+            #Si     {atributo = M14G ([898]   + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855]) > 0}; entonces         Min {([1640] * P84);             ([898]   + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855])}
+            #sino 0
             formula { ($aM14G!=0 AND ($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)>0) ? MINL( ROUND_DECIMAL($cod1640 * $p84,$decimales) ,($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)):0} 
         }
+
         campo cod1642 { 
             glosa "IDPC contribuyentes  o entidades sin vínculo directo o indirecto con propietarios afectos a IGC o IA, según art. 14 letra G) LIR"
             codigo "1642"
@@ -11600,15 +11619,17 @@ formulario f22_DSL_COMPLETO_2025
             caracterizable TRUE
             largo 15 
         }
+
         campo cod1644 { 
             glosa "Impuesto único tasa 25% por distribuciones desproporcionadas, según art. 39° transitorio Ley N° 21.210"
             codigo "1644"
             tipo entero0
             caracterizable TRUE
             largo 15 
-        #[1644]	=	[1643] * P64
-        formula { ROUND_DECIMAL($cod1643 * $p64,$decimales) }
+            #[1644]	=	[1643] * P64
+            formula { ROUND_DECIMAL($cod1643 * $p64,$decimales) }
         }
+
         campo cod1645 { 
             #glosa "PPM puestos a disposición de los propietarios de empresas del régimen de transparencia tributaria del art. 14 letra D) N° 8 LIR"
             glosa "PPM puestos a disposición de los propietarios de empresas del régimen de transparencia tributaria del art. 14 letra D) N° 8 LIR"
@@ -12242,8 +12263,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1722"
             tipo entero0
             caracterizable TRUE
-        #[1722]	=	[1854] + [1859]
-        formula { $cod1854 + $cod1859}
+            #[1722]	=	[1854] + [1859]
+            formula { $cod1854 + $cod1859}
             largo 15 
         }
         campo cod1723 { 
