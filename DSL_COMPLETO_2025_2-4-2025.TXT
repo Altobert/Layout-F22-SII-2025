@@ -11996,10 +11996,11 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1704"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1704]	=	Si atributo = 14D1; entonces [1475] + [1476] + [1767] + [1768] + {1477] + [1478] + [1193]
-            #Sino 0 
-            formula {$a14D1!=0 ? ($cod1475 + $cod1476 + $cod1767 + $cod1768 + $cod1477 + $cod1478 + $cod1193):0} 			
+            largo 15
+            #[1704]	= 14D1==1; [1475] + [1476] + [1767] + [1768] + {1477] + [1478] + [1193]
+            #Sino 0
+            formula {$a14D1!=0 ? ($cod1475 + $cod1476 + $cod1767 + $cod1768 + $cod1477 + $cod1478 + $cod1193) : 0}
+            
         }
         campo cod1705 { 
             glosa "Base imponible afecta a IDPC del ejercicio"
