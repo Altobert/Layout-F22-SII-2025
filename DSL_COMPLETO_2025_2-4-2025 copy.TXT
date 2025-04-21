@@ -1853,7 +1853,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "954" 
             tipo entero0
             largo 15 
-            #[954]=	[1848] + [1851]   + [1856]   + [1861]   + [1872]   + [1864]
+            #[954]=	   [1848]  + [1851]   +  [1856]  + [1861]   + [1872]   + [1864]
+            #          [1848]  + [1851]   +  [1856]  + [1861]   + [1872]   + [1864]
             formula { $cod1848 + $cod1851 + $cod1856 + $cod1861 + $cod1872 + $cod1864}
             caracterizable TRUE
         }
@@ -1863,7 +1864,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "955" 
             tipo entero0
             largo 15 
-            #[955]=	[1849] + [1852]   + [1857]   + [1862]   + [1873]   + [1865]
+            #[955] =	[1849] + [1852]   + [1857]   + [1862]   + [1873]   + [1865]
             formula { $cod1849 + $cod1852 + $cod1857 + $cod1862 + $cod1873 + $cod1865}
             caracterizable TRUE
         }
@@ -14188,8 +14189,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "3061"
             tipo entero0
             largo 15
-        }
-
+        }        
         campo cod1777 { 
             glosa "Régimen de imputación parcial de créditos, según art. 14 letra A) LIR"
             codigo "1777"
@@ -15441,7 +15441,7 @@ formulario f22_DSL_COMPLETO_2025
             #95] = 1 .y. atributo = M14A; 
             formula { ( $cod95 AND $aM14A != 0 ) }
         }
-
+         
         campo cond1C132 {
             glosa "Condicion 1 regla C132"
             codigo ""
@@ -15459,4 +15459,4 @@ formulario f22_DSL_COMPLETO_2025
          severidad error
      }
      
-} 
+}
