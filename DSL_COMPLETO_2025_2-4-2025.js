@@ -13708,6 +13708,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1952"
             tipo entero0
             largo 15
+            #[1952]	=	POS ([1786] - [1951])
+            formula { PSTV( $cod1786 - $cod1951 ) }
         }
 
         campo cod1953 {
@@ -13715,6 +13717,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1953"
             tipo entero0
             largo 15
+            #[1953]	=	[1952] + [1788]
+            formula { $cod1952 + $cod1788 }
         }
 
         campo cod1954 {            
@@ -13722,6 +13726,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1954"
             tipo entero0
             largo 15
+            #[1954]	=	[1975]
+            formula { $cod1975 }
         }
 
         campo cod1955 {
@@ -13764,6 +13770,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1960"
             tipo entero0
             largo 15
+            #[1960]	=	[1689]
+            formula { $cod1689 }
         }
         campo cod1961 {
             glosa "Gastos de organización y puesta en Marcha"
@@ -13794,6 +13802,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1965"
             tipo entero0
             largo 15
+            # 1965 = 1675
+            formula { $cod1675 }
         }
         campo cod1966 {
             glosa "Cuota Gastos de organización y puesta en marcha"
@@ -13806,6 +13816,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1967"
             tipo entero0
             largo 15
+            #[1967]	=	[1954] + [1955] + [1956] + [1957] + [1958] + [1959] + [1960] + [1961] + [1962] + [1963] - [1964] - [1965] - [1966] + [1728]
+            formula { $cod1954 + $cod1955 + $cod1956 + $cod1957 + $cod1958 + $cod1959 + $cod1960 + $cod1961 + $cod1962 + $cod1963 - $cod1964 - $cod1965 - $cod1966 + $cod1728 }
+
         }
         campo cod1968 {
             glosa "Promedio TMCF (incluídos los ingresos de explotadores mineros relacionados) art. 5 Ley N° 21.591"
@@ -13842,12 +13855,16 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1974"
             tipo entero0
             largo 15
+            # [1974]	=	[1978]
+            formula { $cod1978 }
         }
         campo cod1975 {
             glosa "Componente del margen del Royalty Minero según art. 3 o art. 4 Ley N° 21.591"
             codigo "1975"
             tipo entero0
             largo 15
+            # [1975]	=	[1980]
+            formula { $cod1980 }
         }
         campo cod1976 {
             glosa "Royalty Minero Ley N° 21.591"
@@ -13920,12 +13937,16 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1987"
             tipo entero0
             largo 15
+            #[1987]	=	[1981] - [1983] - [1985]
+            formula { $cod1981 - $cod1983 - $cod1985 }
         }
         campo cod1988 {
             glosa "Enajenaciones en menos de 1 o 4 años o BBR situados en el exterior / Mayor o menor valor percibido o devengado"
             codigo "1988"
             tipo entero0
             largo 15
+            #[1988]	=	[1982] - [1984] - [1986]
+            formula { $cod1982 - $cod1984 - $cod1986 }
         }
         campo cod1989 {
             glosa "Enajenaciones a partes relacionadas / Mayor valor percibido según códigos 1099, 1114, o devengado según código1987 afectos al IGC o IA, trasladar a códigos 1891; según código 1988 afecto a IDPC e IGC o IA a trasladar a código 1895 o 1912, y a código 1891"
