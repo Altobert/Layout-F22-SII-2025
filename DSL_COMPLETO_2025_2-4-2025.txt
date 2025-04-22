@@ -2152,6 +2152,7 @@ formulario f22_DSL_COMPLETO_2025
             largo 15            
             formula { (($cod104+$cod105+$cod106+$cod108+$cod955+$cod1632+$cod110+$cod155+$cod1032+$cod1891+$cod1104+$cod166+ $cod1030) == 0 AND (($cod161 > 0) OR ($cod152>0)))?1:0 } 
         }
+
         campo esTGC {
             glosa "Determina si aplicar TGL o TGC"
             codigo ""
@@ -2309,9 +2310,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero
             caracterizable TRUE
             largo 16
-            valorPorDefecto "0"
-            # [304]=	[157] +  [1017] +  [1033] +    [201] +   [1035] +   [910] -   [1036] -   [1101]   - [135]   - [136]   - [176]  - [752]   - [608]   - [1636]   - [1637]   - [1638]   - [895]   - [867]   - [609]   - [1639]   - [1018]   - [162]   - [174]   - [610]   - [746]   - [866]   - [607]
-            #           [157] +  [1017] +  [1033] +    [201] +   [1035] +   [910]   - [1036]   - [1101]   - [135]   - [136]   - [176]  - [752]   - [608]   - [1636]   - [1637]   - [1638]   - [895]   - [867]   - [609]   - [1639]   - [1018]   - [162]   - [174]   - [610]   - [746]   - [866]   - [607]
+            valorPorDefecto "0"            
             formula { $cod157 + $cod1017 + $cod1033 +  $cod201 + $cod1035 + $cod910 - $cod1036 - $cod1101 - $cod135 - $cod136 -$cod176 - $cod752 - $cod608 - $cod1636 - $cod1637 - $cod1638 - $cod895 - $cod867 - $cod609 - $cod1639 - $cod1018 - $cod162 - $cod174 - $cod610 - $cod746 - $cod866 - $cod607 }
         }
         
