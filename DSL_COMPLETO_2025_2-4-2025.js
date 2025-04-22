@@ -1927,8 +1927,6 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15 
             caracterizable TRUE            
-            #Si TIPO {[03]} = 1; entonces POS {POS {[547] - [770]} - [872] - [465] -[494] - [850]} + POS {[617] - POS{[770] - [547]}} + [479]
-            #Sino; 0"
             formula{ ($auxRut < 50000000) ? (PSTV(PSTV($cod547 - $cod770) - $cod872 - $cod465 - $cod494 - $cod850) + PSTV($cod617 - PSTV($cod770 - $cod547)) + $cod479 : 0) }
         } 
         
@@ -2376,9 +2374,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "18" 
             caracterizable TRUE
             tipo entero0
-            largo 15 
-            #[18]	=	"Si ((Pos {[1440]} > P720)  .y. TIPO{[03]} = 1 .y. atributo = 14D1)          .o. ([1440] > 0 .y. TIPO {[03]} = 2, 3, 4, 5, 6, 7, 8  .y. atributo = 14D1); entonces [1440]
-            #Sino 0"
+            largo 15             
             formula { ( (PSTV($cod1440) > $p720  AND $tipoContribuyente == 1 AND ($a14D1!=0)) OR (PSTV($cod1440) > 0 AND IN_LIST($tipoContribuyente, "2|3|4|5|6|7|8")  AND ($a14D1!=0))) ? $cod1440 : 0  }
         }
         
@@ -2387,11 +2383,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "19" 
             caracterizable TRUE
             tipo entero0
-            largo 15
-            #b.89	[19]	=	"Si {atributo = 14D1 .y. ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855]) > 0}; entonces Min {([18] * P704); ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855])}
-            #Sino 0
-            #Si {  atributo = 14D1 .y. ([898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855]) > 0}; entonces        MIN {([18] * P704);                ([898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855])}
-            #Sino 0
+            largo 15            
             formula { ($a14D1!=0 AND ($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)>0) ? MINL( ROUND_DECIMAL($cod18 * $p704,$decimales) ,($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)):0} 
         }
         
@@ -3382,12 +3374,7 @@ formulario f22_DSL_COMPLETO_2025
 
         }
         
-        campo cod467{ 
-            #a.5 465
-            #Si TIPO{[03]} = 2; entonces POS {[547] - [465]}
-            #Sino
-            #Si [617] > 0 .y. [547] = 0; entonces [617] - [770] - [872]
-            #Sino POS{POS{[547] - [465] - [494] - [850]} + [617] - [770] -[872]}
+        campo cod467{             
             glosa "Total Honorarios" 
             codigo "467" 
             caracterizable TRUE
@@ -7187,11 +7174,7 @@ formulario f22_DSL_COMPLETO_2025
             glosa "REBAJA AL IMPUESTO IDPC de empresas acogidas al régimen de imputación parcial de créditos, según art. 14 letra A) LIR"
             codigo "1111"
             tipo entero0
-            largo 15
-            #b.88	[1111]	=	"Si {atributo = M14A .y. ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855]) > 0}; entonces Min {([1109] * P647); ([898] + [373] + [382] + [761] + [773] + [365] + [366] + [392] + [1153] + [984] + [839] + [384] + [390] + [742] + [841] + [855])}
-            #Sino 0
-            #Si {atributo = M14A .y. (  [898] + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984]   + [839]   + [384]   + [390]   + [742]   + [841]   + [855]) > 0}; entonces        MIN {([1109]  * P647);             ([898]   + [373]   + [382]   + [761]   + [773]   + [365]   + [366]   + [392]   + [1153]   + [984] +   [839] +   [384]   + [390] +   [742] +   [841] +  [855])}
-            #Sino 0
+            largo 15            
             formula { ($aM14A!=0 AND ($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)>0) ? MINL( ROUND_DECIMAL($cod1109 * $p647,$decimales) ,($cod898 + $cod373 + $cod382 + $cod761 + $cod773 + $cod365 + $cod366 + $cod392 + $cod1153 + $cod984 + $cod839 + $cod384 + $cod390 + $cod742 + $cod841 + $cod855)):0} 
 
         }
@@ -7287,9 +7270,7 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Pago voluntario a título de IDPC, según art. 14 letra A) N° 5 y letra B) N° 3 LIR"
             codigo "1041"
             tipo entero0
-            largo 15
-            #[1041]	= Si (atributo = M14A);  entonces POS {P647 * [1040]}
-            #Sino POS {P704 * [1040]}
+            largo 15            
             formula { ($aM14A != 0) ? ROUND_DECIMAL(PSTV($p647 * $cod1040),$decimales) : ROUND_DECIMAL(PSTV($p704 * $cod1040),$decimales) } 
         }
         
@@ -7968,11 +7949,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1153"
             tipo entero0
             caracterizable TRUE
-            largo 15             
-            #[1153]	= "Si atributo = M14A .o. 14D1 ; ([1370])
-            #Sino; 0"
-            #Si atributo = M14A .o. 14D1 ; entonces [1370]"
-            #Sino 0"
+            largo 15            
             formula {( $aM14A!=0 OR $a14D1!=0 ) ? ($cod1370) : 0 }
         }
         campo cod1154 { 
@@ -8165,11 +8142,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1182"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1182]	=	"Si atributo = M14A = 1 ; [1699]"
-            #Sino; 0
-            #Si atributo = M14A = 1 ; entonces [1699]
-            #Sino; 0
+            largo 15            
             formula {($aM14A!=0) ? $cod1699 : 0 } 
         }
 
@@ -8340,9 +8313,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1205"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #a.193	[1205]	=	"Si atributo = M14A; entonces [1199]"
-            #Sino 0
+            largo 15            
             formula {$aM14A!=0 ? $cod1199:0} 
         }
         campo cod1206 { 
@@ -12137,31 +12108,21 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Pérdidas tributarias de ejercicios anteriores"
             codigo "1714"
             tipo entero0
-            largo 15 
-            #a.194	[1714]	=	"Si ([1580] + [1582] + [1573]) > 0; entonces ([1613] + [1627])
-            #Sino 0"
+            largo 15            
             formula { ($cod1580 + $cod1582 + $cod1573) > 0 ? ($cod1613 + $cod1627) : 0}
         }
         campo cod1715 { 
             glosa "Ingreso diferido imputado en el ejercicio, debidamente incrementado y reajustado, cuando corresponda"
             codigo "1715"
             tipo entero0
-            largo 15 
-            #a.172	[1715]	=	"Si ([1580] + [1582] + [1573]) > 0; entonces [1608]
-            #Sino 0"
-            #Si ([1580] + [1582] + [1573]) > 0; entonces [1608]
-            #Sino 0"
+            largo 15            
             formula {($cod1580 + $cod1582 + $cod1573) > 0 ? $cod1608 : 0}
         }
         campo cod1716 { 
             glosa "Crédito por activos fijos adquiridos en el ejercicio (art. 33 bis LIR)"
             codigo "1716"
             tipo entero0
-            largo 15 
-            #a.173	[1716]	=	"Si ([1580] + [1582] + [1573]) > 0; entonces [1609]
-            #Sino 0"
-            #Si      ([1580] + [1582] + [1573]) > 0; entonces [1609]
-            #Sino 0"
+            largo 15            
             formula {($cod1580 + $cod1582 + $cod1573)>0 ? $cod1609 : 0} 	
         }
         campo cod1717 { 
@@ -12169,9 +12130,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1717"
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[1717]	=	"Si atributo = M14A; entonces [646] sino 0
-            #Sino 0"
+            largo 15            
             #formula {$aM14A!=0 ? $cod646:0}            
         }
 
@@ -12673,46 +12632,15 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1784"
             tipo entero0
             largo 15
-            #Se modifica en SetValidaciones V3.2 AT2024.
-            #a.187    [1784]    =    "Si F22 NO es Rectificatoria;
-            #"(Si (TIPO{[03]} = 1 .y. (atributo = BHEP .o. PSCD .o. PSEI .o.  PCD2 .o. PEI2)); entonces [170] * P725"
-            #Sino"
-            #Si (VX010183 = 2.y. (atributo = BHEP .o. PSCD .o. PSEI .o.  PCD2 .o. PEI2)); entonces [618] * P725
-            #Sino f22[1784])  **Se considera [1784] de la primitiva"
-
-            #Rectificatoria = $isRectificatoria
-            #TIPO{[03]} = 1 => IN_LIST($tipoContribuyente, "1")
-            #.y. = AND
-            #.o. = OR
-
-            formula{                
-                NOT($isRectificatoria) 
-                ?
-                $aux1784A
-                :
-                $cod1784
-            }
-            
-            
+            formula{ NOT($isRectificatoria) ?  $aux1784A  :  $cod1784  }                        
         }
 
         campo cod1785 {
             glosa "Cuota anual (30% o 10% del monto del préstamo tasa 0%), según art. 6 (art. primero) Ley N° 21.242 y/o art. 7 (art. primero) Ley N° 21.252 o art. 11 inc. 1° Ley N° 21.323   "
             codigo "1785"
             tipo entero0
-            largo 15
-            #Si F22 NO es Rectificatoria;  MIN { [1784]; MIN{ Vx014380; VX014411}}  Sino f22[1785]  **Se considera [1785] de la primitiva
-            #Si F22 NO es Rectificatoria;
-            #MIN { [1784]; MIN{ Vx014380; VX014411}}
-            #Sino f22[1785]  Se considera [1785] de la primitiva
-
-            formula{
-                NOT($isRectificatoria)
-                ?
-                MINL($cod1784, MINL($aVx014380, $aVx014411))
-                :
-                $cod1785
-            }
+            largo 15            
+            formula{ NOT($isRectificatoria) ? MINL($cod1784, MINL($aVx014380, $aVx014411)) :  $cod1785 }
         }
 
         campo cod1786 {
@@ -13579,9 +13507,7 @@ formulario f22_DSL_COMPLETO_2025
             glosa "d) Remanente del IEAM anotado en el código 829 del recuadro N° 8 "
             codigo "1916"
             tipo entero0
-            largo 15
-            #Si SUBTIPO{[03]} = 112 .o. 113 .o. 411; entonces  =  [829]
-            #Sino 0"
+            largo 15            
             formula {IN_LIST($subTipoContribuyente, "112|113|411")  ? $cod829 : 0 }
         }
         campo cod1917{
@@ -14977,14 +14903,10 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Epsilon para rC5"
             codigo ""
             tipo entero
-            largo 15
-            #[ e ] = Si {[104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1891] + [1104] + [166] = 0 .y. [161] > 0}; entonces 0 #Sino 1
+            largo 15            
             formula { (($cod104 + $cod105 + $cod106 + $cod108 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1891 + $cod1104 + $cod166) == 0 AND $cod161 > 0)?0:1 }
         }
-
-
-        #[605]	<=	P85*[155] + P390; si [748] = 0
-        #               P59*[155] + P390; si no
+        
         campo auxC17a { 
             glosa "" 
             codigo "" 
@@ -15000,8 +14922,7 @@ formulario f22_DSL_COMPLETO_2025
             formula { ($cod748 > 0)?(ROUND_DECIMAL($p59*$cod155,$decimales)+$p390):0 }            
             largo 15 
         }
-        #[606]+[1105]+ [1633]+[1634]	<=	 P651*[152] + P390; si [748] = 0
-        #                                        P59*[152] + P390 ; si no
+        
         campo auxC18a { 
             glosa "" 
             codigo "" 
@@ -15145,24 +15066,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo boolean
             formula { NOT($auxB11) -> ($cod18 == 0) }
         }
-        # campo auxB12 {
-        #     glosa "Condicion regla B12"
-        #     codigo ""
-        #     tipo boolean
-        #     formula { ((($cod187 + $cod18) > $p01 AND $auxRut < 50000000) OR $auxRut >= 50000000 OR $cod20 == PSTV(($p84 * $cod18) - $cod19)) }
-        # }
-        #campo auxB12a {
-        #     glosa ""
-        #     codigo ""
-        #     tipo boolean
-        #     formula { $auxB12 -> ($cod20 == PSTV(($p84 * $cod18) - $cod19)) }
-        #}
-        #campo auxB12b {
-        #     glosa ""
-        #     codigo ""
-        #     tipo boolean
-        #     formula { NOT($auxB12) -> ($cod20 == 0) }
-        #}
+        
         campo auxB13 {
             glosa "Condicion regla B13"
             codigo ""
@@ -15261,8 +15165,7 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Lambda para rC4 y rC5"
             codigo ""
             tipo entero
-            largo 15
-            #Si            [104] + [105]   + [106]       + [108] + [955]    + [1632]    + [110]   + [155]    +  [1032]   + [1891]     + [1104]   + [166]     = 0 .y. [161]    > 0; entonces 1
+            largo 15            
             formula { ((($cod104 + $cod105 + $cod106) + ($cod108 + $cod955) + ($cod1632 + $cod110 + $cod155) + ($cod1032 + ($cod1891) + $cod1104 + $cod166)) == 0 AND $cod161 > 0)?1:0 }
         }
         campo auxC4 {
@@ -15282,9 +15185,7 @@ formulario f22_DSL_COMPLETO_2025
         campo auxC4a {
             glosa "Validacion regla C4a"
             codigo ""
-            tipo boolean
-            #largo 15
-            #posDecimales 3
+            tipo boolean            
             formula { $auxC4 -> $cod136 <= (($auxC4Div * MAXL(ROUND_DECIMAL($cod152 / $p13,$decimales), $cod152 + $cod606 + $cod1105)) + $p390) }
         }
         campo auxC4b {
@@ -15371,15 +15272,13 @@ formulario f22_DSL_COMPLETO_2025
         campo cond1C90 {
             glosa "Condicion 1 regla C90"
             codigo ""
-            tipo boolean
-            #Si  alfa > 0 .y. ([608] - gamma) > 0 .y. ([610] - delta) = 0; 
+            tipo boolean            
             formula { ($alfaC90 > 0 AND ($cod608 - $gammaC90) > 0 AND ($cod610 - $deltaC90) == 0) }
         }	
         campo cond2C90 {
             glosa "Condicion 2 regla C90"
             codigo ""
-            tipo boolean
-            #Si beta > 0 .y. ([608] - gamma) =0 .y. [610] - delta >0;
+            tipo boolean            
             formula { ($betaC90 > 0 AND ($cod608 - $gammaC90) == 0 AND ($cod610 - $deltaC90) > 0) }
         }		
         campo cond3C90 {
@@ -15400,8 +15299,7 @@ formulario f22_DSL_COMPLETO_2025
         campo cond2C98 {
             glosa "Condicion 2 regla C98"
             codigo ""
-            tipo boolean
-            #95] = 1 .y. atributo = M14A; 
+            tipo boolean            
             formula { ( $cod95 AND $aM14A != 0 ) }
         }
          
