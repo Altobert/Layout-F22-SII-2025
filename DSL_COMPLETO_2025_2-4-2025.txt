@@ -2141,19 +2141,15 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 16
-            valorPorDefecto "0"
-            #[170]=	    POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}            
-            #           POS {[158] - [111]   - [751]   - [822]   - [765]   - [133]   - [32]}  
+            valorPorDefecto "0"            
             formula { PSTV($cod158 - $cod111 - $cod751 - $cod822 - $cod765 - $cod133 - $cod32) }
         }
         
-
         campo auxImpGlobComp { 
             glosa "Valor auxiliar para el calculo de Impuesto Global Complementario según tabla. (Art. 52)" 
             codigo "" 
             tipo entero
-            largo 15
-            #1 ; Si (    [104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1891] + [1104] + [166] + [1030] = 0)     .y. { [161]   > 0 .o. [152] > 0}; entonces 1 sino 0
+            largo 15            
             formula { (($cod104+$cod105+$cod106+$cod108+$cod955+$cod1632+$cod110+$cod155+$cod1032+$cod1891+$cod1104+$cod166+ $cod1030) == 0 AND (($cod161 > 0) OR ($cod152>0)))?1:0 } 
         }
         campo esTGC {
@@ -2169,10 +2165,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo boolean
             formula { RANGO($p737,$cod1815,($aVx014511 * $p34)) } 
         }
-
-        #[157]	=	"TGL{ [170] - (([152] + [749] - [169] ) * [ lambda ])}
-        #[lambda] = Si ([104] + [105] + [106] + [108] + [955] + [1632] + [110] + [155] + [1032] + [1891] + [1104] + [166] + [1030] = 0) .y. { [161] > 0 .o. [152] > 0}; entonces 1
-        #sino 0        
+              
         campo cod157 {                                    
             glosa "Impuesto Global Complementario o Impuesto Único de Segunda Categoría (Art. 47 o Art. 52 o 52 bis) (según tabla)"
             codigo "157" 
@@ -2253,14 +2246,9 @@ formulario f22_DSL_COMPLETO_2025
             codigo "608" 
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #"[608]	=	Si { ([32]  + [133]) > 0 .y. [158] > 0} .o. {([104] + [105] + [106] + [955] + [1632] + [110] + [155] + [1032] + [1104]) = 0}; entonces 0 :  sino ([1592] + [1593] + [1594] + [1595] + [1721] + [1596] + [1597] + [1599] + [1633] + [1634] + [1635])
-            #"Si     {([32] + [133]) > 0 .y. [158] > 0} .o.      {([104] + [105]   + [106]   + [955]   + [1632]   + [110]   + [155]   + [1032]   + [1104]) = 0}; entonces 0 
-            #"sino    ([1592] + [1593] + [1594] + [1595] + [1721] + [1596] + [1597] + [1599] + [1633] + [1634] + [1635])
-            formula {
-                ( (($cod32 + $cod133) > 0 AND $cod158 > 0) OR (($cod104 + $cod105 + $cod106 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104) == 0) ) ? 0 : 
-                    ($cod1592 + $cod1593 + $cod1594 + $cod1595 + $cod1721 + $cod1596 + $cod1597 + $cod1599 + $cod1633 + $cod1634 + $cod1635)
-            }
+            largo 15             
+            formula { ( (($cod32 + $cod133) > 0 AND $cod158 > 0) OR (($cod104 + $cod105 + $cod106 + $cod955 + $cod1632 + $cod110 + $cod155 + $cod1032 + $cod1104) == 0) ) ? 0 : 
+                    ($cod1592 + $cod1593 + $cod1594 + $cod1595 + $cod1721 + $cod1596 + $cod1597 + $cod1599 + $cod1633 + $cod1634 + $cod1635)}
 
         }
         
@@ -2293,9 +2281,7 @@ formulario f22_DSL_COMPLETO_2025
             codigo "610" 
             tipo entero0
             caracterizable TRUE
-            largo 15 
-            #[610] = Si ([32] + [133]) = 0;     ([1024] + [1025]   + [1026]   + [1027]   + [603]   + [1722]   + [954]   + [1598]   +  [1631]   + [605]   + [1105]   + [606]   + [1031]   + [1890]   + [1914]) sino 0
-            # Si ([32] + [133]) = 0; entonces ([1024]   + [1025]   + [1026]   + [1027]   + [603]   + [1722]   + [954]   + [1598]   +  [1631]   + [605]   + [1105]   + [606]   + [1031]   + [1890]   + [1914]) sino 0            
+            largo 15            
             formula { ($cod32 + $cod133)==0 ? ($cod1024 + $cod1025 + $cod1026 + $cod1027 + $cod603 + $cod1722 + $cod954 + $cod1598 +  $cod1631 + $cod605 + $cod1105 + $cod606 + $cod1031 + $cod1890 + $cod1914) : 0}
         }
         
