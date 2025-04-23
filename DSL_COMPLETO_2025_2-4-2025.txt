@@ -11804,7 +11804,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15 
             #b.95	[1681]	=	[825]
-            formula {$cod825}            
+            formula {$cod825}
         }
         campo cod1682 { 
             glosa "Gastos rechazados afectos a la tributación del art. 21 inc. 1°  LIR "
@@ -11951,8 +11951,8 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             caracterizable TRUE
             largo 15 
-            [1699]	=	"Si atributo = M14A; entonces [1208] + [1218] + [1230] + [1745] + {1746] + [1242] + [1254] + [1193] + [1194] 
-            Sino 0"
+            #[1699]	=	"Si atributo = M14A; entonces [1208] + [1218] + [1230] + [1745] + {1746] + [1242] + [1254] + [1193] + [1194] 
+            #Sino 0"
             formula {$aM14A!=0 ? ($cod1208 + $cod1218 + $cod1230 + $cod1745 + $cod1746 + $cod1242 + $cod1254 + $cod1193 + $cod1194) : 0}            
         }
         campo cod1700 { 
@@ -12662,9 +12662,9 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Monto a pagar de la(s) cuota(s) después de anticipos / Préstamo AC 2020 (Leyes N° 21.242 y N° 21.252)"
             codigo "1788"
             tipo entero0
-            largo 15
-            #a.189	[1788]	=	POS([1786] + [1802] - [1787])
-            formula {PSTV($cod1786 + $cod1802 - $cod1787)}
+            largo 15            
+            #[1788]	=	POS ([1802] - [1787])
+            formula {PSTV( $cod1802 - $cod1787)}
         }
 
         campo cod1789 {
@@ -12708,20 +12708,22 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Monto a pagar de la(s) cuota(s) después de retenciones adicionales y PPMA"
             codigo "1794"
             tipo entero0
-            largo 15
-            #a.191	[1794]	=	POS{[1788] - [1793]}
-            formula {PSTV($cod1788 - $cod1793)}
+            largo 15            
+            #[1794] =	POS{[1953] - [1793]}
+            formula {PSTV($cod1953 - $cod1793)}
         }
+
 
         campo cod1795 {
             glosa "Saldo a devolver por retenciones adicionales y PPMA en exceso"
             codigo "1795"
             tipo entero0
             largo 15
-            #[1795]	=	"Si NEG {[1953] - [1793]} > 0; entonces POS {NEG ({1953] - [1793]} - [1842]}
-            Sino 0"
-            formula { (NEG($cod1953 - $cod1793) > 0) ? PSTV(NEG($cod1953 - $cod1793) - $cod1842) : 0}                    
+            #a.192	[1795]	=	"Si NEG {[1953] - [1793]} > 0; entonces POS {NEG ({1953] - [1793]} - [1842]}
+            #Sino 0"
+            formula { NEG($cod1953 - $cod1793) > 0  ? (PSTV(NEG($cod1953 - $cod1793) - $cod1842)) : 0}            
         }
+      
 
         campo cod1796 {
             glosa "Monto a pagar cuota(s) préstamo(s) tasa 0% (préstamos solidarios del Estado)"
@@ -12729,7 +12731,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo entero0
             largo 15
             #b.91	[1796]	=	[1794]
-                        formula {$cod1794}
+            formula {$cod1794}
         }
         
         #campo cod1797 {
@@ -12768,8 +12770,9 @@ formulario f22_DSL_COMPLETO_2025
             glosa "Monto a pagar de la(s) cuota(s) / Préstamo AC 2021 (Ley N° 21.323)"
             codigo "1802"
             tipo entero0
-            largo 15            
-            #[1802]	=	MIN {[1784]; [1801] + [1799]}
+            largo 15
+            #a.197	MIN {[1784]; [1801]}
+            #MIN {[1784]; [1801] + [1799]}
             formula { MINL($cod1784, $cod1801 + $cod1799)}
         }
         campo cod1803{
@@ -12861,6 +12864,7 @@ formulario f22_DSL_COMPLETO_2025
             tipo enteron
             largo 15
         }
+
         campo cod1816{
             glosa "Base imponible o pérdida del ejercicio"
             codigo "1816"
@@ -13057,8 +13061,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1844"
             tipo entero0
             largo 15
-            #[1844]	=	NEG {[1731] - [1843] + [1734] - [1736] - [1738] + [1740] + [1742] - [1744] - [1746] - [1748]} 
-            formula { NEG($cod1731 - $cod1843 + $cod1734 - $cod1736 - $cod1738 + $cod1740 + $cod1742 - $cod1744 - $cod1746 - $cod1748)}
+            #[1844]=	 NEG {[1731]  - [1843]   + [1734]   - [1736]   - [1738]   + [1740]   + [1742]   - [1744]   - [1746]   - [1748]}  
+            formula {    NEG($cod1731 - $cod1843 + $cod1734 - $cod1736 - $cod1738 + $cod1740 + $cod1742 - $cod1744 - $cod1746 - $cod1748) }
         }
         campo cod1845{
             glosa "Saldo negativo anterior reaj.  otras REX"
@@ -13071,8 +13075,8 @@ formulario f22_DSL_COMPLETO_2025
             codigo "1846"
             tipo entero0
             largo 15
-            #[1846]	=	NEG {[1753]  - [1845]   + [1756]   - [1758]   - [1760]   + [1762]   + [1764]   - [1766]   - [1768]   - [1770]}
-            formula {   NEG($cod1753 - $cod1845 + $cod1756 - $cod1758 - $cod1760 + $cod1762 + $cod1764 - $cod1766 - $cod1768 - $cod1770)}
+            #[1846]=  NEG {[1753]  - {1845]   + [1756]   - [1758]   - [1760]   + [1762]   + [1764]   - [1766]   - [1768]   - [1770]}
+            formula { NEG($cod1753 - $cod1845 + $cod1756 - $cod1758 - $cod1760 + $cod1762 + $cod1764 - $cod1766 - $cod1768 - $cod1770) }
         }
         campo cod1847{
             glosa "Mayor valor devengado a declarar en el año tributario actual"
@@ -15315,5 +15319,5 @@ formulario f22_DSL_COMPLETO_2025
          glosa "Debe habilitarse el AT2025. "
          condicion { ""!="" }
          severidad error
-     }
+    }
 } 
